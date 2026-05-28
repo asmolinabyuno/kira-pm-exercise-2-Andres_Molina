@@ -1,0 +1,92 @@
+{
+  "ACH-10000": {
+    "status": 400,
+    "elapsed_ms": 383.01,
+    "evidence": "13-fu-ACH-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    }
+  },
+  "ACH-100000": {
+    "status": 400,
+    "elapsed_ms": 314.27,
+    "evidence": "14-fu-ACH-100000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    }
+  },
+  "WIRE-10000": {
+    "status": 400,
+    "elapsed_ms": 281.76,
+    "evidence": "15-fu-WIRE-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    }
+  },
+  "SWIFT-10000": {
+    "status": 400,
+    "elapsed_ms": 269.22,
+    "evidence": "16-fu-SWIFT-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    }
+  },
+  "INSTANT_PAY-10000": {
+    "status": 400,
+    "elapsed_ms": 277.0,
+    "evidence": "17-fu-INSTANT_PAY-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    }
+  },
+  "WALLET-poly-USDC-10000": {
+    "status": 400,
+    "elapsed_ms": 374.03,
+    "evidence": "18-fu-WALLET-poly-USDC-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "No fee profile configured for product usa-va-fiat-to-crypto-payout with account type WALLET"
+    }
+  },
+  "WALLET-tron-USDT-10000": {
+    "status": 400,
+    "elapsed_ms": 285.24,
+    "evidence": "19-fu-WALLET-tron-USDT-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "No fee profile configured for product usa-va-fiat-to-crypto-payout with account type WALLET"
+    }
+  },
+  "WALLET-solana-USDC-10000": {
+    "status": 400,
+    "elapsed_ms": 289.67,
+    "evidence": "20-fu-WALLET-solana-USDC-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "No fee profile configured for product usa-va-fiat-to-crypto-payout with account type WALLET"
+    }
+  },
+  "ACH-inverse-true": {
+    "status": 400,
+    "elapsed_ms": 245.87,
+    "evidence": "21-fu-ACH-inverse-true-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "Fee rates exceed 100%, inverse calculation is not possible"
+    }
+  },
+  "ACH-intstr-10000": {
+    "status": 400,
+    "elapsed_ms": 243.28,
+    "evidence": "22-fu-ACH-intstr-10000-fail-400.json",
+    "response_excerpt": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "captured_at": "2026-05-28T02:24:00.043705+00:00",
+  "elapsed_ms": 239.31,
+  "outcome": "fail-404-random-user-1",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/users/bf284937-8505-4423-8eb4-5d5ad7d213b0",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:24:00 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "e47295cc-b116-47a8-8850-e8a27c95aa4a",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "92",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcSDEGCvHcEcYQ=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"5c-waITlsXp1PdOuS24iB43ZQaz/7o\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:23:59 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a029ccef38b7c7d5-BOG"
+    },
+    "body": {
+      "code": "not_found",
+      "message": "User with ID bf284937-8505-4423-8eb4-5d5ad7d213b0 not found"
+    }
+  }
+}

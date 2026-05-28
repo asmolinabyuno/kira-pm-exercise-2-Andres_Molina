@@ -1,0 +1,88 @@
+{
+  "captured_at": "2026-05-28T02:28:46.786947+00:00",
+  "attempt_id": "P1-ssrf-delivery-confirm",
+  "context": "Probe 1 — Step C — webhook.site receipt snapshot after triggering user.created. Proves Kira fired an outbound HTTP POST from 54.201.149.241 (AWS) with x-signature-sha256 header. Used as baseline for the IMDS comparison test.",
+  "webhook_site_token_redacted": "REDACTED(36)",
+  "snapshot": {
+    "step": "stepC",
+    "label": "stepC-poll-after-trigger",
+    "webhook_site_token": "3fa5ca2e-8761-48f6-b93d-fb7897f95a29",
+    "expected_min_count": 1,
+    "elapsed_s": 37.5,
+    "final_count": 1,
+    "delivery_observed": true,
+    "poll_log": [
+      {
+        "t": 1.0,
+        "count": 0
+      },
+      {
+        "t": 5.1,
+        "count": 0
+      },
+      {
+        "t": 9.0,
+        "count": 0
+      },
+      {
+        "t": 13.0,
+        "count": 0
+      },
+      {
+        "t": 17.1,
+        "count": 0
+      },
+      {
+        "t": 21.1,
+        "count": 0
+      },
+      {
+        "t": 25.1,
+        "count": 0
+      },
+      {
+        "t": 29.1,
+        "count": 0
+      },
+      {
+        "t": 33.1,
+        "count": 0
+      },
+      {
+        "t": 37.5,
+        "count": 1
+      }
+    ],
+    "snapshots": [
+      {
+        "elapsed_s": 1.0,
+        "total": 0,
+        "requests_summary": []
+      },
+      {
+        "elapsed_s": 37.5,
+        "total": 1,
+        "requests_summary": [
+          {
+            "method": "POST",
+            "ip": "54.201.149.241",
+            "user_agent": "node",
+            "created_at": "2026-05-28 02:26:42",
+            "content_excerpt": "{\"event\":\"user.created\",\"data\":{\"event_id\":\"704b1b38-4026-4f58-95ea-da803ae53eab\",\"type\":\"business\",\"email\":\"sec+ssrf-stepB-trigger-user-created-1779935166-ab93f0@example.com\",\"phone\":\"\",\"status\":\"CRE",
+            "request_headers_keys": [
+              "content-length",
+              "accept-encoding",
+              "user-agent",
+              "sec-fetch-mode",
+              "accept-language",
+              "accept",
+              "x-signature-sha256",
+              "content-type",
+              "host"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

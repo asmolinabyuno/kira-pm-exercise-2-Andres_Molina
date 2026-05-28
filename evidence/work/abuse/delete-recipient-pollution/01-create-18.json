@@ -1,0 +1,83 @@
+{
+  "captured_at": "2026-05-28T02:22:25.630135+00:00",
+  "elapsed_ms": 300.72,
+  "outcome": "success-201-create-18",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "e7e9fb99-affa-4378-aa2a-4a34a6ad1b62"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "first_name": "Test",
+      "last_name": "PolluteS",
+      "email": "test+abuse-40059c@example.com",
+      "phone": "+525512345678",
+      "account": {
+        "account_type": "SPEI",
+        "clabe": "012180001234567018",
+        "doc_type": "rfc",
+        "doc_number": "TFAK900101AAA",
+        "bank_name": "Test SPEI Bank",
+        "currency": "MXN",
+        "country": "MX"
+      }
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:22:25 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "427",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "6b860acb-3e89-4cb0-b21d-47ac9c4f3b46",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "427",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcDSEkIPHcEjYA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"1ab-Cn7PGSOGnoNOt8lilv9kjc1Nh2Q\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:22:25 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a029caa0cd0b21b7-BOG"
+    },
+    "body": {
+      "recipient_id": "25c94f28-c624-4d2b-a43f-3e778bc4ae27",
+      "type": "individual",
+      "first_name": "Test",
+      "last_name": "PolluteS",
+      "phone": "+525512345678",
+      "email": "test+abuse-40059c@example.com",
+      "account_type": "SPEI",
+      "account_details": {
+        "clabe": "012180001234567018",
+        "doc_type": "rfc",
+        "doc_number": "TFAK900101AAA",
+        "doc_country_code": "MX"
+      },
+      "created_ts": "2026-05-28 02:22:25.543933+00",
+      "updated_ts": "2026-05-28 02:22:25.543933+00",
+      "metadata": {}
+    }
+  }
+}

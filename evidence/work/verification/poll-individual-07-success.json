@@ -1,0 +1,183 @@
+{
+  "captured_at": "2026-05-28T00:57:57.775080+00:00",
+  "attempt_id": "5a9632fc-cef1-4dec-bf14-7b3ad9d462c6",
+  "elapsed_ms": 266.97,
+  "outcome": "success",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/users/02e4e953-f423-4a7a-8828-f9c2a2ecb1c7",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:57:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "a1889074-fe6c-46f3-acce-8b9493f120c9",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "2932",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPrcG9MPHcEeDg=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"b74-8bgAmpgxD+LWL7u7tbwlFTzCFfs\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:57:57 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a0294ee6e9ce2fb2-BOG"
+    },
+    "body": {
+      "id": "02e4e953-f423-4a7a-8828-f9c2a2ecb1c7",
+      "type": "individual",
+      "email": "test+phase2-1779929758-92b08e@example.com",
+      "status": "REVIEW",
+      "verification_status": "in_review",
+      "created_at": "2026-05-28T00:55:58.983Z",
+      "updated_at": "2026-05-28T00:56:57.238Z",
+      "verification_mode": "automatic",
+      "metadata": {},
+      "first_name": "Test",
+      "last_name": "User",
+      "middle_name": "Q",
+      "phone": "+12025550100",
+      "birth_date": "1990-01-15",
+      "nationality": "USA",
+      "gender": "other",
+      "residential_address": {
+        "street_line_1": "123 Main St",
+        "street_line_2": "",
+        "city": "San Francisco",
+        "subdivision": "CA",
+        "postal_code": "94105",
+        "country": "USA"
+      },
+      "identifying_information": [
+        {
+          "type": "ssn",
+          "number": "000-00-0000",
+          "issuing_country": "USA"
+        },
+        {
+          "type": "drivers_license",
+          "number": "FAKE-DL-000000",
+          "documents": [
+            {
+              "type": "front",
+              "file_name": "1779929758986-fc22f1f1-drivers_license-front.png",
+              "uploaded_at": "2026-05-28T00:55:59.053Z",
+              "content_type": "image/png"
+            },
+            {
+              "type": "back",
+              "file_name": "1779929758986-cda8602c-drivers_license-back.png",
+              "uploaded_at": "2026-05-28T00:55:59.049Z",
+              "content_type": "image/png"
+            }
+          ],
+          "issuing_country": "USA"
+        }
+      ],
+      "eligible_products": [
+        {
+          "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+          "product_code": "payment_link",
+          "product_name": "Payment Link",
+          "eligible": false
+        },
+        {
+          "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+          "product_code": "cash_deposit",
+          "product_name": "Cash Deposit",
+          "eligible": false
+        },
+        {
+          "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+          "product_code": "card_deposit",
+          "product_name": "Card Deposit",
+          "eligible": false
+        },
+        {
+          "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+          "product_code": "payout",
+          "product_name": "Payout",
+          "eligible": false
+        },
+        {
+          "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+          "product_code": "virtual_account",
+          "product_name": "Virtual Account",
+          "eligible": false
+        },
+        {
+          "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+          "product_code": "pse_deposit",
+          "product_name": "PSE Deposit",
+          "eligible": false
+        },
+        {
+          "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+          "product_code": "virtual_account_spei",
+          "product_name": "Virtual Account SPEI",
+          "eligible": false
+        },
+        {
+          "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+          "product_code": "usa-virtual-accounts",
+          "product_name": "USA Virtual Accounts",
+          "eligible": false
+        },
+        {
+          "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+          "product_code": "usa-va-deposit-settlement",
+          "product_name": "USA Virtual Accounts Settlements",
+          "eligible": false
+        },
+        {
+          "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+          "product_code": "usa-va-crypto-payout",
+          "product_name": "US VA Crypto Payout",
+          "eligible": false
+        },
+        {
+          "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+          "product_code": "usa-va-fiat-payout",
+          "product_name": "US VA Fiat Payout",
+          "eligible": false
+        },
+        {
+          "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "product_code": "usa-virtual-accounts-act",
+          "product_name": "USA Virtual Accounts (ACT)",
+          "eligible": false
+        },
+        {
+          "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+          "product_code": "usa-va-fiat-to-crypto-payout",
+          "product_name": "USA VA Fiat to Crypto Payout",
+          "eligible": false
+        }
+      ]
+    }
+  }
+}

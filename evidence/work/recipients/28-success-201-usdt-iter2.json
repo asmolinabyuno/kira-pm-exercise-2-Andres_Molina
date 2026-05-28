@@ -1,0 +1,79 @@
+{
+  "captured_at": "2026-05-28T00:54:16.034163+00:00",
+  "attempt_id": "00a1d9c9-7f6a-4a08-bd20-baa5cf050f1b",
+  "elapsed_ms": 258.34,
+  "outcome": "success-201-usdt-iter2",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "95281766-9880-4218-a221-7631618d7279"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "first_name": "Test",
+      "last_name": "WalletHolder",
+      "email": "test+usdt@example.com",
+      "account": {
+        "account_type": "WALLET",
+        "token": "REDACTED(4)",
+        "network": "tron",
+        "address": "TLsV52sRDL79HXGGm9yzwKibb6BeruhUzy",
+        "currency": "USDT"
+      }
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:54:16 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "381",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "50097752-9646-46e7-923f-2bbdc1b11a00",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "381",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPIzEMHPHcEH3A=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"17d-KEOyLGOR0M+RaQcBbpedTPm0LIk\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:54:15 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a029497d19d326ac-BOG"
+    },
+    "body": {
+      "recipient_id": "2038f798-efa1-4c94-9dd4-4c60fff9776e",
+      "type": "individual",
+      "first_name": "Test",
+      "last_name": "WalletHolder",
+      "email": "test+usdt@example.com",
+      "account_type": "WALLET",
+      "account_details": {
+        "token": "REDACTED(4)",
+        "address": "TLsV52sRDL79HXGGm9yzwKibb6BeruhUzy",
+        "network": "tron"
+      },
+      "created_ts": "2026-05-28 00:54:15.977711+00",
+      "updated_ts": "2026-05-28 00:54:15.977711+00",
+      "metadata": {}
+    }
+  }
+}

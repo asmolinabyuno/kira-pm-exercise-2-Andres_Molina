@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-05-28T00:55:56.841048+00:00",
+  "attempt_id": "1c11f03e-36ad-4ba7-b54f-8040ef4d0082",
+  "elapsed_ms": 279.53,
+  "outcome": "fail-403",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/users/ae80515c-2d59-4e02-9678-0bcfd6e9a188/verification/send",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "d5b4d819-0699-4481-a1e1-278c8e1c8688"
+    },
+    "body": {
+      "user_id": "ae80515c-2d59-4e02-9678-0bcfd6e9a188"
+    }
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:55:56 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "f489e2a6-edea-4450-9bab-d5c2256b3542",
+      "x-amzn-errortype": "IncompleteSignatureException",
+      "x-amz-apigw-id": "eDPYjGEZPHcEO2A=",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a0294bf2f918473f-BOG"
+    },
+    "body": {
+      "message": "Invalid key=value pair (missing equal-sign) in Authorization header (hashed with SHA-256 and encoded with Base64): '8ZLwMnVkeOI7J+//OLiFDp497pmAZe3FLeQ+VDW2cfc='."
+    }
+  }
+}

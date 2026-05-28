@@ -1,0 +1,297 @@
+{
+  "captured_at": "2026-05-28T02:20:47.303736+00:00",
+  "token_header": {
+    "kid": "GuYId5hRS6j2TToQzJJ7UOsqh6e1ullOcdHoB9FFRPw=",
+    "alg": "RS256"
+  },
+  "token_claims_keys": [
+    "auth_time",
+    "client_id",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "scope",
+    "sub",
+    "token_use",
+    "version"
+  ],
+  "read_url": "https://api.balampay.com/v1/users?limit=1",
+  "attempts": [
+    {
+      "label": "00-control-valid-token",
+      "status": 200,
+      "elapsed_ms": 282.0,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "f84b6e94-0658-4764-a9bc-7fe774e4b149",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "865",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDbzaEsqPHcEAsA=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"361-3DoGllmco5p5nY4HgNgEyvFvtKQ\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:20:43 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=go38uMPdV7AFQT_U4nrPCLBv9Prvl8YqHREZhQC5oNI-1779934843.708004-1.0.1.1-4HpLvEhUvwD2GvYmahi3TRn1kT8L42.wP0LRTwMKWfu56m4hYmsLQxB.3VwrCbf3VXrvx5AZ9nJpcfpvSj.V1Z_TTVonWHHomlab4.yWW7cveGMDRX9oxSCLedzz82Nr; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:43 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029c8252b6e8cbb-BOG"
+      },
+      "body_excerpt": "{\"data\":[{\"id\":\"0ba8a87a-a49e-423b-86fb-c6a025ba27f9\",\"type\":\"business\",\"email\":\"ops+phase2-1779929759-6a4702@example.com\",\"status\":\"REVIEW\",\"verification_status\":\"in_review\",\"created_at\":\"2026-05-28T00:55:59.323Z\",\"updated_at\":\"2026-05-28T00:56:57.532Z\",\"verification_mode\":\"automatic\",\"metadata\":{},\"formation_country\":\"USA\",\"business_legal_name\":\"Test Corp 1779929759\",\"registered_address\":{\"stree",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(872)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": true
+    },
+    {
+      "label": "01-alg-none",
+      "status": 401,
+      "elapsed_ms": 659.45,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:44 GMT",
+        "content-type": "application/json",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "48ad5835-3afe-4621-852c-aa2928cd372b",
+        "x-amzn-errortype": "UnauthorizedException",
+        "x-amz-apigw-id": "eDbzhEy9vHcECbA=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=Sq76EmFE2gg3CMbDwU.8V29_zP.3bYBxwzSSeRxIav8-1779934844.2139027-1.0.1.1-4R62GJ3TUkN264hvZPBx8C9wd59GblZ2ZsCAmIaTdbwnhxYESUWvTLsZyM5kFm7r3uAo4gQJ4UZO0dFML_bTlojIkPSh4KudEIKNaK64iPZfRFa4YYln6hSIgId8WY5r; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:44 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c8285bc5b3c5-MIA"
+      },
+      "body_excerpt": "{\"message\":\"Unauthorized\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(529)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "01b-alg-none-with-sig",
+      "status": 401,
+      "elapsed_ms": 247.08,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:44 GMT",
+        "content-type": "application/json",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "9706b33b-cb61-4b9a-a3ae-a9d1e918254e",
+        "x-amzn-errortype": "UnauthorizedException",
+        "x-amz-apigw-id": "eDbzjFlLvHcEL2g=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=j5AtMDYUUQLwAErILwHJMlqjG6KZYn0EZKw6ztxpEo0-1779934844.6607313-1.0.1.1-aEcyd1X0cAbsnAXcC8WvsqhGOB5d6h6Na.n6RS7wMk2vFHdraR486PWUcKGH24blduOgmrGYtLQjzNzmg382qyY88KnyNRH9DduUsvyOyFQ6wM4F_sQuIg5eTE1._xpm; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:44 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c82b18925c8e-BOG"
+      },
+      "body_excerpt": "{\"message\":\"Unauthorized\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(871)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "02-kid-pathtraversal",
+      "status": 401,
+      "elapsed_ms": 364.55,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:45 GMT",
+        "content-type": "application/json",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "730ddb5c-a566-4ec9-86db-fab6c626f20d",
+        "x-amzn-errortype": "UnauthorizedException",
+        "x-amz-apigw-id": "eDbzmHAvPHcEB3A=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=.oJKVeznccV9qSQnXkxGOBOQGHE3vcVIO3PdQm1eFlY-1779934844.9974964-1.0.1.1-ghC5zpz4wNUXSfcfktCMvHW_hMmwse1TpYKokcTA9kEqY15eSPrtDiu8NOgE2a_LMteYc0EP8HnywEeMFX8Bx_iYLXwBGWZ6NGYQLAbwgK3hp.73cCTqZ0u8Etp.2oeU; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:45 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c82d39fa603c-BOG"
+      },
+      "body_excerpt": "{\"message\":\"Unauthorized\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(836)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "02b-kid-removed",
+      "status": 401,
+      "elapsed_ms": 298.99,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:45 GMT",
+        "content-type": "application/json",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "20420c43-0f27-4042-b163-a092960447dc",
+        "x-amzn-errortype": "UnauthorizedException",
+        "x-amz-apigw-id": "eDbzpER7vHcELAA=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=VACLjEfNJCDmTUfo20XFAcFp9ab_e2K.vb36O23AXjc-1779934845.27177-1.0.1.1-DHUvXC_yAhbRCz5fYtjvwqkQyoWLgS39zf8nmDwdHLllrlEG3dSwb.ipbVJqXgPk.oxLLSUcBbXsgdSeZ897pVvy0wyYayYkMAO7ZXJDjq8mP2UsYcdHwbWpaUDqziHf; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:45 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c82ee995b290-BOG"
+      },
+      "body_excerpt": "{\"message\":\"Unauthorized\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(801)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "03-claim-tampered-client_id",
+      "status": 403,
+      "elapsed_ms": 238.33,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:45 GMT",
+        "content-type": "application/json",
+        "content-length": "28",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "ca5151ff-720d-43c5-974d-0ed98bb71b39",
+        "x-amzn-errortype": "AccessDeniedException",
+        "x-amz-apigw-id": "eDbzsEF5vHcEL9A=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=upnGE5UhQyllWcN5qKKzPukS67tU0pqBqC0lPqFR0zc-1779934845.569242-1.0.1.1-FDJp9o5ojUGQJ5UyY9KOU9xDDUjuD2yITj3U4i1UzkSXtXzQs9OzU71GRVcqwLvxTfPBQhIW5p2K3c5yHgkMG2Q.L8wy8tMY2DYgTJMaHVw8fscZX57luOAriqhgVZn6; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:45 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c830cf58e70e-BOG"
+      },
+      "body_excerpt": "{\"Message\":\"Access Denied\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(885)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "04-signature-flipped-1char",
+      "status": 403,
+      "elapsed_ms": 696.09,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:46 GMT",
+        "content-type": "application/json",
+        "content-length": "28",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "e32abfad-cc0f-469d-9a15-e1f71a8bb77f",
+        "x-amzn-errortype": "AccessDeniedException",
+        "x-amz-apigw-id": "eDbzzFFrPHcEeaA=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=4RRFOT0RdnZkWDtNKZsO18qwHW397pbcUIs8h6T3hR0-1779934846.0851943-1.0.1.1-zkmu2Q2r57Vp88zY1gxB70FmadASDP4mr2Z7VOdBf2t_HYn08H5e6RYUVwivsSAv3MtyRRcElZvZ8YH6Rr6Q1l7fKSWgccbLjz.tLqOlBopDSncN4A9k5FHmsApKjGVG; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:46 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c8340ecb6da1-MIA"
+      },
+      "body_excerpt": "{\"Message\":\"Access Denied\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(872)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "05-empty-bearer",
+      "error": "Illegal header value b'Bearer '"
+    },
+    {
+      "label": "06-garbage-bearer",
+      "status": 401,
+      "elapsed_ms": 236.67,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:46 GMT",
+        "content-type": "application/json",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "e1c1d420-a9c9-4ea0-843a-d5f08bcc88d4",
+        "x-amzn-errortype": "UnauthorizedException",
+        "x-amz-apigw-id": "eDbz3HJ5vHcEYrw=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=0tHEmEzY4Huy._xxVixNzMJUeuCxkS.boIDLT8FNyfc-1779934846.6261435-1.0.1.1-rqjrQ_.whkWG9XD8KF0UqKzITQBuAa0FAIeBHwIchVjbekxbG8Lzn3dYvs5DaqwSwllgNauCye2UmOkH4oz4fhjiy2w81i3BJQH9OA.PtSlQq_5.N.70BbXEp2vEr22B; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:46 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c83769e89876-BOG"
+      },
+      "body_excerpt": "{\"message\":\"Unauthorized\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(24)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "07a-hs256-confusion-empty-key",
+      "status": 401,
+      "elapsed_ms": 275.48,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:47 GMT",
+        "content-type": "application/json",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "1827971b-9dff-422a-b72b-03ebbccbced7",
+        "x-amzn-errortype": "UnauthorizedException",
+        "x-amz-apigw-id": "eDbz5H5QvHcES_g=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=KvUo5RljCbGIuq2WdPy1eZ9zR6ltFgcD6J2tJHcPwZc-1779934846.864195-1.0.1.1-Anj4qeyM7ixMKPrcE2BTZ1Xcf7fjJM6ouTddXmZA4x1.LD4IWqKfy1rCyWBsw_bhWUwnG0dOKys0hN0KRuYstFcdBC22IqPhmVjvPsUJhEaFReC.OhT4v1fHyYKkEaiS; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:47 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c838d9bd9876-BOG"
+      },
+      "body_excerpt": "{\"message\":\"Unauthorized\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(573)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    },
+    {
+      "label": "07b-hs256-confusion-secret-key",
+      "status": 401,
+      "elapsed_ms": 241.16,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:20:47 GMT",
+        "content-type": "application/json",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "2fe567bb-a777-4df4-be54-722fc34e40c1",
+        "x-amzn-errortype": "UnauthorizedException",
+        "x-amz-apigw-id": "eDbz8EgevHcEejQ=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=fyMR_tNFRIRhnoGYWc79euvOC8AKSYZ1sKYKu3jMAC8-1779934847.1440797-1.0.1.1-feB0tV328Qf4hIXDFZVC6GJ.m9ctlegfwGmDXN0S9__tU2q43IqJTdQCBBxUW0qla__9VeCBLsavTQAUh2FHQJwBOcS.CAmSO8jGxrgOWncyywdHwqpdV7CiVA_JOcYF; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:50:47 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029c83aadf332d4-BOG"
+      },
+      "body_excerpt": "{\"message\":\"Unauthorized\"}\n",
+      "request_headers": {
+        "x-api-key": "REDACTED(40)",
+        "Authorization": "REDACTED(573)",
+        "Accept": "application/json"
+      },
+      "accepted_by_api": false
+    }
+  ],
+  "any_forged_token_accepted": false,
+  "control_succeeded": true
+}

@@ -1,0 +1,75 @@
+{
+  "captured_at": "2026-05-28T02:26:40.435755+00:00",
+  "elapsed_ms": 284.15,
+  "outcome": "fail-400-P2-payout-REVIEW-business",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/payouts",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "79f7bbe0-19ac-45bf-8116-49bc81b0ce54"
+    },
+    "body": {
+      "user_id": "0ba8a87a-a49e-423b-86fb-c6a025ba27f9",
+      "recipient_id": "699d50e9-d2e4-44b2-abd6-a049fe1793c2",
+      "amount": 1.0,
+      "currency": "USD"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:26:40 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "241",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "e5ad868f-34ec-4c72-ab35-e1bd6a7fadc2",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "241",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcrHH7YPHcEVMQ=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"f1-76fiXlP9XlyNtIjhtqJZZeAInb8\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:26:40 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a029d0d97b21c0fa-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "network",
+          "message": "Network is required",
+          "code": "invalid_type"
+        },
+        {
+          "path": "txHash",
+          "message": "Required",
+          "code": "invalid_type"
+        },
+        {
+          "path": "quote_id",
+          "message": "Required",
+          "code": "invalid_type"
+        }
+      ]
+    }
+  }
+}

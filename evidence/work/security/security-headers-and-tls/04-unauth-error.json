@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-05-28T02:19:28.146399+00:00",
+  "url": "https://api.balampay.com/v1/users",
+  "status": 401,
+  "elapsed_ms": 224.27,
+  "response_headers": {
+    "date": "Thu, 28 May 2026 02:19:28 GMT",
+    "content-type": "application/json",
+    "content-length": "26",
+    "connection": "keep-alive",
+    "x-amzn-requestid": "0c0e5e1b-5b7b-4713-aa15-445789046bb0",
+    "x-amzn-errortype": "UnauthorizedException",
+    "x-amz-apigw-id": "eDbnkG0LPHcEp8g=",
+    "cf-cache-status": "DYNAMIC",
+    "set-cookie": "__cf_bm=PxC5Ab.t1XZjiCfhcuYEsfw7ef_SkQNWZosY26Wl1bI-1779934768.0049806-1.0.1.1-_m4QIlBIJHjxM3LkLh3mBi.ohEFKs6rvBK5U_g2Pnsi6GyiEeWdpINsnpCB7YT4.PF2RiqxD66sgtg9kcLlh3.cLrgYlIWobkyGPnc3bHLvuDahDh6bQgBaHbaFi48ur; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:49:28 GMT",
+    "server": "cloudflare",
+    "cf-ray": "a029c64c0b72ccde-BOG"
+  },
+  "body_excerpt": "{\"message\":\"Unauthorized\"}"
+}

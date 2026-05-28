@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-05-28T00:58:11.471042+00:00",
+  "attempt_id": "dbe7d631-3044-4b50-b88c-6fe1fbf87cbf",
+  "elapsed_ms": 222.87,
+  "outcome": "fail-403-G5.3-list-xapikey-only",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/webhooks",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Accept": "application/json"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:58:11 GMT",
+      "content-type": "application/json",
+      "content-length": "43",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "483769db-c624-4704-8438-4b69c19c53a2",
+      "x-amzn-errortype": "MissingAuthenticationTokenException",
+      "x-amz-apigw-id": "eDPtmEqIPHcEEdQ=",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a0294f3cce84da19-BOG"
+    },
+    "body": {
+      "message": "Missing Authentication Token"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "captured_at": "2026-05-28T00:53:23.964047+00:00",
+  "attempt_id": "23d1eb6e-9ea2-455b-aa00-abcb7ce8240b",
+  "elapsed_ms": 215.79,
+  "outcome": "success-latency-3",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/virtual-accounts",
+    "headers": {
+      "Accept": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:53:23 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "05293932-f603-4356-9e29-32ba5ad2ed9f",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "75",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPAqEu1PHcEXDQ=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"4b-goQGPdqIYSERV6XQTSKdIf/pnDs\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:53:23 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a0294837dc88c0fa-BOG"
+    },
+    "body": {
+      "data": [],
+      "pagination": {
+        "total": 0,
+        "limit": 10,
+        "offset": 0,
+        "has_more": false
+      }
+    }
+  }
+}

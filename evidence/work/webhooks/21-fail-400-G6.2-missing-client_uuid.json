@@ -1,0 +1,48 @@
+{
+  "captured_at": "2026-05-28T00:58:09.259310+00:00",
+  "attempt_id": "7ce56c7b-e778-42c6-8ac8-53b0c01baa1b",
+  "elapsed_ms": 294.34,
+  "outcome": "fail-400-G6.2-missing-client_uuid",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/webhooks/register",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Accept": "application/json",
+      "Idempotency-Key": "0d161dae-d2da-47fb-a206-25a5b36a7491"
+    },
+    "body": {
+      "webhook_url": "https://webhook.site/3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34",
+      "secret": "REDACTED(32)"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:58:09 GMT",
+      "content-type": "application/json",
+      "content-length": "160",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "65458b44-2e11-400b-a877-8a7fafc0a13a",
+      "x-amzn-remapped-content-length": "160",
+      "x-amz-apigw-id": "eDPtPHCivHcElSQ=",
+      "x-amzn-trace-id": "Root=1-6a179321-526114894280814a470af098;Sampled=1;Lineage=1:0865cdb1:0",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a0294f2e88d6da19-BOG"
+    },
+    "body": {
+      "data": [
+        {
+          "loc": "client_uuid",
+          "msg": "Field required",
+          "type": "missing"
+        }
+      ],
+      "message": "ERROR-V001: Validation Error"
+    }
+  }
+}

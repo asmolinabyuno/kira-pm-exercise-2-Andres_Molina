@@ -1,0 +1,94 @@
+{
+  "captured_at": "2026-05-28T00:55:58.743885+00:00",
+  "attempt_id": "91666174-bb7b-4836-baf1-e39ed1e774cb",
+  "elapsed_ms": 227.58,
+  "outcome": "fail-400-validation",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/users",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "3063d124-fe7a-4f7f-b4c9-32fd2b2ca386"
+    },
+    "body": {
+      "type": "business",
+      "business_legal_name": "Test Corp 1779929758",
+      "email": "ops+phase2-1779929758-0e21b5@example.com",
+      "business_type": "corporation",
+      "formation_date": "2018-03-15",
+      "formation_state": "DE",
+      "address_country": "USA",
+      "ein": "00-0000000",
+      "associated_persons": [
+        {
+          "first_name": "Test",
+          "last_name": "Signer",
+          "ssn": "000-00-0000",
+          "birth_date": "1975-08-22",
+          "nationality": "USA",
+          "is_signer": true,
+          "has_ownership": true,
+          "ownership_percentage": 100,
+          "email": "signer+max-1779929758@example.com",
+          "document_number": "FAKE-DOC-00000003"
+        }
+      ],
+      "formation_country": "USA",
+      "address_street": "123 Fake Ave",
+      "address_city": "Wilmington",
+      "address_state": "DE",
+      "address_zip_code": "19801",
+      "doing_business_as": "Test DBA 1779929758",
+      "business_industry": "technology",
+      "phone": "+12025550100",
+      "account_purpose": "ecommerce_retail_payments",
+      "document_number": "FAKE-DOC-00000002"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:55:58 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "139",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "96527936-f24c-4b78-b541-0d0e62f3a295",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "139",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPY2GzEvHcEWbg=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"8b-fRdZumF3COb9+3wU1uKuZ0eRD0I\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:55:58 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a0294bff2d202fb2-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "business_industry",
+          "message": "Expected array, received string",
+          "code": "invalid_type"
+        }
+      ]
+    }
+  }
+}

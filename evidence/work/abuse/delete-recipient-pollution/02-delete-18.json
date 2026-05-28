@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-05-28T02:22:25.859906+00:00",
+  "elapsed_ms": 228.8,
+  "outcome": "fail-403-delete-18",
+  "request": {
+    "method": "DELETE",
+    "url": "https://api.balampay.com/v1/recipients/25c94f28-c624-4d2b-a43f-3e778bc4ae27",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:22:25 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "5888a061-179f-45a4-997d-b4ea6804408e",
+      "x-amzn-errortype": "IncompleteSignatureException",
+      "x-amz-apigw-id": "eDcDVFH6PHcEcKw=",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a029caa2a82e9876-BOG"
+    },
+    "body": {
+      "message": "Invalid key=value pair (missing equal-sign) in Authorization header (hashed with SHA-256 and encoded with Base64): 'REDACTED(43)='."
+    }
+  }
+}

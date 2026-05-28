@@ -1,0 +1,69 @@
+{
+  "captured_at": "2026-05-28T00:52:51.241744+00:00",
+  "attempt_id": "1c6cac7a-6bc1-48c6-ada9-07c1de91b0e6",
+  "elapsed_ms": 240.63,
+  "outcome": "success-200-detail-spei",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/recipients/ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:52:51 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "9d0036f7-5e24-4224-b486-89cf39902bf1",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "422",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDO7jEcFPHcECpA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"1a6-U+Tvj8XVSH/KmMvVy55RPzf7Xag\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:52:51 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a029476b3b5949dc-BOG"
+    },
+    "body": {
+      "recipient_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "type": "individual",
+      "first_name": "Test",
+      "last_name": "Beneficiary",
+      "phone": "+525512345678",
+      "email": "test+spei@example.com",
+      "account_type": "SPEI",
+      "account_details": {
+        "clabe": "012180001234567890",
+        "doc_type": "rfc",
+        "doc_number": "TFAK900101AAA",
+        "doc_country_code": "MX"
+      },
+      "created_ts": "2026-05-28 00:52:49.879228+00",
+      "updated_ts": "2026-05-28 00:52:49.879228+00",
+      "metadata": {}
+    }
+  }
+}

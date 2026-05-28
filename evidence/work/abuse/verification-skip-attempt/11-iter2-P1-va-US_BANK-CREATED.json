@@ -1,0 +1,63 @@
+{
+  "captured_at": "2026-05-28T02:27:12.944201+00:00",
+  "elapsed_ms": 375.16,
+  "outcome": "fail-400-iter2-P1-va-US_BANK-CREATED",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/virtual-accounts",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "16aaf381-6f02-49e0-89c2-566440a21c33"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "product": "usa-virtual-accounts",
+      "type": "US_BANK"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:27:12 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "130",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "f3755607-9b33-4968-8791-0e307ab6bd1a",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "130",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcwLF21vHcEFQw=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"82-Sp9Y2SCECa+PA0FbyIdgHyr3S1s\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:27:12 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a029d1a40ecb148f-BOG"
+    },
+    "body": {
+      "code": "validation_error",
+      "error": "Invalid data",
+      "details": [
+        {
+          "message": "bank is bank is required for US_BANK virtual accounts"
+        }
+      ]
+    }
+  }
+}

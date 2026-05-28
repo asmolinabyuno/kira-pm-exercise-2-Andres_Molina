@@ -1,0 +1,377 @@
+{
+  "scenario": "list-pagination-depth-latency",
+  "endpoints": {
+    "/v1/users": {
+      "endpoint": "/v1/users",
+      "offset_sweep": [
+        {
+          "offset": 0,
+          "status": 200,
+          "elapsed_ms": 288.95,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 10,
+          "status": 200,
+          "elapsed_ms": 238.24,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 100,
+          "status": 200,
+          "elapsed_ms": 221.9,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 500,
+          "status": 200,
+          "elapsed_ms": 248.23,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 1000,
+          "status": 200,
+          "elapsed_ms": 198.75,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 5000,
+          "status": 200,
+          "elapsed_ms": 197.14,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        }
+      ],
+      "limit_sweep": [
+        {
+          "limit": 10,
+          "status": 200,
+          "elapsed_ms": 203.64,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "limit": 50,
+          "status": 200,
+          "elapsed_ms": 250.44,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "limit": 100,
+          "status": 200,
+          "elapsed_ms": 210.45,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "limit": 500,
+          "status": 500,
+          "elapsed_ms": 205.55,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "limit": 1000,
+          "status": 500,
+          "elapsed_ms": 180.87,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "limit": 5000,
+          "status": 500,
+          "elapsed_ms": 196.06,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        }
+      ]
+    },
+    "/v1/recipients": {
+      "endpoint": "/v1/recipients",
+      "offset_sweep": [
+        {
+          "offset": 0,
+          "status": 200,
+          "elapsed_ms": 230.48,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 10,
+          "status": 200,
+          "elapsed_ms": 233.08,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 100,
+          "status": 200,
+          "elapsed_ms": 378.99,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 500,
+          "status": 200,
+          "elapsed_ms": 416.23,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 1000,
+          "status": 200,
+          "elapsed_ms": 433.91,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 5000,
+          "status": 200,
+          "elapsed_ms": 229.28,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        }
+      ],
+      "limit_sweep": []
+    },
+    "/v1/virtual-accounts": {
+      "endpoint": "/v1/virtual-accounts",
+      "offset_sweep": [
+        {
+          "offset": 0,
+          "status": 200,
+          "elapsed_ms": 201.17,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 10,
+          "status": 200,
+          "elapsed_ms": 293.36,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 100,
+          "status": 200,
+          "elapsed_ms": 318.35,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 500,
+          "status": 200,
+          "elapsed_ms": 205.26,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 1000,
+          "status": 200,
+          "elapsed_ms": 198.64,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        },
+        {
+          "offset": 5000,
+          "status": 200,
+          "elapsed_ms": 190.67,
+          "retry_after": null,
+          "x_api_version": "2026-04-14",
+          "x_amzn_errortype": null
+        }
+      ],
+      "limit_sweep": []
+    }
+  },
+  "users_offset_summary": {
+    "endpoint": "GET /v1/users",
+    "scenario": "list-pagination-depth-latency/offset-sweep",
+    "n": 6,
+    "min_ms": 197.14,
+    "median_ms": 230.07,
+    "p95_ms": 278.77,
+    "p99_ms": 286.91,
+    "max_ms": 288.95,
+    "samples_ms": [
+      288.95,
+      238.24,
+      221.9,
+      248.23,
+      198.75,
+      197.14
+    ],
+    "offsets": [
+      0,
+      10,
+      100,
+      500,
+      1000,
+      5000
+    ],
+    "limit_fixed": 10,
+    "runs": [
+      {
+        "offset": 0,
+        "status": 200,
+        "elapsed_ms": 288.95,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "offset": 10,
+        "status": 200,
+        "elapsed_ms": 238.24,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "offset": 100,
+        "status": 200,
+        "elapsed_ms": 221.9,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "offset": 500,
+        "status": 200,
+        "elapsed_ms": 248.23,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "offset": 1000,
+        "status": 200,
+        "elapsed_ms": 198.75,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "offset": 5000,
+        "status": 200,
+        "elapsed_ms": 197.14,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      }
+    ],
+    "limit_sweep_runs": [
+      {
+        "limit": 10,
+        "status": 200,
+        "elapsed_ms": 203.64,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "limit": 50,
+        "status": 200,
+        "elapsed_ms": 250.44,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "limit": 100,
+        "status": 200,
+        "elapsed_ms": 210.45,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "limit": 500,
+        "status": 500,
+        "elapsed_ms": 205.55,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "limit": 1000,
+        "status": 500,
+        "elapsed_ms": 180.87,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      },
+      {
+        "limit": 5000,
+        "status": 500,
+        "elapsed_ms": 196.06,
+        "retry_after": null,
+        "x_api_version": "2026-04-14",
+        "x_amzn_errortype": null
+      }
+    ],
+    "notes": "Offset sweep at limit=10. Then a limit sweep at offset=0 captured under limit_sweep_runs."
+  },
+  "users_limit_sweep_status_summary": [
+    {
+      "limit": 10,
+      "status": 200,
+      "elapsed_ms": 203.64
+    },
+    {
+      "limit": 50,
+      "status": 200,
+      "elapsed_ms": 250.44
+    },
+    {
+      "limit": 100,
+      "status": 200,
+      "elapsed_ms": 210.45
+    },
+    {
+      "limit": 500,
+      "status": 500,
+      "elapsed_ms": 205.55
+    },
+    {
+      "limit": 1000,
+      "status": 500,
+      "elapsed_ms": 180.87
+    },
+    {
+      "limit": 5000,
+      "status": 500,
+      "elapsed_ms": 196.06
+    }
+  ],
+  "notes": "Conservative load: <=60 requests total. Looking for latency curve + error onset."
+}

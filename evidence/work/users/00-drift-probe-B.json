@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-05-28T00:31:56.307993+00:00",
+  "attempt_id": "c1f248f5-8d5c-4115-ae25-f14c26bc8e08",
+  "elapsed_ms": 215.38,
+  "outcome": "drift-probe-B-validation",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/sandbox/v1/users",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "ae3fec51-e155-4f1a-9ed2-ec90f14afbef"
+    },
+    "body": {}
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:31:56 GMT",
+      "content-type": "application/json",
+      "content-length": "26",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "b1a4980f-ddc7-4983-9d56-d830be092421",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Content-Type,Authorization,x-api-key,x-client-id",
+      "x-amzn-errortype": "UnauthorizedException",
+      "x-amz-apigw-id": "eDL3eFvVPHcED2A=",
+      "access-control-allow-methods": "GET,POST,PUT,DELETE,OPTIONS",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a02928c81c3baefa-BOG"
+    },
+    "body": {
+      "message": "Unauthorized"
+    }
+  }
+}

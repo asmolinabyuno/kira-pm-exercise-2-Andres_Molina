@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-05-28T02:24:01.357202+00:00",
+  "elapsed_ms": 278.63,
+  "outcome": "fail-404-random-va-1",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/virtual-accounts/662edb56-b360-4ad8-95e6-8b2313a3c085",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:24:01 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "7ee31e87-5903-4a03-9b89-a4ce9425f80c",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-frame-options": "SAMEORIGIN",
+      "x-amzn-remapped-content-length": "152",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcSQE6zvHcEibQ=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:01 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a029ccf73b77d7f5-BOG"
+    },
+    "body": {
+      "statusCode": 404,
+      "error": "Not Found",
+      "message": "Virtual account 662edb56-b360-4ad8-95e6-8b2313a3c085 not found",
+      "timestamp": "2026-05-28T02:24:01.305Z"
+    }
+  }
+}

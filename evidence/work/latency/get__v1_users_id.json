@@ -1,0 +1,25 @@
+{
+  "endpoint": "GET /v1/users/id",
+  "n": 10,
+  "samples_ms": [
+    340.04,
+    330.06,
+    642.17,
+    524.15,
+    249.54,
+    365.52,
+    317.44,
+    339.54,
+    366.3,
+    290.34
+  ],
+  "min_ms": 249.54,
+  "max_ms": 642.17,
+  "median_ms": 339.79,
+  "p50_ms": 339.54,
+  "p95_ms": 642.17,
+  "p99_ms": 642.17,
+  "mean_ms": 376.51,
+  "stdev_ms": 117.61,
+  "notes": "N=10 sequential GETs against DRIFT-3 user. No idempotency on GET. Sandbox warm path."
+}

@@ -1,0 +1,14 @@
+{
+  "endpoint": "GET /v1/virtual-accounts",
+  "n": 4,
+  "samples_ms": [
+    277.88,
+    245.04,
+    276.17,
+    215.79
+  ],
+  "min_ms": 215.79,
+  "max_ms": 277.88,
+  "median_ms": 260.6,
+  "notes": "Preliminary baseline GET /v1/virtual-accounts (n=4). p50/p95/p99 require N>=10."
+}

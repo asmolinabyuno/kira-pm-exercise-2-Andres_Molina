@@ -1,0 +1,79 @@
+{
+  "captured_at": "2026-05-28T00:54:15.773598+00:00",
+  "attempt_id": "87b97dd3-7b89-447c-8173-f98d1b92a704",
+  "elapsed_ms": 272.91,
+  "outcome": "success-200-detail-ach-iter2",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/recipients/044aeb76-8f56-4344-8eb0-a6b7a7852969",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:54:15 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "a9b8ea94-a636-4b43-b5de-ed2d72a356a1",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "637",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPIwFbrvHcEbJQ=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"27d-o6mUxdmRymqSDjrOBBNozw9QaTc\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:54:15 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a029497b5887810e-BOG"
+    },
+    "body": {
+      "recipient_id": "044aeb76-8f56-4344-8eb0-a6b7a7852969",
+      "type": "individual",
+      "first_name": "Test",
+      "last_name": "Recipient",
+      "phone": "+15555550100",
+      "email": "test+ach@example.com",
+      "address": {
+        "street_name": "100 Test St",
+        "city": "San Francisco",
+        "state": "CA",
+        "postal_code": "94105",
+        "country": "US"
+      },
+      "account_type": "ACH",
+      "account_details": {
+        "routing_number": "021000089",
+        "account_number": "000123456789",
+        "type": "checking",
+        "bank_name": "Test US Bank N.A.",
+        "bank_address": "1 Bank Plaza, New York, NY 10001, USA",
+        "doc_type": "id",
+        "doc_number": "FAKE000000"
+      },
+      "created_ts": "2026-05-28 00:54:15.43984+00",
+      "updated_ts": "2026-05-28 00:54:15.43984+00",
+      "metadata": {}
+    }
+  }
+}

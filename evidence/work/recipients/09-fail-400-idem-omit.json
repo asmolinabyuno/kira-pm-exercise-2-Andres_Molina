@@ -1,0 +1,75 @@
+{
+  "captured_at": "2026-05-28T00:52:51.992484+00:00",
+  "attempt_id": "9f39bccd-a5ad-4768-a51b-10bc3f2d7061",
+  "elapsed_ms": 224.56,
+  "outcome": "fail-400-idem-omit",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "first_name": "Test",
+      "last_name": "Beneficiary",
+      "email": "test+spei@example.com",
+      "phone": "+525512345678",
+      "account": {
+        "account_type": "SPEI",
+        "clabe": "012180001234567890",
+        "doc_type": "rfc",
+        "doc_number": "TFAK900101AAA",
+        "bank_name": "Test SPEI Bank",
+        "currency": "MXN",
+        "country": "MX"
+      }
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:52:52 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "114",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "f62aaccc-dab7-4375-b7d1-be9827fc682e",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "114",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDO7rG3FPHcEL2g=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"72-8rov0BXJ1jOi22gqETLzyOxbtRA\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:52:51 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a029476ffae7492b-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "idempotency-key",
+          "message": "Required",
+          "code": "invalid_type"
+        }
+      ]
+    }
+  }
+}

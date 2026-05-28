@@ -1,0 +1,49 @@
+{
+  "captured_at": "2026-05-28T00:58:08.267315+00:00",
+  "attempt_id": "7c79ae57-68c7-4d61-8056-4ff17cd572a0",
+  "elapsed_ms": 279.28,
+  "outcome": "fail-400-ssrf-ftp-scheme",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/webhooks/register",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Accept": "application/json",
+      "Idempotency-Key": "1e663e2d-75b3-43ce-a308-9e9e273e3fcf"
+    },
+    "body": {
+      "webhook_url": "ftp://webhook.site/test",
+      "secret": "REDACTED(32)",
+      "client_uuid": "<client_id-redacted>"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:58:08 GMT",
+      "content-type": "application/json",
+      "content-length": "187",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "b66843cb-f987-4dd1-abb6-bac88ea8afff",
+      "x-amzn-remapped-content-length": "187",
+      "x-amz-apigw-id": "eDPtFHJsvHcEsZQ=",
+      "x-amzn-trace-id": "Root=1-6a179320-205433021790a5b5364046b1;Sampled=1;Lineage=1:0865cdb1:0",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a0294f28695c9876-BOG"
+    },
+    "body": {
+      "data": [
+        {
+          "loc": "webhook_url",
+          "msg": "URL scheme should be 'http' or 'https'",
+          "type": "url_scheme"
+        }
+      ],
+      "message": "ERROR-V001: Validation Error"
+    }
+  }
+}

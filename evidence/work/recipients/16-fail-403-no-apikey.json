@@ -1,0 +1,34 @@
+{
+  "captured_at": "2026-05-28T00:53:24.521486+00:00",
+  "attempt_id": "fd2f3f07-4c47-4b56-b18c-4ec60ec2d3c8",
+  "elapsed_ms": 246.35,
+  "outcome": "fail-403-no-apikey",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:53:24 GMT",
+      "content-type": "application/json",
+      "content-length": "24",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "7615ae84-dceb-46e9-a162-eeab69edef4b",
+      "x-amzn-errortype": "ForbiddenException",
+      "x-amz-apigw-id": "eDPAwEMJvHcET9Q=",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a029483b3cdfae73-BOG"
+    },
+    "body": {
+      "message": "Forbidden"
+    }
+  }
+}

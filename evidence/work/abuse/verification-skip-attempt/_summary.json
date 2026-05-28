@@ -1,0 +1,160 @@
+{
+  "scenario": "verification-skip-attempt",
+  "findings": [
+    {
+      "probe": "P1-va-create",
+      "user_state": "CREATED",
+      "status": 400,
+      "envelope": "shape-A-flat",
+      "body_excerpt": "{\"code\": \"validation_error\", \"error\": \"Invalid data\", \"details\": [{\"message\": \"type is Invalid enum value. Expected 'US_BANK' | 'MX_SPEI', received 'individual'\"}]}"
+    },
+    {
+      "probe": "P2-payout",
+      "user_state": "CREATED",
+      "status": 400,
+      "envelope": "shape-A-flat",
+      "body_excerpt": "{\"error\": \"Invalid request data\", \"details\": [{\"path\": \"network\", \"message\": \"Network is required\", \"code\": \"invalid_type\"}, {\"path\": \"txHash\", \"message\": \"Required\", \"code\": \"invalid_type\"}, {\"path\": \"quote_id\", \"message\": \"Required\", \"code\": \"inval"
+    },
+    {
+      "probe": "P3-quotation",
+      "user_state": "CREATED",
+      "status": 400,
+      "envelope": "unknown-['code', 'details', 'message']",
+      "body_excerpt": "{\"code\": \"validation_error\", \"message\": \"Invalid request body\", \"details\": [{\"code\": \"custom\", \"message\": \"Either recipient_id or account_type (WIRE, SWIFT, WALLET, ACH, or INSTANT_PAY) is required\", \"path\": [\"recipient_id\"]}]}"
+    },
+    {
+      "probe": "P1-va-create",
+      "user_state": "REVIEW-individual",
+      "status": 400,
+      "envelope": "shape-A-flat",
+      "body_excerpt": "{\"code\": \"validation_error\", \"error\": \"Invalid data\", \"details\": [{\"message\": \"type is Invalid enum value. Expected 'US_BANK' | 'MX_SPEI', received 'individual'\"}]}"
+    },
+    {
+      "probe": "P2-payout",
+      "user_state": "REVIEW-individual",
+      "status": 400,
+      "envelope": "shape-A-flat",
+      "body_excerpt": "{\"error\": \"Invalid request data\", \"details\": [{\"path\": \"network\", \"message\": \"Network is required\", \"code\": \"invalid_type\"}, {\"path\": \"txHash\", \"message\": \"Required\", \"code\": \"invalid_type\"}, {\"path\": \"quote_id\", \"message\": \"Required\", \"code\": \"inval"
+    },
+    {
+      "probe": "P3-quotation",
+      "user_state": "REVIEW-individual",
+      "status": 400,
+      "envelope": "unknown-['code', 'details', 'message']",
+      "body_excerpt": "{\"code\": \"validation_error\", \"message\": \"Invalid request body\", \"details\": [{\"code\": \"custom\", \"message\": \"Either recipient_id or account_type (WIRE, SWIFT, WALLET, ACH, or INSTANT_PAY) is required\", \"path\": [\"recipient_id\"]}]}"
+    },
+    {
+      "probe": "P1-va-create",
+      "user_state": "REVIEW-business",
+      "status": 400,
+      "envelope": "shape-A-flat",
+      "body_excerpt": "{\"code\": \"validation_error\", \"error\": \"Invalid data\", \"details\": [{\"message\": \"type is Invalid enum value. Expected 'US_BANK' | 'MX_SPEI', received 'individual'\"}]}"
+    },
+    {
+      "probe": "P2-payout",
+      "user_state": "REVIEW-business",
+      "status": 400,
+      "envelope": "shape-A-flat",
+      "body_excerpt": "{\"error\": \"Invalid request data\", \"details\": [{\"path\": \"network\", \"message\": \"Network is required\", \"code\": \"invalid_type\"}, {\"path\": \"txHash\", \"message\": \"Required\", \"code\": \"invalid_type\"}, {\"path\": \"quote_id\", \"message\": \"Required\", \"code\": \"inval"
+    },
+    {
+      "probe": "P3-quotation",
+      "user_state": "REVIEW-business",
+      "status": 400,
+      "envelope": "unknown-['code', 'details', 'message']",
+      "body_excerpt": "{\"code\": \"validation_error\", \"message\": \"Invalid request body\", \"details\": [{\"code\": \"custom\", \"message\": \"Either recipient_id or account_type (WIRE, SWIFT, WALLET, ACH, or INSTANT_PAY) is required\", \"path\": [\"recipient_id\"]}]}"
+    }
+  ],
+  "per_probe_status_matrix": {
+    "P1-va-create": [
+      {
+        "state": "CREATED",
+        "status": 400,
+        "envelope": "shape-A-flat"
+      },
+      {
+        "state": "REVIEW-individual",
+        "status": 400,
+        "envelope": "shape-A-flat"
+      },
+      {
+        "state": "REVIEW-business",
+        "status": 400,
+        "envelope": "shape-A-flat"
+      }
+    ],
+    "P2-payout": [
+      {
+        "state": "CREATED",
+        "status": 400,
+        "envelope": "shape-A-flat"
+      },
+      {
+        "state": "REVIEW-individual",
+        "status": 400,
+        "envelope": "shape-A-flat"
+      },
+      {
+        "state": "REVIEW-business",
+        "status": 400,
+        "envelope": "shape-A-flat"
+      }
+    ],
+    "P3-quotation": [
+      {
+        "state": "CREATED",
+        "status": 400,
+        "envelope": "unknown-['code', 'details', 'message']"
+      },
+      {
+        "state": "REVIEW-individual",
+        "status": 400,
+        "envelope": "unknown-['code', 'details', 'message']"
+      },
+      {
+        "state": "REVIEW-business",
+        "status": 400,
+        "envelope": "unknown-['code', 'details', 'message']"
+      }
+    ]
+  },
+  "any_bypass": false,
+  "iter2_findings": [
+    {
+      "probe": "iter2-P1-va-US_BANK",
+      "user_state": "CREATED",
+      "status": 400,
+      "body": "{\"code\": \"validation_error\", \"error\": \"Invalid data\", \"details\": [{\"message\": \"bank is bank is required for US_BANK virtual accounts\"}]}"
+    },
+    {
+      "probe": "iter2-P1b-va-MX_SPEI",
+      "user_state": "CREATED",
+      "status": 400,
+      "body": "{\"statusCode\": 400, \"error\": \"Bad Request\", \"message\": \"User must be in VERIFIED status to create a virtual account. Current status: CREATED\", \"timestamp\": \"2026-05-28T02:27:13.151Z\"}"
+    },
+    {
+      "probe": "iter2-P1-va-US_BANK",
+      "user_state": "REVIEW-individual",
+      "status": 400,
+      "body": "{\"code\": \"validation_error\", \"error\": \"Invalid data\", \"details\": [{\"message\": \"bank is bank is required for US_BANK virtual accounts\"}]}"
+    },
+    {
+      "probe": "iter2-P1b-va-MX_SPEI",
+      "user_state": "REVIEW-individual",
+      "status": 400,
+      "body": "{\"statusCode\": 400, \"error\": \"Bad Request\", \"message\": \"User must be in VERIFIED status to create a virtual account. Current status: REVIEW\", \"timestamp\": \"2026-05-28T02:27:13.755Z\"}"
+    },
+    {
+      "probe": "iter2-P1-va-US_BANK",
+      "user_state": "REVIEW-business",
+      "status": 400,
+      "body": "{\"code\": \"validation_error\", \"error\": \"Invalid data\", \"details\": [{\"message\": \"bank is bank is required for US_BANK virtual accounts\"}]}"
+    },
+    {
+      "probe": "iter2-P1b-va-MX_SPEI",
+      "user_state": "REVIEW-business",
+      "status": 400,
+      "body": "{\"statusCode\": 400, \"error\": \"Bad Request\", \"message\": \"User must be in VERIFIED status to create a virtual account. Current status: REVIEW\", \"timestamp\": \"2026-05-28T02:27:14.259Z\"}"
+    }
+  ]
+}

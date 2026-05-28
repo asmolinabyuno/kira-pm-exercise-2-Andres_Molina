@@ -1,0 +1,44 @@
+{
+  "scenario": "delete-recipient-pollution",
+  "n_create_attempts": 20,
+  "n_created_ok": 20,
+  "delete_status_counts": {
+    "403": 20
+  },
+  "delete_success_count": 0,
+  "list_total_field": 26,
+  "list_count_observed": 26,
+  "paging_probes": [
+    {
+      "label": "limit-100",
+      "status": 200,
+      "listed_count": 26
+    },
+    {
+      "label": "limit-1000",
+      "status": 200,
+      "listed_count": 26
+    },
+    {
+      "label": "limit-100000",
+      "status": 200,
+      "listed_count": 26
+    },
+    {
+      "label": "offset-9999",
+      "status": 200,
+      "listed_count": 26
+    },
+    {
+      "label": "limit-neg1",
+      "status": 200,
+      "listed_count": 26
+    },
+    {
+      "label": "limit-0",
+      "status": 200,
+      "listed_count": 26
+    }
+  ],
+  "evidence_dir": "evidence/work/abuse/delete-recipient-pollution"
+}

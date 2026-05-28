@@ -1,0 +1,14 @@
+{
+  "endpoint": "POST /v1/users",
+  "n": 4,
+  "samples_ms": [
+    252.1,
+    271.12,
+    327.75,
+    370.34
+  ],
+  "min_ms": 252.1,
+  "max_ms": 370.34,
+  "median_ms": 299.44,
+  "notes": "4-sample first cut. p50/p95/p99 require N>=10 per data-engineer persona; this is the initial baseline. Latency includes Cloudflare edge + AWS API Gateway + Lambda hops. All calls used distinct fake business payloads (different emails) so no idempotency cache hits."
+}

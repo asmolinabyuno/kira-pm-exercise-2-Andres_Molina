@@ -1,0 +1,103 @@
+[
+  {
+    "label": "v1-cc-CO",
+    "url": "https://api.balampay.com/v1/banks",
+    "params": {
+      "country_code": "CO"
+    },
+    "status": 200,
+    "elapsed_ms": 276.22,
+    "items": null,
+    "body_top": [
+      "banks",
+      "total",
+      "country_code"
+    ],
+    "evidence": "evidence/work/banks/14-success-v1-cc-CO.json"
+  },
+  {
+    "label": "v1-cc-co-lower",
+    "url": "https://api.balampay.com/v1/banks",
+    "params": {
+      "country_code": "co"
+    },
+    "status": 400,
+    "elapsed_ms": 264.29,
+    "items": null,
+    "body_top": [
+      "error",
+      "details"
+    ],
+    "evidence": "evidence/work/banks/15-fail-400-v1-cc-co-lower.json"
+  },
+  {
+    "label": "v1-cc-COL-alpha3",
+    "url": "https://api.balampay.com/v1/banks",
+    "params": {
+      "country_code": "COL"
+    },
+    "status": 400,
+    "elapsed_ms": 280.52,
+    "items": null,
+    "body_top": [
+      "error",
+      "details"
+    ],
+    "evidence": "evidence/work/banks/16-fail-400-v1-cc-COL-alpha3.json"
+  },
+  {
+    "label": "v1-cc-MX",
+    "url": "https://api.balampay.com/v1/banks",
+    "params": {
+      "country_code": "MX"
+    },
+    "status": 400,
+    "elapsed_ms": 269.79,
+    "items": null,
+    "body_top": [
+      "error",
+      "details"
+    ],
+    "evidence": "evidence/work/banks/17-fail-400-v1-cc-MX.json"
+  },
+  {
+    "label": "v1-cc-Colombia-name",
+    "url": "https://api.balampay.com/v1/banks",
+    "params": {
+      "country_code": "Colombia"
+    },
+    "status": 400,
+    "elapsed_ms": 710.64,
+    "items": null,
+    "body_top": [
+      "error",
+      "details"
+    ],
+    "evidence": "evidence/work/banks/18-fail-400-v1-cc-Colombia-name.json"
+  },
+  {
+    "label": "v1-no-params",
+    "url": "https://api.balampay.com/v1/banks",
+    "params": null,
+    "status": 400,
+    "elapsed_ms": 260.06,
+    "items": null,
+    "body_top": [
+      "error",
+      "details"
+    ],
+    "evidence": "evidence/work/banks/19-fail-400-v1-no-params.json"
+  },
+  {
+    "label": "nov1-cc-CO",
+    "url": "https://api.balampay.com/banks",
+    "params": {
+      "country_code": "CO"
+    },
+    "status": 200,
+    "elapsed_ms": 268.07,
+    "items": null,
+    "body_top": "str",
+    "evidence": "evidence/work/banks/20-success-nov1-cc-CO.json"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-05-28T22:36:47.672025+00:00",
+  "attempt_id": "9f873fae-41ad-4005-8d0e-129d79fcc42f",
+  "elapsed_ms": 249.72,
+  "outcome": "fail-403",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/virtual-accounts/00000000-0000-0000-0000-000000000000/simulate-deposit",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "amount": 1000,
+      "currency": "USD"
+    }
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "date": "Thu, 28 May 2026 22:36:47 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "89983d4d-6f1c-4258-9404-6dbe850a001e",
+      "x-amzn-errortype": "IncompleteSignatureException",
+      "x-amz-apigw-id": "eGN8AGJLvHcENqw=",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a030bd7cebb8c0fa-BOG"
+    },
+    "body": {
+      "message": "Invalid key=value pair (missing equal-sign) in Authorization header (hashed with SHA-256 and encoded with Base64): 'HHqcMsnd6+3Vp1odliNnBvLkis5ZcvbDvDuD5ZYy+Fg='."
+    }
+  }
+}

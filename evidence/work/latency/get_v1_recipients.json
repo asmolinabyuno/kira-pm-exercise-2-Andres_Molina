@@ -1,0 +1,14 @@
+{
+  "endpoint": "GET /v1/recipients",
+  "n": 4,
+  "samples_ms": [
+    307.99,
+    284.2,
+    283.46,
+    248.5
+  ],
+  "min_ms": 248.5,
+  "max_ms": 307.99,
+  "median_ms": 283.83,
+  "notes": "Preliminary baseline GET /v1/recipients (n=4). Measures handler reach time even when returning 4xx (validation path). p50/p95/p99 require N>=10."
+}

@@ -1,0 +1,665 @@
+{
+  "countries": {
+    "family": "countries",
+    "url": "https://api.balampay.com/v1/countries",
+    "iterations": [
+      {
+        "iter": 1,
+        "label": "happy",
+        "status": 200,
+        "outcome": "success-happy",
+        "elapsed_ms": 1008.73,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "count",
+            "data"
+          ]
+        },
+        "evidence": "evidence/work/countries/01-success-happy.json",
+        "x_api_version_resp": "2026-04-14"
+      },
+      {
+        "iter": 2,
+        "label": "no-apikey",
+        "status": 403,
+        "outcome": "fail-403-no-apikey",
+        "elapsed_ms": 286.39,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/countries/02-fail-403-no-apikey.json",
+        "x_api_version_resp": null
+      },
+      {
+        "iter": 3,
+        "label": "no-bearer",
+        "status": 401,
+        "outcome": "fail-401-no-bearer",
+        "elapsed_ms": 266.15,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/countries/03-fail-401-no-bearer.json",
+        "x_api_version_resp": null
+      },
+      {
+        "iter": 4,
+        "label": "xver-2025-01-01",
+        "status": 200,
+        "outcome": "success-xver-2025-01-01",
+        "elapsed_ms": 501.71,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "count",
+            "data"
+          ]
+        },
+        "evidence": "evidence/work/countries/04-success-xver-2025-01-01.json",
+        "x_api_version_resp": "2025-01-01"
+      },
+      {
+        "iter": 5,
+        "label": "xver-2026-04-14",
+        "status": 200,
+        "outcome": "success-xver-2026-04-14",
+        "elapsed_ms": 439.17,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "count",
+            "data"
+          ]
+        },
+        "evidence": "evidence/work/countries/05-success-xver-2026-04-14.json",
+        "x_api_version_resp": "2026-04-14"
+      },
+      {
+        "iter": 6,
+        "label": "limit-100000",
+        "status": 200,
+        "outcome": "success-limit-100000",
+        "elapsed_ms": 335.2,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "count",
+            "data"
+          ]
+        },
+        "evidence": "evidence/work/countries/06-success-limit-100000.json",
+        "x_api_version_resp": "2026-04-14"
+      },
+      {
+        "iter": 7,
+        "label": "offset-99999",
+        "status": 200,
+        "outcome": "success-offset-99999",
+        "elapsed_ms": 422.97,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "count",
+            "data"
+          ]
+        },
+        "evidence": "evidence/work/countries/07-success-offset-99999.json",
+        "x_api_version_resp": "2026-04-14"
+      }
+    ],
+    "latency_samples_ms": [
+      1008.73,
+      306.692,
+      372.752958,
+      359.903125
+    ]
+  },
+  "banks": {
+    "family": "banks",
+    "iterations": [
+      {
+        "iter": 1,
+        "label": "v1-country-MX",
+        "url": "https://api.balampay.com/v1/banks",
+        "params": {
+          "country": "MX"
+        },
+        "status": 400,
+        "outcome": "fail-400-v1-country-MX",
+        "elapsed_ms": 355.1,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "details",
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/banks/01-fail-400-v1-country-MX.json"
+      },
+      {
+        "iter": 2,
+        "label": "nov1-country-MX",
+        "url": "https://api.balampay.com/banks",
+        "params": {
+          "country": "MX"
+        },
+        "status": 200,
+        "outcome": "success-nov1-country-MX",
+        "elapsed_ms": 19925.5,
+        "shape": {
+          "top_type": "str",
+          "value": "error code: 522"
+        },
+        "evidence": "evidence/work/banks/02-success-nov1-country-MX.json"
+      },
+      {
+        "iter": 3,
+        "label": "v1-country-MEX-alpha3",
+        "url": "https://api.balampay.com/v1/banks",
+        "params": {
+          "country": "MEX"
+        },
+        "status": 400,
+        "outcome": "fail-400-v1-country-MEX-alpha3",
+        "elapsed_ms": 385.57,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "details",
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/banks/03-fail-400-v1-country-MEX-alpha3.json"
+      },
+      {
+        "iter": 4,
+        "label": "v1-country-mx-lower",
+        "url": "https://api.balampay.com/v1/banks",
+        "params": {
+          "country": "mx"
+        },
+        "status": 400,
+        "outcome": "fail-400-v1-country-mx-lower",
+        "elapsed_ms": 296.55,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "details",
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/banks/04-fail-400-v1-country-mx-lower.json"
+      },
+      {
+        "iter": 5,
+        "label": "v1-country-Mexico-name",
+        "url": "https://api.balampay.com/v1/banks",
+        "params": {
+          "country": "Mexico"
+        },
+        "status": 400,
+        "outcome": "fail-400-v1-country-Mexico-name",
+        "elapsed_ms": 387.14,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "details",
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/banks/05-fail-400-v1-country-Mexico-name.json"
+      },
+      {
+        "iter": 6,
+        "label": "v1-no-country",
+        "url": "https://api.balampay.com/v1/banks",
+        "params": {},
+        "status": 400,
+        "outcome": "fail-400-v1-no-country",
+        "elapsed_ms": 247.15,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "details",
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/banks/06-fail-400-v1-no-country.json"
+      },
+      {
+        "iter": 7,
+        "label": "no-apikey",
+        "url": "https://api.balampay.com/banks",
+        "params": {
+          "country": "MX"
+        },
+        "status": 403,
+        "outcome": "fail-403-no-apikey",
+        "elapsed_ms": 299.09,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/banks/07-fail-403-no-apikey.json"
+      },
+      {
+        "iter": 8,
+        "label": "no-bearer",
+        "url": "https://api.balampay.com/banks",
+        "params": {
+          "country": "MX"
+        },
+        "status": 200,
+        "outcome": "success-no-bearer",
+        "elapsed_ms": 400.12,
+        "shape": {
+          "top_type": "str",
+          "value": "Blocked"
+        },
+        "evidence": "evidence/work/banks/08-success-no-bearer.json"
+      },
+      {
+        "iter": 9,
+        "label": "xver-2025-01-01",
+        "url": "https://api.balampay.com/banks",
+        "params": {
+          "country": "MX"
+        },
+        "status": 200,
+        "outcome": "success-xver-2025-01-01",
+        "elapsed_ms": 20028.77,
+        "shape": {
+          "top_type": "str",
+          "value": "error code: 522"
+        },
+        "evidence": "evidence/work/banks/09-success-xver-2025-01-01.json"
+      },
+      {
+        "iter": 10,
+        "label": "xver-2026-04-14",
+        "url": "https://api.balampay.com/banks",
+        "params": {
+          "country": "MX"
+        },
+        "status": 200,
+        "outcome": "success-xver-2026-04-14",
+        "elapsed_ms": 19935.74,
+        "shape": {
+          "top_type": "str",
+          "value": "error code: 522"
+        },
+        "evidence": "evidence/work/banks/10-success-xver-2026-04-14.json"
+      }
+    ],
+    "working_url": "https://api.balampay.com/banks",
+    "latency_samples_ms": [
+      19925.5,
+      19947.495667,
+      20151.43775,
+      261.579167
+    ]
+  },
+  "users_list": {
+    "family": "users-list",
+    "url": "https://api.balampay.com/v1/users",
+    "iterations": [
+      {
+        "iter": 1,
+        "label": "happy",
+        "status": 200,
+        "outcome": "success-happy",
+        "elapsed_ms": 252.01,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/users-list/01-success-happy.json"
+      },
+      {
+        "iter": 2,
+        "label": "no-apikey",
+        "status": 403,
+        "outcome": "fail-403-no-apikey",
+        "elapsed_ms": 223.6,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/users-list/02-fail-403-no-apikey.json"
+      },
+      {
+        "iter": 3,
+        "label": "no-bearer",
+        "status": 401,
+        "outcome": "fail-401-no-bearer",
+        "elapsed_ms": 257.28,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/users-list/03-fail-401-no-bearer.json"
+      },
+      {
+        "iter": 4,
+        "label": "xver-2025-01-01",
+        "status": 200,
+        "outcome": "success-xver-2025-01-01",
+        "elapsed_ms": 258.16,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/users-list/04-success-xver-2025-01-01.json"
+      },
+      {
+        "iter": 5,
+        "label": "xver-2026-04-14",
+        "status": 200,
+        "outcome": "success-xver-2026-04-14",
+        "elapsed_ms": 278.27,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/users-list/05-success-xver-2026-04-14.json"
+      },
+      {
+        "iter": 6,
+        "label": "limit-100000",
+        "status": 500,
+        "outcome": "fail-500-limit-100000",
+        "elapsed_ms": 241.8,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message",
+            "status"
+          ]
+        },
+        "evidence": "evidence/work/users-list/06-fail-500-limit-100000.json"
+      },
+      {
+        "iter": 7,
+        "label": "offset-99999",
+        "status": 200,
+        "outcome": "success-offset-99999",
+        "elapsed_ms": 254.02,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/users-list/07-success-offset-99999.json"
+      }
+    ],
+    "latency_samples_ms": [
+      252.01,
+      225.555708,
+      294.645417,
+      240.89525
+    ]
+  },
+  "va_list": {
+    "family": "va-list",
+    "url": "https://api.balampay.com/v1/virtual-accounts",
+    "iterations": [
+      {
+        "iter": 1,
+        "label": "happy",
+        "status": 200,
+        "outcome": "success-happy",
+        "elapsed_ms": 277.88,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/va-list/01-success-happy.json"
+      },
+      {
+        "iter": 2,
+        "label": "no-apikey",
+        "status": 403,
+        "outcome": "fail-403-no-apikey",
+        "elapsed_ms": 238.52,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/va-list/02-fail-403-no-apikey.json"
+      },
+      {
+        "iter": 3,
+        "label": "no-bearer",
+        "status": 401,
+        "outcome": "fail-401-no-bearer",
+        "elapsed_ms": 285.31,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/va-list/03-fail-401-no-bearer.json"
+      },
+      {
+        "iter": 4,
+        "label": "xver-2025-01-01",
+        "status": 200,
+        "outcome": "success-xver-2025-01-01",
+        "elapsed_ms": 217.45,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/va-list/04-success-xver-2025-01-01.json"
+      },
+      {
+        "iter": 5,
+        "label": "xver-2026-04-14",
+        "status": 200,
+        "outcome": "success-xver-2026-04-14",
+        "elapsed_ms": 306.28,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/va-list/05-success-xver-2026-04-14.json"
+      },
+      {
+        "iter": 6,
+        "label": "limit-100000",
+        "status": 500,
+        "outcome": "fail-500-limit-100000",
+        "elapsed_ms": 250.96,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message",
+            "status"
+          ]
+        },
+        "evidence": "evidence/work/va-list/06-fail-500-limit-100000.json"
+      },
+      {
+        "iter": 7,
+        "label": "offset-99999",
+        "status": 200,
+        "outcome": "success-offset-99999",
+        "elapsed_ms": 267.08,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "data",
+            "pagination"
+          ]
+        },
+        "evidence": "evidence/work/va-list/07-success-offset-99999.json"
+      }
+    ],
+    "latency_samples_ms": [
+      277.88,
+      245.039167,
+      276.165708,
+      215.791875
+    ]
+  },
+  "recipients": {
+    "family": "recipients",
+    "url": "https://api.balampay.com/v1/recipients",
+    "iterations": [
+      {
+        "iter": 1,
+        "label": "happy-no-user-id",
+        "status": 400,
+        "outcome": "fail-400-happy-no-user-id",
+        "elapsed_ms": 307.99,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/recipients/15-fail-400-happy-no-user-id.json"
+      },
+      {
+        "iter": 2,
+        "label": "no-apikey",
+        "status": 403,
+        "outcome": "fail-403-no-apikey",
+        "elapsed_ms": 246.35,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/recipients/16-fail-403-no-apikey.json"
+      },
+      {
+        "iter": 3,
+        "label": "no-bearer",
+        "status": 401,
+        "outcome": "fail-401-no-bearer",
+        "elapsed_ms": 272.89,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "message"
+          ]
+        },
+        "evidence": "evidence/work/recipients/17-fail-401-no-bearer.json"
+      },
+      {
+        "iter": 4,
+        "label": "xver-2025-01-01",
+        "status": 400,
+        "outcome": "fail-400-xver-2025-01-01",
+        "elapsed_ms": 251.63,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/recipients/18-fail-400-xver-2025-01-01.json"
+      },
+      {
+        "iter": 5,
+        "label": "xver-2026-04-14",
+        "status": 400,
+        "outcome": "fail-400-xver-2026-04-14",
+        "elapsed_ms": 266.58,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/recipients/19-fail-400-xver-2026-04-14.json"
+      },
+      {
+        "iter": 6,
+        "label": "limit-100000",
+        "status": 400,
+        "outcome": "fail-400-limit-100000",
+        "elapsed_ms": 220.46,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/recipients/20-fail-400-limit-100000.json"
+      },
+      {
+        "iter": 7,
+        "label": "offset-99999",
+        "status": 400,
+        "outcome": "fail-400-offset-99999",
+        "elapsed_ms": 300.96,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/recipients/21-fail-400-offset-99999.json"
+      },
+      {
+        "iter": 8,
+        "label": "junk-user-id",
+        "status": 404,
+        "outcome": "fail-404-junk-user-id",
+        "elapsed_ms": 239.22,
+        "shape": {
+          "top_type": "object",
+          "keys": [
+            "error"
+          ]
+        },
+        "evidence": "evidence/work/recipients/22-fail-404-junk-user-id.json"
+      }
+    ],
+    "latency_samples_ms": [
+      307.99,
+      284.202917,
+      283.461459,
+      248.498083
+    ]
+  }
+}

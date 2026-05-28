@@ -1,0 +1,229 @@
+{
+  "captured_at": "2026-05-28T00:54:45.621970+00:00",
+  "attempt_id": "d1ca6ff5-2dc9-4811-ad6e-d5b091b818c6",
+  "elapsed_ms": 276.22,
+  "outcome": "success-v1-cc-CO",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/banks?country_code=CO",
+    "headers": {
+      "Accept": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:54:45 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "01bb2541-b562-4fa7-896c-7c107385d0e9",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "1817",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPNbEORPHcEg6Q=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"719-MUIrpOYrYc78Z63JOyDPpc2GDRk\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:54:45 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a0294a36097b0ce3-BOG"
+    },
+    "body": {
+      "banks": [
+        {
+          "code": "049",
+          "name": "Bancamia s.a."
+        },
+        {
+          "code": "041",
+          "name": "Banco agrario"
+        },
+        {
+          "code": "052",
+          "name": "Banco av villas"
+        },
+        {
+          "code": "119",
+          "name": "Banco btg pactual"
+        },
+        {
+          "code": "032",
+          "name": "Banco caja social bcsc s.a."
+        },
+        {
+          "code": "067",
+          "name": "Banco compartir s.a."
+        },
+        {
+          "code": "076",
+          "name": "Banco cooperativo coopcentral"
+        },
+        {
+          "code": "050",
+          "name": "Banco credifinanciera sa."
+        },
+        {
+          "code": "051",
+          "name": "Banco davivienda s.a."
+        },
+        {
+          "code": "001",
+          "name": "Banco de bogotá"
+        },
+        {
+          "code": "023",
+          "name": "Banco de occidente"
+        },
+        {
+          "code": "310",
+          "name": "Banco falabella s.a."
+        },
+        {
+          "code": "320",
+          "name": "Banco finandina s.a."
+        },
+        {
+          "code": "012",
+          "name": "Banco gnb sudameris"
+        },
+        {
+          "code": "1071",
+          "name": "Banco j.p. morgan colombia s.a."
+        },
+        {
+          "code": "031",
+          "name": "Bancoldex s.a."
+        },
+        {
+          "code": "007",
+          "name": "Bancolombia"
+        },
+        {
+          "code": "047",
+          "name": "Banco mundo mujer"
+        },
+        {
+          "code": "044",
+          "name": "Bancoomeva"
+        },
+        {
+          "code": "332",
+          "name": "Banco pichincha"
+        },
+        {
+          "code": "002",
+          "name": "Banco popular"
+        },
+        {
+          "code": "058",
+          "name": "Banco procredit col"
+        },
+        {
+          "code": "039",
+          "name": "Banco santander"
+        },
+        {
+          "code": "342",
+          "name": "Banco serfinanza"
+        },
+        {
+          "code": "043",
+          "name": "Banco w s.a."
+        },
+        {
+          "code": "013",
+          "name": "Bbva colombia"
+        },
+        {
+          "code": "009",
+          "name": "Citibank"
+        },
+        {
+          "code": "969",
+          "name": "Coink"
+        },
+        {
+          "code": "370",
+          "name": "Coltefinanciera s.a."
+        },
+        {
+          "code": "292",
+          "name": "Confiar"
+        },
+        {
+          "code": "283",
+          "name": "Cooperativa financiera de antioquia"
+        },
+        {
+          "code": "289",
+          "name": "Cotrafa cooperativa financiera"
+        },
+        {
+          "code": "551",
+          "name": "Daviplata"
+        },
+        {
+          "code": "1802",
+          "name": "Ding tecnipagos sa"
+        },
+        {
+          "code": "324",
+          "name": "Financiera juriscoop"
+        },
+        {
+          "code": "637",
+          "name": "Iris"
+        },
+        {
+          "code": "014",
+          "name": "Itau antes corpbanca"
+        },
+        {
+          "code": "070",
+          "name": "Lulo bank s.a."
+        },
+        {
+          "code": "507",
+          "name": "Nequi"
+        },
+        {
+          "code": "970",
+          "name": "Nubank"
+        },
+        {
+          "code": "1151",
+          "name": "Rappipay"
+        },
+        {
+          "code": "019",
+          "name": "Scotiabank colpatria s.a."
+        },
+        {
+          "code": "025",
+          "name": "Uala"
+        }
+      ],
+      "total": 43,
+      "country_code": "CO"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "captured_at": "2026-05-28T00:54:16.535367+00:00",
+  "attempt_id": "3488723c-a0fb-4045-bcd9-ffc01885e565",
+  "elapsed_ms": 268.27,
+  "outcome": "success-201-swift-iter2",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "081ac9a4-9a3b-4880-a7d9-babbd54aef8d"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "first_name": "Test",
+      "last_name": "EuroBeneficiary",
+      "email": "test+swift@example.com",
+      "phone": "+34900000000",
+      "address": {
+        "street_name": "1 Recipient St",
+        "city": "Madrid",
+        "state": "Madrid",
+        "postal_code": "28001",
+        "country": "ES"
+      },
+      "account": {
+        "account_type": "SWIFT",
+        "account_number": "ES7100000000000000000000",
+        "swift_code": "TESTESM0XXX",
+        "bank_name": "Test European Bank S.A.",
+        "bank_address": {
+          "street_name": "1 Bank Avenue",
+          "city": "Madrid",
+          "state": "Madrid",
+          "postal_code": "28001",
+          "country": "ES"
+        },
+        "doc_type": "passport",
+        "doc_number": "FAKE000000",
+        "doc_country_code": "ES",
+        "currency": "EUR",
+        "country": "ES"
+      }
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:54:16 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "728",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "fa2a7971-0344-4b57-b6ee-2e32c82b742e",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "728",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPI4HlrPHcEh4A=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"2d8-AAlm/ujrTpy1WKpnzmortmHDl/Y\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:54:16 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a02949802835374d-BOG"
+    },
+    "body": {
+      "recipient_id": "2a0cb60a-da7b-4463-afd5-7c0908307c91",
+      "type": "individual",
+      "first_name": "Test",
+      "last_name": "EuroBeneficiary",
+      "phone": "+34900000000",
+      "email": "test+swift@example.com",
+      "address": {
+        "street_name": "1 Recipient St",
+        "city": "Madrid",
+        "state": "Madrid",
+        "postal_code": "28001",
+        "country": "ES"
+      },
+      "account_type": "SWIFT",
+      "account_details": {
+        "account_number": "ES7100000000000000000000",
+        "swift_code": "TESTESM0XXX",
+        "bank_name": "Test European Bank S.A.",
+        "bank_address": {
+          "street_name": "1 Bank Avenue",
+          "city": "Madrid",
+          "state": "",
+          "postal_code": "",
+          "country": "ES"
+        },
+        "doc_type": "passport",
+        "doc_number": "FAKE000000",
+        "doc_country_code": "ES"
+      },
+      "created_ts": "2026-05-28 00:54:16.464742+00",
+      "updated_ts": "2026-05-28 00:54:16.464742+00",
+      "metadata": {}
+    }
+  }
+}

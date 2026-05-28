@@ -1,0 +1,75 @@
+{
+  "captured_at": "2026-05-28T02:19:27.243278+00:00",
+  "host": "api.balampay.com",
+  "python_probes": [
+    {
+      "label": "tls1.0-only",
+      "connected": true,
+      "negotiated_protocol": "TLSv1",
+      "cipher": [
+        "ECDHE-RSA-AES128-SHA",
+        "TLSv1/SSLv3",
+        128
+      ]
+    },
+    {
+      "label": "tls1.1-only",
+      "connected": true,
+      "negotiated_protocol": "TLSv1.1",
+      "cipher": [
+        "ECDHE-RSA-AES128-SHA",
+        "TLSv1/SSLv3",
+        128
+      ]
+    },
+    {
+      "label": "tls1.2-only",
+      "connected": true,
+      "negotiated_protocol": "TLSv1.2",
+      "cipher": [
+        "ECDHE-ECDSA-CHACHA20-POLY1305",
+        "TLSv1/SSLv3",
+        256
+      ]
+    },
+    {
+      "label": "tls1.3-only",
+      "connected": false,
+      "error": "ValueError: Unsupported protocol version 0x304"
+    }
+  ],
+  "openssl_probes": [
+    {
+      "version_flag": "-tls1",
+      "exit_code": 0,
+      "handshake_completed": true,
+      "rejected": false,
+      "stdout_excerpt": "CONNECTED(00000005)\nwrite W BLOCK\n---\nCertificate chain\n 0 s:/CN=balampay.com\n   i:/C=US/O=Let's Encrypt/CN=R12\n 1 s:/C=US/O=Let's Encrypt/CN=R12\n   i:/C=US/O=Internet Security Research Group/CN=ISRG Root X1\n---\nServer certificate\n-----BEGIN CERTIFICATE-----\nMIIFAzCCA+ugAwIBAgISBc+42CN3FH1R/ZLeHoXsqe1TMA0GCSqGSIb3DQEBCwUA\nMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD\nEwNSMTIwHhcNMjYwNDIxMjExMzIyWhcNMjYwNzIwMjExMzIxWjAXMRUwEwYDVQQD\nEwxiYWxhbXBheS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCm\nWRlY9SIvceDD6R36/B/4lIP2lPKZk4SrvZSNh77lbrBZo4jSSbOV3WuGilboHAxA\nhi+FAdqBoNti6hJtSCM7sN9XbIO5qxcBqxCebprZCjJGH9ZDJuxbMBbkRdVFJUQL\nJmtlV/srsvDwXTgNFAte9Dt6V2vnJy5hUtUrl7aoKQJ8MJbG4f7sKUKcBLdNi4bg\nOhW8KZKAgghjyH++fIr374tp3kGN9wu+wUw7i6m6M3ztmo2bOfZ/+aPj3s/dUcXA\n83gt5wNr47viNCwXKJ7Hvm7GLnYrPjwDfFqudgViuADKxP4DHtwiz6yr3LHy5QTq\nN2azvv4HtelLvaPYOf9bAgMBAAGjggIrMIICJzAOBgNVHQ8BAf8EBAMCBaAwEwYD\nVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUfnmcsS4Z\nRdHWKp0M4pWD+e08A7wwHwYDVR0jBBgwFoAUALUp8i2ObzHom0yteD763OkM0dIw\nMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8vcjEyLmkubGVuY3Iu\nb3JnLzAnBgNVHREEIDAegg4qLmJhbGFtcGF5LmNvbYIMYmFsYW1wYXkuY29tMBMG\nA1UdIAQMMAowCAYGZ4EMAQIBMC4GA1UdHwQnMCUwI6AhoB+GHWh0dHA6Ly9yMTIu\nYy5sZW5jci5vcmcvODQuY3JsMIIBDQYKKwYBBAHWeQIEAgSB/gSB+wD5AHYAyKPE\nf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5oAAAGdshmPLAAABAMARzBFAiEA\nzO0BZ9NbCFxKhj4s6b8q2CgGoXELYtzSaIBvDKkW/Z4CIEAnEm0W7CV0nM9mkl7Y\n4mic29NAhBwjDGprRA8uuhP+AH8AqCbL4wrGNRJGUz/gZfFPGdluGQgTxB3ZbXkA\nsxI8VScAAAGdshmSGQAIAAAFAAfKSbcEAwBIMEYCIQDwV5R6rzzdNyv1MBFPBDmC\nQodQPPNfxQn2ejqlhcJbfgIhAJw577t2Z1njPhiq3IX6QL0BNvtWinInu39Qcuwr\ntdtiMA0GCSqGSIb3DQEBCwUAA4IBAQCwojtP6fii5S7/FKWXcrFXZSbqJAtlWVUA\nVd9D9emOAiuY2RgO6D6Im8STmJj2nsYACUs09f4vHCdH+fHsZdj1Rr/unBTVEARD\nDOGXLPNUwGAxwcSRR8aWnFqcvAWqotCaGkdzBm/TNFTUSfAjgNnhdLlgN6HDVjzS\niBmH/EUPsRgIJKSAFPlDGXedRqy1BfJF9BGHzVHn3yaA5u52Kwvu8cBx6dp6g3NM\nyA5Yql7YZiQ8+liIocy+40sEbyX1Iq7eYczxtoJ2R+i1TVrgVt8C9MSsmA6s/2wx\nY22yDtlNe6X/fPH5KJ83G9F/c+hfFrvDLttf7UGIb94pba+dQ0A",
+      "stderr_excerpt": "depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1\nverify return:1\ndepth=1 C = US, O = Let's Encrypt, CN = R12\nverify return:1\ndepth=0 CN = balampay.com\nverify return:1\nDONE\n"
+    },
+    {
+      "version_flag": "-tls1_1",
+      "exit_code": 0,
+      "handshake_completed": true,
+      "rejected": false,
+      "stdout_excerpt": "CONNECTED(00000005)\nwrite W BLOCK\n---\nCertificate chain\n 0 s:/CN=balampay.com\n   i:/C=US/O=Let's Encrypt/CN=R12\n 1 s:/C=US/O=Let's Encrypt/CN=R12\n   i:/C=US/O=Internet Security Research Group/CN=ISRG Root X1\n---\nServer certificate\n-----BEGIN CERTIFICATE-----\nMIIFAzCCA+ugAwIBAgISBc+42CN3FH1R/ZLeHoXsqe1TMA0GCSqGSIb3DQEBCwUA\nMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD\nEwNSMTIwHhcNMjYwNDIxMjExMzIyWhcNMjYwNzIwMjExMzIxWjAXMRUwEwYDVQQD\nEwxiYWxhbXBheS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCm\nWRlY9SIvceDD6R36/B/4lIP2lPKZk4SrvZSNh77lbrBZo4jSSbOV3WuGilboHAxA\nhi+FAdqBoNti6hJtSCM7sN9XbIO5qxcBqxCebprZCjJGH9ZDJuxbMBbkRdVFJUQL\nJmtlV/srsvDwXTgNFAte9Dt6V2vnJy5hUtUrl7aoKQJ8MJbG4f7sKUKcBLdNi4bg\nOhW8KZKAgghjyH++fIr374tp3kGN9wu+wUw7i6m6M3ztmo2bOfZ/+aPj3s/dUcXA\n83gt5wNr47viNCwXKJ7Hvm7GLnYrPjwDfFqudgViuADKxP4DHtwiz6yr3LHy5QTq\nN2azvv4HtelLvaPYOf9bAgMBAAGjggIrMIICJzAOBgNVHQ8BAf8EBAMCBaAwEwYD\nVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUfnmcsS4Z\nRdHWKp0M4pWD+e08A7wwHwYDVR0jBBgwFoAUALUp8i2ObzHom0yteD763OkM0dIw\nMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8vcjEyLmkubGVuY3Iu\nb3JnLzAnBgNVHREEIDAegg4qLmJhbGFtcGF5LmNvbYIMYmFsYW1wYXkuY29tMBMG\nA1UdIAQMMAowCAYGZ4EMAQIBMC4GA1UdHwQnMCUwI6AhoB+GHWh0dHA6Ly9yMTIu\nYy5sZW5jci5vcmcvODQuY3JsMIIBDQYKKwYBBAHWeQIEAgSB/gSB+wD5AHYAyKPE\nf8ezrbk1awE/anoSbeM6TkOlxkb5l605dZkdz5oAAAGdshmPLAAABAMARzBFAiEA\nzO0BZ9NbCFxKhj4s6b8q2CgGoXELYtzSaIBvDKkW/Z4CIEAnEm0W7CV0nM9mkl7Y\n4mic29NAhBwjDGprRA8uuhP+AH8AqCbL4wrGNRJGUz/gZfFPGdluGQgTxB3ZbXkA\nsxI8VScAAAGdshmSGQAIAAAFAAfKSbcEAwBIMEYCIQDwV5R6rzzdNyv1MBFPBDmC\nQodQPPNfxQn2ejqlhcJbfgIhAJw577t2Z1njPhiq3IX6QL0BNvtWinInu39Qcuwr\ntdtiMA0GCSqGSIb3DQEBCwUAA4IBAQCwojtP6fii5S7/FKWXcrFXZSbqJAtlWVUA\nVd9D9emOAiuY2RgO6D6Im8STmJj2nsYACUs09f4vHCdH+fHsZdj1Rr/unBTVEARD\nDOGXLPNUwGAxwcSRR8aWnFqcvAWqotCaGkdzBm/TNFTUSfAjgNnhdLlgN6HDVjzS\niBmH/EUPsRgIJKSAFPlDGXedRqy1BfJF9BGHzVHn3yaA5u52Kwvu8cBx6dp6g3NM\nyA5Yql7YZiQ8+liIocy+40sEbyX1Iq7eYczxtoJ2R+i1TVrgVt8C9MSsmA6s/2wx\nY22yDtlNe6X/fPH5KJ83G9F/c+hfFrvDLttf7UGIb94pba+dQ0A",
+      "stderr_excerpt": "depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1\nverify return:1\ndepth=1 C = US, O = Let's Encrypt, CN = R12\nverify return:1\ndepth=0 CN = balampay.com\nverify return:1\nDONE\n"
+    },
+    {
+      "version_flag": "-tls1_2",
+      "exit_code": 0,
+      "handshake_completed": true,
+      "rejected": false,
+      "stdout_excerpt": "CONNECTED(00000005)\nwrite W BLOCK\n---\nCertificate chain\n 0 s:/CN=balampay.com\n   i:/C=US/O=Let's Encrypt/CN=E7\n 1 s:/C=US/O=Let's Encrypt/CN=E7\n   i:/C=US/O=Internet Security Research Group/CN=ISRG Root X1\n---\nServer certificate\n-----BEGIN CERTIFICATE-----\nMIIDkjCCAxmgAwIBAgISBj422p0YC4iAqAtEVgRUU9DpMAoGCCqGSM49BAMDMDIx\nCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF\nNzAeFw0yNjA0MjEyMTEzMzdaFw0yNjA3MjAyMTEzMzZaMBcxFTATBgNVBAMTDGJh\nbGFtcGF5LmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABC1M1Hs+MpdZGYvT\ni6clTAhl7H9r8BbsVYaivJVtI5vhmcpuEmBEzaiCJFjhSnm2DMALzhERgxA1JHnE\nX7UcjKijggIoMIICJDAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0lBAwwCgYIKwYBBQUH\nAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU+viW3ytzByYzAmZtUvDY6Zl37Akw\nHwYDVR0jBBgwFoAUrkie3IcdRKBv2qLlYHQEeMKcAIAwMgYIKwYBBQUHAQEEJjAk\nMCIGCCsGAQUFBzAChhZodHRwOi8vZTcuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6C\nDiouYmFsYW1wYXkuY29tggxiYWxhbXBheS5jb20wEwYDVR0gBAwwCjAIBgZngQwB\nAgEwLgYDVR0fBCcwJTAjoCGgH4YdaHR0cDovL2U3LmMubGVuY3Iub3JnLzEwNi5j\ncmwwggELBgorBgEEAdZ5AgQCBIH8BIH5APcAdgDXbX0Q0af1d8LH6V/XAL/5gskz\nWmXh0LMBcxfAyMVpdwAAAZ2yGchfAAAEAwBHMEUCIEd1qgZBxUtVs9ZisRjlL53W\nwU/gqpQuxlQH47SW59AWAiEAnphRsDHwZ+QsBi/lW8XSkMPWYKDmSeCkBHVjFako\nUIMAfQBs/lAZQ6heqRa8UtEz5NzJHvFBHH0lhCDRc4CeGBjrOgAAAZ2yGctXAAgA\nAAUACCwQDgQDAEYwRAIgDw37IDWe7gbz5k04qEJvfPHmah9vAbe6Mwbv6rQDNHkC\nIHtSwUV09X4TpIHfXgCzhugpiNWtOwlGM5NLJ0C04RPEMAoGCCqGSM49BAMDA2cA\nMGQCMBKqpVIYfm4zCcgGX24FzEVVY2wsyEOvxbK8BRIaJciuhtKbFdu5YA+PdBRG\nrSv73gIwBD/ZmsPaAKsgeV41ur5CzfSR+YZMIqSFYw6nhMS4l3CJoih+V0/+A6+v\nYNriuVAN\n-----END CERTIFICATE-----\nsubject=/CN=balampay.com\nissuer=/C=US/O=Let's Encrypt/CN=E7\n---\nNo client certificate CA names sent\nServer Temp Key: ECDH, X25519, 253 bits\n---\nSSL handshake has read 2482 bytes and written 304 bytes\n---\nNew, TLSv1/SSLv3, Cipher is ECDHE-ECDSA-CHACHA20-POLY1305\nServer public key is 256 bit\nSecure Renegotiation IS supported\nCompression: NONE\nExpansion: NONE\nNo ALPN negotiated\nSSL-Session:\n    Protocol  : TLSv1.2\n    Cipher    : ECDHE-ECDSA-CHACHA20-POLY1305\n    Session-",
+      "stderr_excerpt": "depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1\nverify return:1\ndepth=1 C = US, O = Let's Encrypt, CN = E7\nverify return:1\ndepth=0 CN = balampay.com\nverify return:1\nDONE\n"
+    },
+    {
+      "version_flag": "-tls1_3",
+      "exit_code": 0,
+      "handshake_completed": true,
+      "rejected": false,
+      "stdout_excerpt": "CONNECTED(00000005)\nwrite W BLOCK\n---\nCertificate chain\n 0 s:/CN=balampay.com\n   i:/C=US/O=Let's Encrypt/CN=E7\n 1 s:/C=US/O=Let's Encrypt/CN=E7\n   i:/C=US/O=Internet Security Research Group/CN=ISRG Root X1\n---\nServer certificate\n-----BEGIN CERTIFICATE-----\nMIIDkjCCAxmgAwIBAgISBj422p0YC4iAqAtEVgRUU9DpMAoGCCqGSM49BAMDMDIx\nCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF\nNzAeFw0yNjA0MjEyMTEzMzdaFw0yNjA3MjAyMTEzMzZaMBcxFTATBgNVBAMTDGJh\nbGFtcGF5LmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABC1M1Hs+MpdZGYvT\ni6clTAhl7H9r8BbsVYaivJVtI5vhmcpuEmBEzaiCJFjhSnm2DMALzhERgxA1JHnE\nX7UcjKijggIoMIICJDAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0lBAwwCgYIKwYBBQUH\nAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU+viW3ytzByYzAmZtUvDY6Zl37Akw\nHwYDVR0jBBgwFoAUrkie3IcdRKBv2qLlYHQEeMKcAIAwMgYIKwYBBQUHAQEEJjAk\nMCIGCCsGAQUFBzAChhZodHRwOi8vZTcuaS5sZW5jci5vcmcvMCcGA1UdEQQgMB6C\nDiouYmFsYW1wYXkuY29tggxiYWxhbXBheS5jb20wEwYDVR0gBAwwCjAIBgZngQwB\nAgEwLgYDVR0fBCcwJTAjoCGgH4YdaHR0cDovL2U3LmMubGVuY3Iub3JnLzEwNi5j\ncmwwggELBgorBgEEAdZ5AgQCBIH8BIH5APcAdgDXbX0Q0af1d8LH6V/XAL/5gskz\nWmXh0LMBcxfAyMVpdwAAAZ2yGchfAAAEAwBHMEUCIEd1qgZBxUtVs9ZisRjlL53W\nwU/gqpQuxlQH47SW59AWAiEAnphRsDHwZ+QsBi/lW8XSkMPWYKDmSeCkBHVjFako\nUIMAfQBs/lAZQ6heqRa8UtEz5NzJHvFBHH0lhCDRc4CeGBjrOgAAAZ2yGctXAAgA\nAAUACCwQDgQDAEYwRAIgDw37IDWe7gbz5k04qEJvfPHmah9vAbe6Mwbv6rQDNHkC\nIHtSwUV09X4TpIHfXgCzhugpiNWtOwlGM5NLJ0C04RPEMAoGCCqGSM49BAMDA2cA\nMGQCMBKqpVIYfm4zCcgGX24FzEVVY2wsyEOvxbK8BRIaJciuhtKbFdu5YA+PdBRG\nrSv73gIwBD/ZmsPaAKsgeV41ur5CzfSR+YZMIqSFYw6nhMS4l3CJoih+V0/+A6+v\nYNriuVAN\n-----END CERTIFICATE-----\nsubject=/CN=balampay.com\nissuer=/C=US/O=Let's Encrypt/CN=E7\n---\nNo client certificate CA names sent\nServer Temp Key: ECDH, X25519, 253 bits\n---\nSSL handshake has read 2331 bytes and written 276 bytes\n---\nNew, TLSv1/SSLv3, Cipher is AEAD-CHACHA20-POLY1305-SHA256\nServer public key is 256 bit\nSecure Renegotiation IS NOT supported\nCompression: NONE\nExpansion: NONE\nNo ALPN negotiated\nSSL-Session:\n    Protocol  : TLSv1.3\n    Cipher    : AEAD-CHACHA20-POLY1305-SHA256\n    Sess",
+      "stderr_excerpt": "depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1\nverify return:1\ndepth=1 C = US, O = Let's Encrypt, CN = E7\nverify return:1\ndepth=0 CN = balampay.com\nverify return:1\nDONE\n"
+    }
+  ]
+}

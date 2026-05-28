@@ -1,0 +1,147 @@
+{
+  "scenario": "bola-cross-tenant-stub",
+  "results": [
+    {
+      "probe": "mutate-user",
+      "pos": -1,
+      "target": "65ba0e06-9f52-4c43-b093-5d30a632ce30",
+      "status": 404,
+      "response_kind": "error"
+    },
+    {
+      "probe": "mutate-user",
+      "pos": -2,
+      "target": "65ba0e06-9f52-4c43-b093-5d30a632ce0d",
+      "status": 404,
+      "response_kind": "error"
+    },
+    {
+      "probe": "mutate-user",
+      "pos": -3,
+      "target": "65ba0e06-9f52-4c43-b093-5d30a632c03d",
+      "status": 404,
+      "response_kind": "error"
+    },
+    {
+      "probe": "mutate-user",
+      "pos": -7,
+      "target": "65ba0e06-9f52-4c43-b093-5d30a032ce3d",
+      "status": 404,
+      "response_kind": "error"
+    },
+    {
+      "probe": "mutate-user",
+      "pos": 0,
+      "target": "05ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "status": 404,
+      "response_kind": "error"
+    },
+    {
+      "probe": "mutate-user",
+      "pos": 4,
+      "target": "65ba1e06-9f52-4c43-b093-5d30a632ce3d",
+      "status": 404,
+      "response_kind": "error"
+    },
+    {
+      "probe": "mutate-user",
+      "pos": 8,
+      "target": "65ba0e06-0f52-4c43-b093-5d30a632ce3d",
+      "status": 404,
+      "response_kind": "error"
+    },
+    {
+      "probe": "random-recipient",
+      "target": "e09dd3dd-2932-41c4-a0e6-45408f68fb33",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-recipient",
+      "target": "23b03bfd-7450-4ed2-a00e-bd9ce4fbfc7d",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-recipient",
+      "target": "2714c1a1-8039-4792-85e1-96b3d66e66df",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-recipient",
+      "target": "e85a5dd4-b8f5-4fbb-90d0-c4928e405a51",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-recipient",
+      "target": "1ffff7c9-f197-43eb-8424-e434d9096b86",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-user",
+      "target": "52c3a6a9-c1e7-48e5-bbef-0d40456860ce",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-user",
+      "target": "bf284937-8505-4423-8eb4-5d5ad7d213b0",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-user",
+      "target": "ca66a5f9-2c0f-4360-bdc1-07e26e30c7c4",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-user",
+      "target": "77caa070-2b36-441e-8a77-70e8571f3ecb",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-user",
+      "target": "4be5241f-fd0f-4e97-93db-f5a447f1a641",
+      "status": 404,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "random-va",
+      "target": "f7053545-e419-4218-a24e-7c581457c19c",
+      "status": 404
+    },
+    {
+      "probe": "random-va",
+      "target": "662edb56-b360-4ad8-95e6-8b2313a3c085",
+      "status": 404
+    },
+    {
+      "probe": "random-va",
+      "target": "b298c435-5b24-41e7-b48e-9c1bf4fd6569",
+      "status": 404
+    },
+    {
+      "probe": "payout-fake-recipient",
+      "target": "c02ef6d6-67d3-43bb-b0f7-08d4cce3fe99",
+      "status": 400,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "va-fake-user",
+      "target": "b3901864-db4f-4748-8080-c4187be08b03",
+      "status": 400,
+      "body_kind": "dict"
+    },
+    {
+      "probe": "sanity-own-user",
+      "target": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "status": 200
+    }
+  ],
+  "leak_count": 0
+}

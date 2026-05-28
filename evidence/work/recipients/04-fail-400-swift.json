@@ -1,0 +1,95 @@
+{
+  "captured_at": "2026-05-28T00:52:50.718168+00:00",
+  "attempt_id": "b04facc5-0283-4b90-9652-2fb9a27eeaff",
+  "elapsed_ms": 287.45,
+  "outcome": "fail-400-swift",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "de83c892-29cb-42ba-8809-12821fb924f5"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "first_name": "Test",
+      "last_name": "EuroBeneficiary",
+      "email": "test+swift@example.com",
+      "phone": "+34900000000",
+      "account": {
+        "account_type": "SWIFT",
+        "account_number": "ES7100000000000000000000",
+        "swift_code": "TESTESM0XXX",
+        "bank_name": "Test European Bank S.A.",
+        "bank_address": {
+          "street_name": "1 Bank Avenue",
+          "city": "Madrid",
+          "state": "Madrid",
+          "postal_code": "28001",
+          "country": "ESP"
+        },
+        "doc_type": "passport",
+        "doc_number": "FAKE000000",
+        "doc_country_code": "ESP",
+        "currency": "EUR",
+        "country": "ES"
+      }
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:52:50 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "426",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "12d9032e-6cd0-4175-a131-1216df164318",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "426",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDO7eGJmvHcEFtg=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"1aa-H6tvWXGd6bq585OVZCLAzqFsHDE\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:52:50 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a0294767ac433bf3-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "account.bank_address.country",
+          "message": "Country must be a 2-character ISO code",
+          "code": "too_big"
+        },
+        {
+          "path": "account.doc_country_code",
+          "message": "Document country code must be exactly 2 characters",
+          "code": "too_big"
+        },
+        {
+          "path": "address",
+          "message": "address is required for SWIFT accounts (structured object with street_name, city, state, postal_code, country)",
+          "code": "custom"
+        }
+      ]
+    }
+  }
+}

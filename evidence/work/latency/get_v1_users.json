@@ -1,0 +1,14 @@
+{
+  "endpoint": "GET /v1/users",
+  "n": 4,
+  "samples_ms": [
+    252.01,
+    225.56,
+    294.65,
+    240.9
+  ],
+  "min_ms": 225.56,
+  "max_ms": 294.65,
+  "median_ms": 246.45,
+  "notes": "Preliminary baseline GET /v1/users (n=4). p50/p95/p99 require N>=10."
+}

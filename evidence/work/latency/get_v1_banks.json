@@ -1,0 +1,14 @@
+{
+  "endpoint": "GET /v1/banks",
+  "n": 4,
+  "samples_ms": [
+    19925.5,
+    19947.5,
+    20151.44,
+    261.58
+  ],
+  "min_ms": 261.58,
+  "max_ms": 20151.44,
+  "median_ms": 19936.5,
+  "notes": "Preliminary baseline on working URL form (n=4). p50/p95/p99 require N>=10."
+}

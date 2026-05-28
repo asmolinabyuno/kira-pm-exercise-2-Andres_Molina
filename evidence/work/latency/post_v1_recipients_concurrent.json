@@ -1,0 +1,228 @@
+{
+  "endpoint": "POST /v1/recipients",
+  "scenario": "concurrent-create-recipients",
+  "n": 20,
+  "min_ms": 248.12,
+  "median_ms": 599.8,
+  "p95_ms": 818.26,
+  "p99_ms": 825.91,
+  "max_ms": 827.82,
+  "samples_ms": [
+    346.84,
+    620.29,
+    504.09,
+    363.68,
+    722.77,
+    502.39,
+    712.16,
+    248.12,
+    781.87,
+    705.84,
+    817.76,
+    764.89,
+    579.31,
+    827.82,
+    294.0,
+    746.67,
+    501.77,
+    353.54,
+    648.8,
+    322.22
+  ],
+  "concurrency": 20,
+  "baseline_single_ms": 225.89,
+  "baseline_status": 400,
+  "burst_wall_clock_ms": 838.63,
+  "ok_count": 0,
+  "err_429": 0,
+  "err_other_4xx": 20,
+  "err_5xx": 0,
+  "retry_after_values": [],
+  "status_codes": [
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400
+  ],
+  "throughput_rps_under_burst": 23.85,
+  "latency_degradation_factor": 2.66,
+  "runs": [
+    {
+      "status": 400,
+      "elapsed_ms": 346.84,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042000
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 620.29,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042001
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 504.09,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042002
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 363.68,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042003
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 722.77,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042004
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 502.39,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042005
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 712.16,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042006
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 248.12,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042007
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 781.87,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042008
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 705.84,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042009
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 817.76,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042010
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 764.89,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042011
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 579.31,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042012
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 827.82,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042013
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 294.0,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042014
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 746.67,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042015
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 501.77,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042016
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 353.54,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042017
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 648.8,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042018
+    },
+    {
+      "status": 400,
+      "elapsed_ms": 322.22,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null,
+      "seed": 1779935042019
+    }
+  ],
+  "notes": "20 parallel POSTs with distinct fake CLABEs + distinct Idempotency-Keys. Sandbox-only fake data."
+}

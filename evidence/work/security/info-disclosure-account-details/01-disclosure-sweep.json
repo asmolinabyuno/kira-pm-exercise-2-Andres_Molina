@@ -1,0 +1,1335 @@
+{
+  "captured_at": "2026-05-28T02:24:23.073939+00:00",
+  "ids_used": {
+    "user_id": "ae80515c-2d59-4e02-9678-0bcfd6e9a188",
+    "recipient_id_spei": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+    "recipient_id_ach": "044aeb76-8f56-4344-8eb0-a6b7a7852969",
+    "recipient_id_usdt": "2038f798-efa1-4c94-9dd4-4c60fff9776e",
+    "recipient_id_swift": "2a0cb60a-da7b-4463-afd5-7c0908307c91"
+  },
+  "probes": [
+    {
+      "label": "users-list",
+      "url": "https://api.balampay.com/v1/users?limit=5",
+      "method": "GET",
+      "status": 200,
+      "elapsed_ms": 261.87,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:19 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "24160317-6e60-4334-acdf-f4db4afdbc02",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "3318",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVIGiOvHcEGsA=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"cf6-XzbQHHTiXRq2j/shu3hSyB8AgvA\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:19 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=y4vTob1iiUeaSFNZcb_BHtDdcv2am6z59QUqpecWNI4-1779935059.5808575-1.0.1.1-4VGlAon7gPMHzI0.XBsHL8sHAH8VNDpAhLsKIE4d4PwpVZFD8jycTpPml7w3WhFn6EIPLUj0Et211KfTsmH8CRnau1GaD4IX_8NNrUMem_5S4I28l6lPblzwfDXM_JND; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:19 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029cd6a59811e0e-BOG"
+      },
+      "body": {
+        "data": [
+          {
+            "id": "5a707d0d-7153-4cfb-9905-b89403e30428",
+            "type": "business",
+            "email": "sec+enum-e5-both-1779935009-866b12@example.com",
+            "status": "CREATED",
+            "verification_status": "unverified",
+            "created_at": "2026-05-28T02:23:29.538Z",
+            "updated_at": "2026-05-28T02:23:29.538Z",
+            "verification_mode": "verification_link",
+            "verification_link": "https://verify.aiprise.com/?business_onboarding_session_id=b8e42fb0-2518-4a06-b499-3494b4371fcb",
+            "metadata": {},
+            "business_legal_name": "Test Corp 1779935009",
+            "registered_address": {
+              "street_line_1": "",
+              "street_line_2": "",
+              "city": "",
+              "subdivision": "",
+              "postal_code": "",
+              "country": ""
+            }
+          },
+          {
+            "id": "474692d1-07d6-43c3-b18b-e79b1cfb3c5a",
+            "type": "business",
+            "email": "sec+enum-e4-verification_mode-verification_link-1779935008-58e3e4@example.com",
+            "status": "CREATED",
+            "verification_status": "unverified",
+            "created_at": "2026-05-28T02:23:29.161Z",
+            "updated_at": "2026-05-28T02:23:29.161Z",
+            "verification_mode": "verification_link",
+            "verification_link": "https://verify.aiprise.com/?business_onboarding_session_id=785eea5f-0252-4e36-aa9c-a2f4f806bd25",
+            "metadata": {},
+            "business_legal_name": "Test Corp 1779935008",
+            "registered_address": {
+              "street_line_1": "",
+              "street_line_2": "",
+              "city": "",
+              "subdivision": "",
+              "postal_code": "",
+              "country": ""
+            }
+          },
+          {
+            "id": "0ec71bc1-39e0-4a85-b15e-374ead89f9a6",
+            "type": "business",
+            "email": "sec+enum-e3-status-inactive-1779935008-607d81@example.com",
+            "status": "CREATED",
+            "verification_status": "unverified",
+            "created_at": "2026-05-28T02:23:28.849Z",
+            "updated_at": "2026-05-28T02:23:28.849Z",
+            "verification_mode": "automatic",
+            "metadata": {},
+            "business_legal_name": "Test Corp 1779935008",
+            "registered_address": {
+              "street_line_1": "",
+              "street_line_2": "",
+              "city": "",
+              "subdivision": "",
+              "postal_code": "",
+              "country": "USA"
+            },
+            "associated_persons": [
+              {
+                "ssn": "000-00-0000",
+                "is_signer": true,
+                "last_name": "Signer",
+                "birth_date": "1975-08-22",
+                "first_name": "Test",
+                "nationality": "USA",
+                "has_ownership": true,
+                "ownership_percentage": 100
+              }
+            ]
+          },
+          {
+            "id": "6b4553f4-db49-4703-a110-57de01af55e7",
+            "type": "business",
+            "email": "sec+enum-e2-status-suspended-1779935008-f56eeb@example.com",
+            "status": "CREATED",
+            "verification_status": "unverified",
+            "created_at": "2026-05-28T02:23:28.531Z",
+            "updated_at": "2026-05-28T02:23:28.531Z",
+            "verification_mode": "automatic",
+            "metadata": {},
+            "business_legal_name": "Test Corp 1779935008",
+            "registered_address": {
+              "street_line_1": "",
+              "street_line_2": "",
+              "city": "",
+              "subdivision": "",
+              "postal_code": "",
+              "country": "USA"
+            },
+            "associated_persons": [
+              {
+                "ssn": "000-00-0000",
+                "is_signer": true,
+                "last_name": "Signer",
+                "birth_date": "1975-08-22",
+                "first_name": "Test",
+                "nationality": "USA",
+                "has_ownership": true,
+                "ownership_percentage": 100
+              }
+            ]
+          },
+          {
+            "id": "c80f5edb-cfe2-4769-8d0b-5be408edaf25",
+            "type": "business",
+            "email": "sec+enum-e1-status-active-lowercase-1779935008-22ce9b@example.com",
+            "status": "CREATED",
+            "verification_status": "unverified",
+            "created_at": "2026-05-28T02:23:28.249Z",
+            "updated_at": "2026-05-28T02:23:28.249Z",
+            "verification_mode": "automatic",
+            "metadata": {},
+            "business_legal_name": "Test Corp 1779935008",
+            "registered_address": {
+              "street_line_1": "",
+              "street_line_2": "",
+              "city": "",
+              "subdivision": "",
+              "postal_code": "",
+              "country": "USA"
+            },
+            "associated_persons": [
+              {
+                "ssn": "000-00-0000",
+                "is_signer": true,
+                "last_name": "Signer",
+                "birth_date": "1975-08-22",
+                "first_name": "Test",
+                "nationality": "USA",
+                "has_ownership": true,
+                "ownership_percentage": 100
+              }
+            ]
+          }
+        ],
+        "pagination": {
+          "total": 23,
+          "limit": 5,
+          "offset": 0,
+          "has_more": true
+        }
+      }
+    },
+    {
+      "label": "user-detail",
+      "url": "https://api.balampay.com/v1/users/ae80515c-2d59-4e02-9678-0bcfd6e9a188",
+      "method": "GET",
+      "status": 200,
+      "elapsed_ms": 538.09,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:20 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "608d4bf7-c486-44a9-a59c-2d92db27e181",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "3929",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVOHHlvHcEhig=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"f59-Yg7XE+5zgAqPhW1nrLx9CFhcnOs\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:20 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=zl1ZyTC.9v3D1DNE2wdR2Z2kVdnhIUqOP02yqq4qb8I-1779935060.1412067-1.0.1.1-ksyrZ.UOqeLmxKOhrtoxnUI2vL7iVcu_nwPSxHgECwL3zgIvJ7JY8FTy27HpkAVfq9sUCltRwh1t4wQ2UGxROPNLgZHXhXblxZkgp.MahG7ksyQ1pPsA62IclCRYNACv; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:20 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029cd6defd3a57b-MIA"
+      },
+      "body": {
+        "id": "ae80515c-2d59-4e02-9678-0bcfd6e9a188",
+        "type": "business",
+        "email": "ops+phase2-1779928419-312dc5@example.com",
+        "status": "CREATED",
+        "verification_status": "unverified",
+        "created_at": "2026-05-28T00:33:39.255Z",
+        "updated_at": "2026-05-28T01:00:20.092Z",
+        "verification_mode": "automatic",
+        "metadata": {
+          "i": "9",
+          "k": "v",
+          "ts": "1779930019",
+          "batch": "B",
+          "probe": "non-sensitive-update",
+          "latency_probe": "true"
+        },
+        "formation_country": "USA",
+        "business_legal_name": "Test Corp 1779928419",
+        "registered_address": {
+          "street_line_1": "123 Fake Ave",
+          "street_line_2": "",
+          "city": "Wilmington",
+          "subdivision": "DE",
+          "postal_code": "19801",
+          "country": "USA"
+        },
+        "associated_persons": [
+          {
+            "ssn": "000-00-0000",
+            "email": "signer+batchB-1779929750@example.com",
+            "is_signer": true,
+            "last_name": "Signer",
+            "birth_date": "1975-08-22",
+            "first_name": "Test",
+            "nationality": "USA",
+            "has_ownership": true,
+            "document_number": "FAKE-DOC-00000001",
+            "ownership_percentage": 100
+          },
+          {
+            "ssn": "000-00-0000",
+            "email": "signer+batchB-1779929726@example.com",
+            "is_signer": true,
+            "last_name": "Signer",
+            "birth_date": "1975-08-22",
+            "first_name": "Test",
+            "nationality": "USA",
+            "has_ownership": true,
+            "document_number": "FAKE-DOC-00000001",
+            "ownership_percentage": 100
+          },
+          {
+            "ssn": "000-00-0000",
+            "email": "signer+batchB-1779929659@example.com",
+            "is_signer": true,
+            "last_name": "Signer",
+            "birth_date": "1975-08-22",
+            "first_name": "Test",
+            "nationality": "USA",
+            "has_ownership": true,
+            "document_number": "FAKE-DOC-00000001",
+            "ownership_percentage": 100
+          },
+          {
+            "ssn": "000-00-0000",
+            "is_signer": true,
+            "last_name": "Signer",
+            "birth_date": "1975-08-22",
+            "first_name": "Test",
+            "nationality": "USA",
+            "has_ownership": true,
+            "ownership_percentage": 100
+          }
+        ],
+        "eligible_products": [
+          {
+            "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+            "product_code": "payment_link",
+            "product_name": "Payment Link",
+            "eligible": false
+          },
+          {
+            "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+            "product_code": "cash_deposit",
+            "product_name": "Cash Deposit",
+            "eligible": false
+          },
+          {
+            "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+            "product_code": "card_deposit",
+            "product_name": "Card Deposit",
+            "eligible": false
+          },
+          {
+            "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+            "product_code": "payout",
+            "product_name": "Payout",
+            "eligible": false
+          },
+          {
+            "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+            "product_code": "virtual_account",
+            "product_name": "Virtual Account",
+            "eligible": false
+          },
+          {
+            "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+            "product_code": "pse_deposit",
+            "product_name": "PSE Deposit",
+            "eligible": false
+          },
+          {
+            "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+            "product_code": "virtual_account_spei",
+            "product_name": "Virtual Account SPEI",
+            "eligible": false
+          },
+          {
+            "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+            "product_code": "usa-virtual-accounts",
+            "product_name": "USA Virtual Accounts",
+            "eligible": false
+          },
+          {
+            "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+            "product_code": "usa-va-deposit-settlement",
+            "product_name": "USA Virtual Accounts Settlements",
+            "eligible": false
+          },
+          {
+            "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+            "product_code": "usa-va-crypto-payout",
+            "product_name": "US VA Crypto Payout",
+            "eligible": false
+          },
+          {
+            "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+            "product_code": "usa-va-fiat-payout",
+            "product_name": "US VA Fiat Payout",
+            "eligible": false
+          },
+          {
+            "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+            "product_code": "usa-virtual-accounts-act",
+            "product_name": "USA Virtual Accounts (ACT)",
+            "eligible": false
+          },
+          {
+            "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+            "product_code": "usa-va-fiat-to-crypto-payout",
+            "product_name": "USA VA Fiat to Crypto Payout",
+            "eligible": false
+          }
+        ],
+        "missing_fields": {
+          "usa-virtual-accounts": [
+            "doing_business_as",
+            "business_industry",
+            "phone",
+            "document_number",
+            "identifying_information:file_proof_of_address",
+            "identifying_information:file_business_formation",
+            "identifying_information:file_source_of_wealth",
+            "associated_persons:identifying_information:front",
+            "associated_persons:identifying_information:back:unless_doc_type:passport"
+          ],
+          "usa-virtual-accounts-act": [
+            "associated_persons:email",
+            "associated_persons:document_number"
+          ]
+        }
+      }
+    },
+    {
+      "label": "recipients-list",
+      "url": "https://api.balampay.com/v1/recipients?user_id=ae80515c-2d59-4e02-9678-0bcfd6e9a188",
+      "method": "GET",
+      "status": 200,
+      "elapsed_ms": 260.8,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:20 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "27",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "58b48414-d2ad-4616-a2c1-8a5e8977a0fc",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "27",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVQEI1vHcEDyA=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"1b-zrdD+T9SMdxM+tttSLSKDWbCAs8\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:20 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=sxrhg2upsmqJfWDaMX.Rmagxk8IZEtIzNobj3uA06Mc-1779935060.3816016-1.0.1.1-9NDAYhdjCh8cZd._63rKwBuzNlCLKTTe0pcwauF1QSTZaAH7tryhZjKZIAGnsbkO_PrhL9Irwv5dC.6vu85ipvbuuIhrMOgHmm8XmhzvCsE9ufP_NzCQ6uYzVt7Q8Y2v; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:20 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029cd6f6d321e02-BOG"
+      },
+      "body": {
+        "recipients": [],
+        "total": 0
+      }
+    },
+    {
+      "label": "recipient_id_spei-detail",
+      "url": "https://api.balampay.com/v1/recipients/ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "method": "GET",
+      "status": 200,
+      "elapsed_ms": 253.33,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:20 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "78a98f97-30fd-43b3-8d05-b0a21089403d",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "422",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVTGZxPHcEn2A=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"1a6-U+Tvj8XVSH/KmMvVy55RPzf7Xag\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:20 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=oogUiA2JIEe1o_9KBGYAHSZurwSxkz_CTMuiY4GIcPQ-1779935060.647967-1.0.1.1-I6YUmP8xFPWKiE0MT8omJBVbvaNbGIUSW5ejSn0VxHR6cs4UjdeKDUiGprjwtCEiODP5WG6_VZ4kuHeWSzMQN52_tjQMZZhCkjUIC9.DoVkxUb_601qYO0Sif5oiveCS; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:20 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029cd710c3c8cbb-BOG"
+      },
+      "body": {
+        "recipient_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+        "type": "individual",
+        "first_name": "Test",
+        "last_name": "Beneficiary",
+        "phone": "+525512345678",
+        "email": "test+spei@example.com",
+        "account_type": "SPEI",
+        "account_details": {
+          "clabe": "012180001234567890",
+          "doc_type": "rfc",
+          "doc_number": "TFAK900101AAA",
+          "doc_country_code": "MX"
+        },
+        "created_ts": "2026-05-28 00:52:49.879228+00",
+        "updated_ts": "2026-05-28 00:52:49.879228+00",
+        "metadata": {}
+      }
+    },
+    {
+      "label": "recipient_id_ach-detail",
+      "url": "https://api.balampay.com/v1/recipients/044aeb76-8f56-4344-8eb0-a6b7a7852969",
+      "method": "GET",
+      "status": 200,
+      "elapsed_ms": 242.12,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:21 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "6c8937ea-3cf6-4805-a425-e35fe8667984",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "637",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVVFWWPHcEYJg=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"27d-o6mUxdmRymqSDjrOBBNozw9QaTc\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:21 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=ZLSJdiwXgPIZ1EGTTSmZOhTo_is_d9Qqk_qklfVdyGI-1779935060.9079335-1.0.1.1-QR8P6tt11MiBcLns5lCXD.CXdLJ8pdPmiBqkrWCPshwguADqvv0zVJgdxKEaZDJ_1FRkm_XVMOprjQJHIm9QR69eII8086GyIaHeDhjh967HyHfdab.v_T4chxW8da.5; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:21 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029cd72aeaa713a-BOG"
+      },
+      "body": {
+        "recipient_id": "044aeb76-8f56-4344-8eb0-a6b7a7852969",
+        "type": "individual",
+        "first_name": "Test",
+        "last_name": "Recipient",
+        "phone": "+15555550100",
+        "email": "test+ach@example.com",
+        "address": {
+          "street_name": "100 Test St",
+          "city": "San Francisco",
+          "state": "CA",
+          "postal_code": "94105",
+          "country": "US"
+        },
+        "account_type": "ACH",
+        "account_details": {
+          "routing_number": "021000089",
+          "account_number": "000123456789",
+          "type": "checking",
+          "bank_name": "Test US Bank N.A.",
+          "bank_address": "1 Bank Plaza, New York, NY 10001, USA",
+          "doc_type": "id",
+          "doc_number": "FAKE000000"
+        },
+        "created_ts": "2026-05-28 00:54:15.43984+00",
+        "updated_ts": "2026-05-28 00:54:15.43984+00",
+        "metadata": {}
+      }
+    },
+    {
+      "label": "recipient_id_usdt-detail",
+      "url": "https://api.balampay.com/v1/recipients/2038f798-efa1-4c94-9dd4-4c60fff9776e",
+      "method": "GET",
+      "status": 200,
+      "elapsed_ms": 274.48,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:21 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "fc2ba38e-aea9-46b3-93a0-590c26710de0",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "381",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVYEnCvHcErLg=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"17d-KEOyLGOR0M+RaQcBbpedTPm0LIk\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:21 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=_lpzVorbWJfF7Y8q5M1yEmhFePQV3g.rDss2kdca5nk-1779935061.1487331-1.0.1.1-1Ap5LGfQwa6lVXYKHvO6cf8ZEE7N90EhJGRhn5W2lVv5kzL6lQlX9_sCYdxKrrjPnisF5OYlBLAvmuMHIJAcEAWfxJG5sAXQoCpY6Rtoxo_ldPK9cn78jZQG0pwYAxdV; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:21 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029cd742fac0da0-BOG"
+      },
+      "body": {
+        "recipient_id": "2038f798-efa1-4c94-9dd4-4c60fff9776e",
+        "type": "individual",
+        "first_name": "Test",
+        "last_name": "WalletHolder",
+        "email": "test+usdt@example.com",
+        "account_type": "WALLET",
+        "account_details": {
+          "token": "REDACTED(4)",
+          "address": "TLsV52sRDL79HXGGm9yzwKibb6BeruhUzy",
+          "network": "tron"
+        },
+        "created_ts": "2026-05-28 00:54:15.977711+00",
+        "updated_ts": "2026-05-28 00:54:15.977711+00",
+        "metadata": {}
+      }
+    },
+    {
+      "label": "recipient_id_swift-detail",
+      "url": "https://api.balampay.com/v1/recipients/2a0cb60a-da7b-4463-afd5-7c0908307c91",
+      "method": "GET",
+      "status": 200,
+      "elapsed_ms": 320.89,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:21 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "e800d652-9678-46e0-8871-71a327542962",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "739",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVbGwuPHcEntA=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"2e3-hiWco47d7l2A7khZY5Fh7fAZMbc\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:21 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=yxmZQ7DbkBIUkVKuhmwYlPx_.fikFDHW2TkSzrtAQv8-1779935061.432939-1.0.1.1-kqrAtzGx0w.hA_QGGEQCvYJAWypUSpVENj4ZuMrjZguKnMmmf11D1XHl33JTykHNFPxUx8y8gHSEQh_peGRd80EOReA_hlsMrk2osZSmRH8fGwYMOPQ1NrsEHQDqwW1Y; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:21 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029cd75fd72386d-BOG"
+      },
+      "body": {
+        "recipient_id": "2a0cb60a-da7b-4463-afd5-7c0908307c91",
+        "type": "individual",
+        "first_name": "Test",
+        "last_name": "EuroBeneficiary",
+        "phone": "+34900000000",
+        "email": "test+swift@example.com",
+        "address": {
+          "street_name": "1 Recipient St",
+          "city": "Madrid",
+          "state": "Madrid",
+          "postal_code": "28001",
+          "country": "ES"
+        },
+        "account_type": "SWIFT",
+        "account_details": {
+          "account_number": "ES7100000000000000000000",
+          "swift_code": "TESTESM0XXX",
+          "bank_name": "Test European Bank S.A.",
+          "bank_address": {
+            "street_name": "1 Bank Avenue",
+            "city": "Madrid",
+            "state": "Madrid",
+            "postal_code": "28001",
+            "country": "ES"
+          },
+          "doc_type": "passport",
+          "doc_number": "FAKE000000",
+          "doc_country_code": "ES"
+        },
+        "created_ts": "2026-05-28 00:54:16.464742+00",
+        "updated_ts": "2026-05-28 00:54:16.464742+00",
+        "metadata": {}
+      }
+    },
+    {
+      "label": "err-bad-uuid-user",
+      "url": "https://api.balampay.com/v1/users/not-a-uuid",
+      "method": "GET",
+      "status": 400,
+      "elapsed_ms": 244.86,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:21 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "5d7f21b1-9558-4e0e-8150-9a9740f20484",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "122",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVeGT6PHcEJeQ=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"7a-CD0CBaR3ezyjO7ophy78H6f3dN8\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:21 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=pxtTPq.tJXmsqQr2DOffyx.A7tNrvrxcgnIVPaTqj6A-1779935061.7474551-1.0.1.1-7q9hhKr1nyG0KJd_0M2ae4Jg.PvJ6qxK4yLqzKWhb0pb5MW8cJT8ZMWzEaikL50qcy.m0gkrT_ClpGb9PEoGaGmPROpjOjaJomO8X5LhFr3FY.ksVeIygQDrIUXClXBz; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:21 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029cd77edb01bc9-BOG"
+      },
+      "body": {
+        "error": "Invalid request data",
+        "details": [
+          {
+            "path": "user_id",
+            "message": "Invalid user ID format",
+            "code": "invalid_string"
+          }
+        ]
+      }
+    },
+    {
+      "label": "err-bad-uuid-recipient",
+      "url": "https://api.balampay.com/v1/recipients/not-a-uuid",
+      "method": "GET",
+      "status": 400,
+      "elapsed_ms": 314.67,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:22 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "131",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "d391ab0e-3388-45f3-8a0e-4cc8f17d13d3",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "131",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVhHdlvHcEs7Q=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"83-28YxRKw90e3FiZOEttspaKQdY/g\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:22 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=5HtmZcSRyJLkmrnobSwQuuEDV3N63E1hI5vvlVIPets-1779935062.0711799-1.0.1.1-1J3s10uBRnkazswPCF9_o5.L6AL1i0UTHCcd.lBVovR5kQs1A7pI3s8vxo3w_r8_j8EaJ_kXQ9mdCEZANDnSS9_Ak2NHArPpc8P1QmIGNSbKCGNZo37wwVZtTrgSjqQC; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:22 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029cd79f86907ce-BOG"
+      },
+      "body": {
+        "error": "Invalid request data",
+        "details": [
+          {
+            "path": "recipientId",
+            "message": "Invalid recipient ID format",
+            "code": "invalid_string"
+          }
+        ]
+      }
+    },
+    {
+      "label": "err-massive-limit-users",
+      "url": "https://api.balampay.com/v1/users?limit=100000",
+      "method": "GET",
+      "status": 500,
+      "elapsed_ms": 320.46,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:22 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "52",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "f6baa9f8-51fa-471f-b70d-7dd9e3f9e6b4",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "52",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVjGuwvHcEfPw=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"34-Beo0uDQ1v/QUMc10iip0z2Tp9uQ\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:22 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=HitIHsNAZgpuhGRE.Y0._TIBpL0ap4QPntnTo4XoySQ-1779935062.3080964-1.0.1.1-rMdJn3.uLwnNAdMMykwTedLkz83rF2TgJRoPBvlanjPdSf2Q_p7YZ_QXfYIDL_RwwnZ.GMqIt6QsolUpfAoMFzBhGCBAcUcxblzK2H_aTeXmUZaRdnewVpkZ1mkbeN9N; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:22 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029cd7b6966148f-BOG"
+      },
+      "body": {
+        "status": "error",
+        "message": "Internal server error"
+      }
+    },
+    {
+      "label": "err-bogus-query-banks",
+      "url": "https://api.balampay.com/v1/banks?country_code=ZZZ",
+      "method": "GET",
+      "status": 400,
+      "elapsed_ms": 228.82,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:22 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "144",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "7e40e1c7-175e-4396-aba4-4af1e324f3b4",
+        "x-dns-prefetch-control": "off",
+        "referrer-policy": "no-referrer",
+        "x-permitted-cross-domain-policies": "none",
+        "x-xss-protection": "0",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-amzn-remapped-content-length": "144",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+        "origin-agent-cluster": "?1",
+        "x-amzn-remapped-connection": "keep-alive",
+        "cross-origin-opener-policy": "same-origin",
+        "x-download-options": "noopen",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVmH7VPHcEfBw=",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff",
+        "etag": "W/\"90-/xRch50fs9XDzR+zR56EwBBww48\"",
+        "cross-origin-resource-policy": "same-origin",
+        "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:22 GMT",
+        "access-control-allow-credentials": "true",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=K4qzUC1HzaWvq6GOeSuOSlrDyXNSERqQJnZNsbuV7c0-1779935062.617226-1.0.1.1-firYmiK8gviY8A9wl_rStKalQ1xVReblKMHTJR30X_oQ7eyMbtKfjyi3mcfiSt5AFuhOV3xPEFexMPNlhp_piOVaG.Lazeyi.vin.lKskzIpS6Ze3zM8lLPT1W40JMGy; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:22 GMT",
+        "server": "cloudflare",
+        "cf-ray": "a029cd7d5c691ed3-BOG"
+      },
+      "body": {
+        "error": "Invalid request data",
+        "details": [
+          {
+            "path": "country_code",
+            "message": "Invalid literal value, expected \"CO\"",
+            "code": "invalid_literal"
+          }
+        ]
+      }
+    },
+    {
+      "label": "err-unknown-path",
+      "url": "https://api.balampay.com/v1/this-endpoint-does-not-exist",
+      "method": "GET",
+      "status": 403,
+      "elapsed_ms": 301.05,
+      "response_headers": {
+        "date": "Thu, 28 May 2026 02:24:23 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "x-amzn-requestid": "5ea0c2cb-4ffe-4c4e-9d64-7b64a2aaade7",
+        "x-amzn-errortype": "IncompleteSignatureException",
+        "x-amz-apigw-id": "eDcVpFTePHcEIaQ=",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=F7XblxwvvcVkSsQkNmYXmG9SSipGo195qjpVn7DCkgg-1779935062.8515804-1.0.1.1-gc5AiHNcazoUXzBSA8AOHu7tHCrkoDIsvT9tJRwjXBdhe5WLrNboO5jJk76R7J3GeWxrun_adhn85.vKQHnuAwq4dzCfsp.m4qjPAPB5QWJPshdA1k.X8OAcortd_d.q; HttpOnly; SameSite=None; Secure; Path=/; Domain=balampay.com; Expires=Thu, 28 May 2026 02:54:23 GMT",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "a029cd7ecf4c9426-BOG"
+      },
+      "body": {
+        "message": "Invalid key=value pair (missing equal-sign) in Authorization header (hashed with SHA-256 and encoded with Base64): '/vTWWppr+9Ffd3RLXh9wej0ya8LpUse0iLAGaMR5ArI='."
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "label": "users-list",
+      "url": "https://api.balampay.com/v1/users?limit=5",
+      "status": 200,
+      "sensitive_fields_found": [
+        {
+          "path": "$.data[2].associated_persons[0].ssn",
+          "key": "ssn",
+          "value_repr": "000-00-0000",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.data[3].associated_persons[0].ssn",
+          "key": "ssn",
+          "value_repr": "000-00-0000",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.data[4].associated_persons[0].ssn",
+          "key": "ssn",
+          "value_repr": "000-00-0000",
+          "looks_masked": false,
+          "is_nested": false
+        }
+      ],
+      "unmasked_sensitive_field_count": 3,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "24160317-6e60-4334-acdf-f4db4afdbc02",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVIGiOvHcEGsA=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "user-detail",
+      "url": "https://api.balampay.com/v1/users/ae80515c-2d59-4e02-9678-0bcfd6e9a188",
+      "status": 200,
+      "sensitive_fields_found": [
+        {
+          "path": "$.associated_persons[0].ssn",
+          "key": "ssn",
+          "value_repr": "000-00-0000",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.associated_persons[0].document_number",
+          "key": "document_number",
+          "value_repr": "FAKE-DOC-00000001",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.associated_persons[1].ssn",
+          "key": "ssn",
+          "value_repr": "000-00-0000",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.associated_persons[1].document_number",
+          "key": "document_number",
+          "value_repr": "FAKE-DOC-00000001",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.associated_persons[2].ssn",
+          "key": "ssn",
+          "value_repr": "000-00-0000",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.associated_persons[2].document_number",
+          "key": "document_number",
+          "value_repr": "FAKE-DOC-00000001",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.associated_persons[3].ssn",
+          "key": "ssn",
+          "value_repr": "000-00-0000",
+          "looks_masked": false,
+          "is_nested": false
+        }
+      ],
+      "unmasked_sensitive_field_count": 7,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "608d4bf7-c486-44a9-a59c-2d92db27e181",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVOHHlvHcEhig=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "recipients-list",
+      "url": "https://api.balampay.com/v1/recipients?user_id=ae80515c-2d59-4e02-9678-0bcfd6e9a188",
+      "status": 200,
+      "sensitive_fields_found": [],
+      "unmasked_sensitive_field_count": 0,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "58b48414-d2ad-4616-a2c1-8a5e8977a0fc",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVQEI1vHcEDyA=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "recipient_id_spei-detail",
+      "url": "https://api.balampay.com/v1/recipients/ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "status": 200,
+      "sensitive_fields_found": [
+        {
+          "path": "$.account_details.clabe",
+          "key": "clabe",
+          "value_repr": "012180001234567890",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.account_details.doc_number",
+          "key": "doc_number",
+          "value_repr": "TFAK900101AAA",
+          "looks_masked": false,
+          "is_nested": false
+        }
+      ],
+      "unmasked_sensitive_field_count": 2,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "78a98f97-30fd-43b3-8d05-b0a21089403d",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVTGZxPHcEn2A=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "recipient_id_ach-detail",
+      "url": "https://api.balampay.com/v1/recipients/044aeb76-8f56-4344-8eb0-a6b7a7852969",
+      "status": 200,
+      "sensitive_fields_found": [
+        {
+          "path": "$.address",
+          "key": "address",
+          "value_repr": "{\"street_name\": \"100 Test St\", \"city\": \"San Francisco\", \"state\": \"CA\", \"postal_code\": \"94105\", \"country\": \"US\"}",
+          "looks_masked": false,
+          "is_nested": true
+        },
+        {
+          "path": "$.account_details.routing_number",
+          "key": "routing_number",
+          "value_repr": "021000089",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.account_details.account_number",
+          "key": "account_number",
+          "value_repr": "000123456789",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.account_details.doc_number",
+          "key": "doc_number",
+          "value_repr": "FAKE000000",
+          "looks_masked": false,
+          "is_nested": false
+        }
+      ],
+      "unmasked_sensitive_field_count": 3,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "6c8937ea-3cf6-4805-a425-e35fe8667984",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVVFWWPHcEYJg=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "recipient_id_usdt-detail",
+      "url": "https://api.balampay.com/v1/recipients/2038f798-efa1-4c94-9dd4-4c60fff9776e",
+      "status": 200,
+      "sensitive_fields_found": [
+        {
+          "path": "$.account_details.address",
+          "key": "address",
+          "value_repr": "TLsV52sRDL79HXGGm9yzwKibb6BeruhUzy",
+          "looks_masked": false,
+          "is_nested": false
+        }
+      ],
+      "unmasked_sensitive_field_count": 1,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "fc2ba38e-aea9-46b3-93a0-590c26710de0",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVYEnCvHcErLg=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "recipient_id_swift-detail",
+      "url": "https://api.balampay.com/v1/recipients/2a0cb60a-da7b-4463-afd5-7c0908307c91",
+      "status": 200,
+      "sensitive_fields_found": [
+        {
+          "path": "$.address",
+          "key": "address",
+          "value_repr": "{\"street_name\": \"1 Recipient St\", \"city\": \"Madrid\", \"state\": \"Madrid\", \"postal_code\": \"28001\", \"country\": \"ES\"}",
+          "looks_masked": false,
+          "is_nested": true
+        },
+        {
+          "path": "$.account_details.account_number",
+          "key": "account_number",
+          "value_repr": "ES7100000000000000000000",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.account_details.swift_code",
+          "key": "swift_code",
+          "value_repr": "TESTESM0XXX",
+          "looks_masked": false,
+          "is_nested": false
+        },
+        {
+          "path": "$.account_details.doc_number",
+          "key": "doc_number",
+          "value_repr": "FAKE000000",
+          "looks_masked": false,
+          "is_nested": false
+        }
+      ],
+      "unmasked_sensitive_field_count": 3,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "e800d652-9678-46e0-8871-71a327542962",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVbGwuPHcEntA=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "err-bad-uuid-user",
+      "url": "https://api.balampay.com/v1/users/not-a-uuid",
+      "status": 400,
+      "sensitive_fields_found": [],
+      "unmasked_sensitive_field_count": 0,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "5d7f21b1-9558-4e0e-8150-9a9740f20484",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVeGT6PHcEJeQ=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "err-bad-uuid-recipient",
+      "url": "https://api.balampay.com/v1/recipients/not-a-uuid",
+      "status": 400,
+      "sensitive_fields_found": [],
+      "unmasked_sensitive_field_count": 0,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "d391ab0e-3388-45f3-8a0e-4cc8f17d13d3",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVhHdlvHcEs7Q=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "err-massive-limit-users",
+      "url": "https://api.balampay.com/v1/users?limit=100000",
+      "status": 500,
+      "sensitive_fields_found": [],
+      "unmasked_sensitive_field_count": 0,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "f6baa9f8-51fa-471f-b70d-7dd9e3f9e6b4",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVjGuwvHcEfPw=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "err-bogus-query-banks",
+      "url": "https://api.balampay.com/v1/banks?country_code=ZZZ",
+      "status": 400,
+      "sensitive_fields_found": [],
+      "unmasked_sensitive_field_count": 0,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json; charset=utf-8",
+        "x-amzn-requestid": "7e40e1c7-175e-4396-aba4-4af1e324f3b4",
+        "x-api-version": "2026-04-14",
+        "x-amz-apigw-id": "eDcVmH7VPHcEfBw=",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "label": "err-unknown-path",
+      "url": "https://api.balampay.com/v1/this-endpoint-does-not-exist",
+      "status": 403,
+      "sensitive_fields_found": [],
+      "unmasked_sensitive_field_count": 0,
+      "disclosure_clues": {
+        "framework_hints": [
+          "server",
+          "x-amzn-errortype",
+          "x-amz-apigw-id"
+        ],
+        "stack_trace_in_body": false,
+        "framework_versions": false
+      },
+      "response_headers_subset": {
+        "content-type": "application/json",
+        "x-amzn-requestid": "5ea0c2cb-4ffe-4c4e-9d64-7b64a2aaade7",
+        "x-amzn-errortype": "IncompleteSignatureException",
+        "x-amz-apigw-id": "eDcVpFTePHcEIaQ=",
+        "server": "cloudflare"
+      }
+    }
+  ]
+}

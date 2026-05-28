@@ -1,0 +1,195 @@
+{
+  "scenario": "idempotency-replay-race",
+  "n_parallel": 10,
+  "probe_A_same_key_same_body": {
+    "status_counts": {
+      "201": 10
+    },
+    "ids": [
+      {
+        "worker": 0,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 1,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 2,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 3,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 4,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 5,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 6,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 7,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 8,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      },
+      {
+        "worker": 9,
+        "status": 201,
+        "recipient_id": "bd297852-a63b-4070-ba7e-2c15e4426c4d"
+      }
+    ],
+    "unique_ids": 1
+  },
+  "probe_B_diff_keys_same_body": {
+    "status_counts": {
+      "201": 10
+    },
+    "ids": [
+      {
+        "worker": 0,
+        "status": 201,
+        "recipient_id": "f1cc49ee-6d03-48e3-819d-c11f83ce9fce"
+      },
+      {
+        "worker": 1,
+        "status": 201,
+        "recipient_id": "596fd7f9-e7e1-48be-a139-e191a71db315"
+      },
+      {
+        "worker": 2,
+        "status": 201,
+        "recipient_id": "3f43bf05-86e3-47e9-9842-9b93fe68d5d0"
+      },
+      {
+        "worker": 3,
+        "status": 201,
+        "recipient_id": "b06884a3-9950-46f0-8be2-fc46aeace57e"
+      },
+      {
+        "worker": 4,
+        "status": 201,
+        "recipient_id": "8447652f-ee5f-4d76-bdf5-1efc4a9dbccb"
+      },
+      {
+        "worker": 5,
+        "status": 201,
+        "recipient_id": "723e58db-de54-4e91-a738-cad9ba0c0e1d"
+      },
+      {
+        "worker": 6,
+        "status": 201,
+        "recipient_id": "33f25f14-c4ea-4868-a993-ea1960447d1b"
+      },
+      {
+        "worker": 7,
+        "status": 201,
+        "recipient_id": "6234719e-1317-4261-987b-2e3627a87d27"
+      },
+      {
+        "worker": 8,
+        "status": 201,
+        "recipient_id": "73d0c299-e464-469c-ac67-f745122b528b"
+      },
+      {
+        "worker": 9,
+        "status": 201,
+        "recipient_id": "7bcec09d-1519-4d51-b9c0-b9316040ec19"
+      }
+    ],
+    "unique_ids": 10
+  },
+  "probe_C_same_key_mut_body": {
+    "status_counts": {
+      "409": 9,
+      "201": 1
+    },
+    "ids": [
+      {
+        "worker": 0,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 1,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 2,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 3,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 4,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 5,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 6,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 7,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 8,
+        "status": 409,
+        "recipient_id": null
+      },
+      {
+        "worker": 9,
+        "status": 201,
+        "recipient_id": "e91c17f4-8092-453a-bfa4-913d2121c846"
+      }
+    ]
+  },
+  "probe_D_pair_race": {
+    "status_counts": {
+      "201": 2
+    },
+    "ids": [
+      {
+        "worker": 0,
+        "status": 201,
+        "recipient_id": "3b3d6e9b-96cf-453f-b079-5f71a91be5fa"
+      },
+      {
+        "worker": 1,
+        "status": 201,
+        "recipient_id": "3b3d6e9b-96cf-453f-b079-5f71a91be5fa"
+      }
+    ]
+  }
+}

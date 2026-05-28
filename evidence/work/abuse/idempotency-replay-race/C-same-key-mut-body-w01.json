@@ -1,0 +1,76 @@
+{
+  "captured_at": "2026-05-28T02:23:11.246152+00:00",
+  "elapsed_ms": 807.61,
+  "outcome": "fail-409-race-mut",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "131ea67b-bcd7-4fd3-ae8a-a5c4b9d6c9e5"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "first_name": "Test",
+      "last_name": "MutB",
+      "email": "test+abuse-663858@example.com",
+      "phone": "+525512345678",
+      "account": {
+        "account_type": "SPEI",
+        "clabe": "012180001234567902",
+        "doc_type": "rfc",
+        "doc_number": "TFAK900101AAA",
+        "bank_name": "Test SPEI Bank",
+        "currency": "MXN",
+        "country": "MX"
+      }
+    }
+  },
+  "response": {
+    "status": 409,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:23:11 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "132",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "f098f93a-c036-403f-b036-385677249c90",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "132",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcKaFoyPHcEGdA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"84-GbzooW3iUN5YIk/WtFipE0haJ40\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:23:11 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a029cbbc7d6ab25a-MIA"
+    },
+    "body": {
+      "error": {
+        "code": "IDEMPOTENCY_CONFLICT",
+        "message": "Idempotency key has already been used with different request data",
+        "details": {}
+      }
+    }
+  },
+  "extra": {
+    "worker_index": 1,
+    "t0_perf_ns": 2207475583
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "captured_at": "2026-05-28T00:51:57.532734+00:00",
+  "attempt_id": "9071b72d-1584-4871-bd40-98ccd8ff7194",
+  "elapsed_ms": 387.14,
+  "outcome": "fail-400-v1-country-Mexico-name",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/banks?country=Mexico",
+    "headers": {
+      "Accept": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:51:57 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "150",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "05f9517b-8587-4128-a891-24fe58c53471",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "150",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDOzJG65vHcEd_Q=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"96-CGfPMJ+DUeoTsUuT40UyQP2l57k\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:51:57 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a029461b28155090-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "country_code",
+          "message": "Only CO (Colombia) is supported at this time",
+          "code": "invalid_literal"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3163 @@
+{
+  "captured_at": "2026-05-28T02:22:45.878372+00:00",
+  "probes": [
+    {
+      "finding": {
+        "label": "T1-verification_status-APPROVED",
+        "overlay": {
+          "verification_status": "APPROVED"
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {
+          "verification_status": {
+            "sent": "APPROVED",
+            "echoed": "unverified"
+          }
+        },
+        "persisted_in_get_response": {
+          "verification_status": {
+            "sent": "APPROVED",
+            "persisted": "unverified"
+          }
+        },
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T1-verification_status-APPROVED",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 256.78,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "53797018-293d-401f-bf2a-ccd0fb32bf12"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934957",
+          "email": "sec+mass-t1-verification_status-approved-1779934957-105efc@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "verification_status": "APPROVED"
+        },
+        "response_body": {
+          "id": "51203e01-6d25-4d43-bbde-985223a1c171",
+          "type": "business",
+          "email": "sec+mass-t1-verification_status-approved-1779934957-105efc@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:37.190Z",
+          "updated_at": "2026-05-28T02:22:37.190Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934957",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/51203e01-6d25-4d43-bbde-985223a1c171",
+        "method": "GET",
+        "elapsed_ms": 248.51,
+        "status": 200,
+        "response_body": {
+          "id": "51203e01-6d25-4d43-bbde-985223a1c171",
+          "type": "business",
+          "email": "sec+mass-t1-verification_status-approved-1779934957-105efc@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:37.190Z",
+          "updated_at": "2026-05-28T02:22:37.190Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934957",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "finding": {
+        "label": "T2-status-ACTIVE",
+        "overlay": {
+          "status": "ACTIVE"
+        },
+        "create_status": 400,
+        "echoed_in_create_response": {},
+        "persisted_in_get_response": {},
+        "evaluated": {
+          "verification_status_in_response": null,
+          "status_in_response": null,
+          "verification_triggered_in_response": null
+        }
+      },
+      "create_record": {
+        "label": "T2-status-ACTIVE",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 296.98,
+        "status": 400,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "f643a2d7-736e-4e20-bb02-70d1aabf8db1"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934957",
+          "email": "sec+mass-t2-status-active-1779934957-f47965@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "status": "ACTIVE"
+        },
+        "response_body": {
+          "error": "Invalid request data",
+          "details": [
+            {
+              "path": "status",
+              "message": "Invalid enum value. Expected 'active' | 'inactive' | 'suspended', received 'ACTIVE'",
+              "code": "invalid_enum_value"
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {}
+    },
+    {
+      "finding": {
+        "label": "T3-foreign-client_id",
+        "overlay": {
+          "client_id": "00000000-0000-4000-8000-000000000001"
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {},
+        "persisted_in_get_response": {},
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T3-foreign-client_id",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 262.77,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "949b2382-99cc-4700-970e-bd7052071b5a"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934958",
+          "email": "sec+mass-t3-foreign-client_id-1779934958-a045ea@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "client_id": "REDACTED(36)"
+        },
+        "response_body": {
+          "id": "eb162578-f82d-405b-869c-e84f5c2bce18",
+          "type": "business",
+          "email": "sec+mass-t3-foreign-client_id-1779934958-a045ea@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:38.397Z",
+          "updated_at": "2026-05-28T02:22:38.397Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934958",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/eb162578-f82d-405b-869c-e84f5c2bce18",
+        "method": "GET",
+        "elapsed_ms": 256.3,
+        "status": 200,
+        "response_body": {
+          "id": "eb162578-f82d-405b-869c-e84f5c2bce18",
+          "type": "business",
+          "email": "sec+mass-t3-foreign-client_id-1779934958-a045ea@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:38.397Z",
+          "updated_at": "2026-05-28T02:22:38.397Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934958",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "finding": {
+        "label": "T4-verification_mode-manual",
+        "overlay": {
+          "verification_mode": "manual"
+        },
+        "create_status": 400,
+        "echoed_in_create_response": {},
+        "persisted_in_get_response": {},
+        "evaluated": {
+          "verification_status_in_response": null,
+          "status_in_response": null,
+          "verification_triggered_in_response": null
+        }
+      },
+      "create_record": {
+        "label": "T4-verification_mode-manual",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 317.56,
+        "status": 400,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "9ff52a01-8a93-46e5-adc0-874955b511f3"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934959",
+          "email": "sec+mass-t4-verification_mode-manual-1779934959-55e141@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "verification_mode": "manual"
+        },
+        "response_body": {
+          "error": "Invalid request data",
+          "details": [
+            {
+              "path": "verification_mode",
+              "message": "Invalid enum value. Expected 'automatic' | 'verification_link', received 'manual'",
+              "code": "invalid_enum_value"
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {}
+    },
+    {
+      "finding": {
+        "label": "T5-verified_at-backdate",
+        "overlay": {
+          "verified_at": "2000-01-01T00:00:00Z",
+          "kyb_approved_at": "2000-01-01T00:00:00Z"
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {},
+        "persisted_in_get_response": {},
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T5-verified_at-backdate",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 328.73,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "98075c3f-c2ac-46d5-9127-9f867161b3a1"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934959",
+          "email": "sec+mass-t5-verified_at-backdate-1779934959-a19779@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "verified_at": "2000-01-01T00:00:00Z",
+          "kyb_approved_at": "2000-01-01T00:00:00Z"
+        },
+        "response_body": {
+          "id": "5e36a23a-471b-4901-be81-22796b55d6ea",
+          "type": "business",
+          "email": "sec+mass-t5-verified_at-backdate-1779934959-a19779@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:39.663Z",
+          "updated_at": "2026-05-28T02:22:39.663Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934959",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/5e36a23a-471b-4901-be81-22796b55d6ea",
+        "method": "GET",
+        "elapsed_ms": 326.9,
+        "status": 200,
+        "response_body": {
+          "id": "5e36a23a-471b-4901-be81-22796b55d6ea",
+          "type": "business",
+          "email": "sec+mass-t5-verified_at-backdate-1779934959-a19779@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:39.663Z",
+          "updated_at": "2026-05-28T02:22:39.663Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934959",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "finding": {
+        "label": "T6-eligible_products-override",
+        "overlay": {
+          "eligible_products": [
+            {
+              "product_code": "usa-virtual-accounts",
+              "eligible": true
+            },
+            {
+              "product_code": "payout",
+              "eligible": true
+            }
+          ]
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {
+          "eligible_products": {
+            "sent": [
+              {
+                "product_code": "usa-virtual-accounts",
+                "eligible": true
+              },
+              {
+                "product_code": "payout",
+                "eligible": true
+              }
+            ],
+            "echoed": [
+              {
+                "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+                "product_code": "payment_link",
+                "product_name": "Payment Link",
+                "eligible": false
+              },
+              {
+                "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+                "product_code": "cash_deposit",
+                "product_name": "Cash Deposit",
+                "eligible": false
+              },
+              {
+                "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+                "product_code": "card_deposit",
+                "product_name": "Card Deposit",
+                "eligible": false
+              },
+              {
+                "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+                "product_code": "payout",
+                "product_name": "Payout",
+                "eligible": false
+              },
+              {
+                "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+                "product_code": "virtual_account",
+                "product_name": "Virtual Account",
+                "eligible": false
+              },
+              {
+                "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+                "product_code": "pse_deposit",
+                "product_name": "PSE Deposit",
+                "eligible": false
+              },
+              {
+                "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+                "product_code": "virtual_account_spei",
+                "product_name": "Virtual Account SPEI",
+                "eligible": false
+              },
+              {
+                "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+                "product_code": "usa-virtual-accounts",
+                "product_name": "USA Virtual Accounts",
+                "eligible": false
+              },
+              {
+                "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+                "product_code": "usa-va-deposit-settlement",
+                "product_name": "USA Virtual Accounts Settlements",
+                "eligible": false
+              },
+              {
+                "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+                "product_code": "usa-va-crypto-payout",
+                "product_name": "US VA Crypto Payout",
+                "eligible": false
+              },
+              {
+                "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+                "product_code": "usa-va-fiat-payout",
+                "product_name": "US VA Fiat Payout",
+                "eligible": false
+              },
+              {
+                "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+                "product_code": "usa-virtual-accounts-act",
+                "product_name": "USA Virtual Accounts (ACT)",
+                "eligible": false
+              },
+              {
+                "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+                "product_code": "usa-va-fiat-to-crypto-payout",
+                "product_name": "USA VA Fiat to Crypto Payout",
+                "eligible": false
+              }
+            ]
+          }
+        },
+        "persisted_in_get_response": {
+          "eligible_products": {
+            "sent": [
+              {
+                "product_code": "usa-virtual-accounts",
+                "eligible": true
+              },
+              {
+                "product_code": "payout",
+                "eligible": true
+              }
+            ],
+            "persisted": [
+              {
+                "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+                "product_code": "payment_link",
+                "product_name": "Payment Link",
+                "eligible": false
+              },
+              {
+                "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+                "product_code": "cash_deposit",
+                "product_name": "Cash Deposit",
+                "eligible": false
+              },
+              {
+                "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+                "product_code": "card_deposit",
+                "product_name": "Card Deposit",
+                "eligible": false
+              },
+              {
+                "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+                "product_code": "payout",
+                "product_name": "Payout",
+                "eligible": false
+              },
+              {
+                "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+                "product_code": "virtual_account",
+                "product_name": "Virtual Account",
+                "eligible": false
+              },
+              {
+                "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+                "product_code": "pse_deposit",
+                "product_name": "PSE Deposit",
+                "eligible": false
+              },
+              {
+                "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+                "product_code": "virtual_account_spei",
+                "product_name": "Virtual Account SPEI",
+                "eligible": false
+              },
+              {
+                "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+                "product_code": "usa-virtual-accounts",
+                "product_name": "USA Virtual Accounts",
+                "eligible": false
+              },
+              {
+                "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+                "product_code": "usa-va-deposit-settlement",
+                "product_name": "USA Virtual Accounts Settlements",
+                "eligible": false
+              },
+              {
+                "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+                "product_code": "usa-va-crypto-payout",
+                "product_name": "US VA Crypto Payout",
+                "eligible": false
+              },
+              {
+                "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+                "product_code": "usa-va-fiat-payout",
+                "product_name": "US VA Fiat Payout",
+                "eligible": false
+              },
+              {
+                "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+                "product_code": "usa-virtual-accounts-act",
+                "product_name": "USA Virtual Accounts (ACT)",
+                "eligible": false
+              },
+              {
+                "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+                "product_code": "usa-va-fiat-to-crypto-payout",
+                "product_name": "USA VA Fiat to Crypto Payout",
+                "eligible": false
+              }
+            ]
+          }
+        },
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T6-eligible_products-override",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 307.84,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "7482f79b-a788-4733-b446-dba3181c1915"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934960",
+          "email": "sec+mass-t6-eligible_products-override-1779934960-409d42@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_code": "usa-virtual-accounts",
+              "eligible": true
+            },
+            {
+              "product_code": "payout",
+              "eligible": true
+            }
+          ]
+        },
+        "response_body": {
+          "id": "9a2eb3b1-9d8c-4654-b9be-8b67ee92f606",
+          "type": "business",
+          "email": "sec+mass-t6-eligible_products-override-1779934960-409d42@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:40.697Z",
+          "updated_at": "2026-05-28T02:22:40.697Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934960",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/9a2eb3b1-9d8c-4654-b9be-8b67ee92f606",
+        "method": "GET",
+        "elapsed_ms": 655.57,
+        "status": 200,
+        "response_body": {
+          "id": "9a2eb3b1-9d8c-4654-b9be-8b67ee92f606",
+          "type": "business",
+          "email": "sec+mass-t6-eligible_products-override-1779934960-409d42@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:40.697Z",
+          "updated_at": "2026-05-28T02:22:40.697Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934960",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "finding": {
+        "label": "T7-missing_fields-empty",
+        "overlay": {
+          "missing_fields": {},
+          "verification_triggered": true
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {
+          "missing_fields": {
+            "sent": {},
+            "echoed": {
+              "usa-virtual-accounts": [
+                "doing_business_as",
+                "business_industry",
+                "phone",
+                "address_street",
+                "address_city",
+                "address_zip_code",
+                "document_number",
+                "identifying_information:file_proof_of_address",
+                "identifying_information:file_business_formation",
+                "identifying_information:file_source_of_wealth",
+                "associated_persons:identifying_information:front",
+                "associated_persons:identifying_information:back:unless_doc_type:passport",
+                "account_purpose"
+              ],
+              "usa-virtual-accounts-act": [
+                "formation_country",
+                "address_street",
+                "address_city",
+                "address_state",
+                "address_zip_code",
+                "associated_persons:email",
+                "associated_persons:document_number",
+                "account_purpose"
+              ]
+            }
+          },
+          "verification_triggered": {
+            "sent": true,
+            "echoed": false
+          }
+        },
+        "persisted_in_get_response": {
+          "missing_fields": {
+            "sent": {},
+            "persisted": {
+              "usa-virtual-accounts": [
+                "doing_business_as",
+                "business_industry",
+                "phone",
+                "address_street",
+                "address_city",
+                "address_zip_code",
+                "document_number",
+                "identifying_information:file_proof_of_address",
+                "identifying_information:file_business_formation",
+                "identifying_information:file_source_of_wealth",
+                "associated_persons:identifying_information:front",
+                "associated_persons:identifying_information:back:unless_doc_type:passport",
+                "account_purpose"
+              ],
+              "usa-virtual-accounts-act": [
+                "formation_country",
+                "address_street",
+                "address_city",
+                "address_state",
+                "address_zip_code",
+                "associated_persons:email",
+                "associated_persons:document_number",
+                "account_purpose"
+              ]
+            }
+          }
+        },
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T7-missing_fields-empty",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 302.74,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "50fd7cd0-d694-43df-8511-4bd4238b324a"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934961",
+          "email": "sec+mass-t7-missing_fields-empty-1779934961-827691@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "missing_fields": {},
+          "verification_triggered": true
+        },
+        "response_body": {
+          "id": "f75426a8-2976-4637-98dc-f0940f3c0eff",
+          "type": "business",
+          "email": "sec+mass-t7-missing_fields-empty-1779934961-827691@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:42.106Z",
+          "updated_at": "2026-05-28T02:22:42.106Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934961",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/f75426a8-2976-4637-98dc-f0940f3c0eff",
+        "method": "GET",
+        "elapsed_ms": 329.64,
+        "status": 200,
+        "response_body": {
+          "id": "f75426a8-2976-4637-98dc-f0940f3c0eff",
+          "type": "business",
+          "email": "sec+mass-t7-missing_fields-empty-1779934961-827691@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:42.106Z",
+          "updated_at": "2026-05-28T02:22:42.106Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934961",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "finding": {
+        "label": "T8-is_admin-role",
+        "overlay": {
+          "is_admin": true,
+          "role": "admin",
+          "scope": "admin"
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {},
+        "persisted_in_get_response": {},
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T8-is_admin-role",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 271.26,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "39505f56-af90-400b-8e1c-40b9c61c98ff"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934962",
+          "email": "sec+mass-t8-is_admin-role-1779934962-1787ff@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "is_admin": true,
+          "role": "admin",
+          "scope": "admin"
+        },
+        "response_body": {
+          "id": "39b78312-78af-4c07-b057-858dc7e2db36",
+          "type": "business",
+          "email": "sec+mass-t8-is_admin-role-1779934962-1787ff@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:43.129Z",
+          "updated_at": "2026-05-28T02:22:43.129Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934962",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/39b78312-78af-4c07-b057-858dc7e2db36",
+        "method": "GET",
+        "elapsed_ms": 249.82,
+        "status": 200,
+        "response_body": {
+          "id": "39b78312-78af-4c07-b057-858dc7e2db36",
+          "type": "business",
+          "email": "sec+mass-t8-is_admin-role-1779934962-1787ff@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:43.129Z",
+          "updated_at": "2026-05-28T02:22:43.129Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934962",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "finding": {
+        "label": "T9-fee-override",
+        "overlay": {
+          "fee_override": 0,
+          "fees": {
+            "percentage": 0,
+            "fixed": 0
+          }
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {},
+        "persisted_in_get_response": {},
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T9-fee-override",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 357.31,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "310662f1-130c-4617-ad89-61f67e1a0975"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934963",
+          "email": "sec+mass-t9-fee-override-1779934963-0779ca@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "fee_override": 0,
+          "fees": {
+            "percentage": 0,
+            "fixed": 0
+          }
+        },
+        "response_body": {
+          "id": "5b155920-c57f-408a-86a6-4faa47bc968a",
+          "type": "business",
+          "email": "sec+mass-t9-fee-override-1779934963-0779ca@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:44.141Z",
+          "updated_at": "2026-05-28T02:22:44.141Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934963",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/5b155920-c57f-408a-86a6-4faa47bc968a",
+        "method": "GET",
+        "elapsed_ms": 247.15,
+        "status": 200,
+        "response_body": {
+          "id": "5b155920-c57f-408a-86a6-4faa47bc968a",
+          "type": "business",
+          "email": "sec+mass-t9-fee-override-1779934963-0779ca@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:44.141Z",
+          "updated_at": "2026-05-28T02:22:44.141Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934963",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "finding": {
+        "label": "T10-id-chosen",
+        "overlay": {
+          "id": "11111111-2222-3333-4444-555555555555"
+        },
+        "create_status": 201,
+        "echoed_in_create_response": {
+          "id": {
+            "sent": "11111111-2222-3333-4444-555555555555",
+            "echoed": "118b8e36-8755-4fff-a2a6-f3842021fb28"
+          }
+        },
+        "persisted_in_get_response": {
+          "id": {
+            "sent": "11111111-2222-3333-4444-555555555555",
+            "persisted": "118b8e36-8755-4fff-a2a6-f3842021fb28"
+          }
+        },
+        "evaluated": {
+          "verification_status_in_response": "unverified",
+          "status_in_response": "CREATED",
+          "verification_triggered_in_response": false
+        }
+      },
+      "create_record": {
+        "label": "T10-id-chosen",
+        "url": "https://api.balampay.com/v1/users",
+        "method": "POST",
+        "elapsed_ms": 334.45,
+        "status": 201,
+        "request_headers": {
+          "Content-Type": "application/json",
+          "x-api-key": "REDACTED(40)",
+          "Authorization": "REDACTED(872)",
+          "Idempotency-Key": "b799e4a6-5832-4bcc-bbf0-f7e9bb45d8b0"
+        },
+        "request_body": {
+          "type": "business",
+          "business_legal_name": "Test Corp 1779934964",
+          "email": "sec+mass-t10-id-chosen-1779934964-da736e@example.com",
+          "business_type": "corporation",
+          "formation_date": "2018-03-15",
+          "formation_state": "DE",
+          "address_country": "USA",
+          "ein": "00-0000000",
+          "associated_persons": [
+            {
+              "first_name": "Test",
+              "last_name": "Signer",
+              "ssn": "000-00-0000",
+              "birth_date": "1975-08-22",
+              "nationality": "USA",
+              "is_signer": true,
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "id": "11111111-2222-3333-4444-555555555555"
+        },
+        "response_body": {
+          "id": "118b8e36-8755-4fff-a2a6-f3842021fb28",
+          "type": "business",
+          "email": "sec+mass-t10-id-chosen-1779934964-da736e@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:45.120Z",
+          "updated_at": "2026-05-28T02:22:45.120Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934964",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "verification_triggered": false,
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        "response_headers": {
+          "content-type": "application/json; charset=utf-8"
+        }
+      },
+      "get_record": {
+        "url": "https://api.balampay.com/v1/users/118b8e36-8755-4fff-a2a6-f3842021fb28",
+        "method": "GET",
+        "elapsed_ms": 252.91,
+        "status": 200,
+        "response_body": {
+          "id": "118b8e36-8755-4fff-a2a6-f3842021fb28",
+          "type": "business",
+          "email": "sec+mass-t10-id-chosen-1779934964-da736e@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T02:22:45.120Z",
+          "updated_at": "2026-05-28T02:22:45.120Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779934964",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ],
+          "eligible_products": [
+            {
+              "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+              "product_code": "payment_link",
+              "product_name": "Payment Link",
+              "eligible": false
+            },
+            {
+              "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+              "product_code": "cash_deposit",
+              "product_name": "Cash Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+              "product_code": "card_deposit",
+              "product_name": "Card Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+              "product_code": "payout",
+              "product_name": "Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+              "product_code": "virtual_account",
+              "product_name": "Virtual Account",
+              "eligible": false
+            },
+            {
+              "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+              "product_code": "pse_deposit",
+              "product_name": "PSE Deposit",
+              "eligible": false
+            },
+            {
+              "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+              "product_code": "virtual_account_spei",
+              "product_name": "Virtual Account SPEI",
+              "eligible": false
+            },
+            {
+              "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+              "product_code": "usa-virtual-accounts",
+              "product_name": "USA Virtual Accounts",
+              "eligible": false
+            },
+            {
+              "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+              "product_code": "usa-va-deposit-settlement",
+              "product_name": "USA Virtual Accounts Settlements",
+              "eligible": false
+            },
+            {
+              "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+              "product_code": "usa-va-crypto-payout",
+              "product_name": "US VA Crypto Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+              "product_code": "usa-va-fiat-payout",
+              "product_name": "US VA Fiat Payout",
+              "eligible": false
+            },
+            {
+              "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+              "product_code": "usa-virtual-accounts-act",
+              "product_name": "USA Virtual Accounts (ACT)",
+              "eligible": false
+            },
+            {
+              "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+              "product_code": "usa-va-fiat-to-crypto-payout",
+              "product_name": "USA VA Fiat to Crypto Payout",
+              "eligible": false
+            }
+          ],
+          "missing_fields": {
+            "usa-virtual-accounts": [
+              "doing_business_as",
+              "business_industry",
+              "phone",
+              "address_street",
+              "address_city",
+              "address_zip_code",
+              "document_number",
+              "identifying_information:file_proof_of_address",
+              "identifying_information:file_business_formation",
+              "identifying_information:file_source_of_wealth",
+              "associated_persons:identifying_information:front",
+              "associated_persons:identifying_information:back:unless_doc_type:passport",
+              "account_purpose"
+            ],
+            "usa-virtual-accounts-act": [
+              "formation_country",
+              "address_street",
+              "address_city",
+              "address_state",
+              "address_zip_code",
+              "associated_persons:email",
+              "associated_persons:document_number",
+              "account_purpose"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

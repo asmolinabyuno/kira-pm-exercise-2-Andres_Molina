@@ -1,0 +1,62 @@
+{
+  "captured_at": "2026-05-28T00:55:56.560213+00:00",
+  "attempt_id": "5f72d4b7-dbe5-4ab7-928f-9c6f9ef5ab8b",
+  "elapsed_ms": 241.02,
+  "outcome": "fail-400-validation",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/verification/send",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "7c55845c-b5e4-42d6-add7-6e871100bf8f"
+    },
+    "body": {
+      "user_id": "ae80515c-2d59-4e02-9678-0bcfd6e9a188"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:55:56 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "125",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "08d86fb2-9734-4bed-a140-f8d9430b9174",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "125",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPYgGwnPHcEQDQ=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"7d-FiHCyLmkjlqsHierHZgh5MNdaFU\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:55:56 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a0294bf19b2a6dca-BOG"
+    },
+    "body": {
+      "code": "validation_error",
+      "error": "Invalid data",
+      "details": [
+        {
+          "message": " is Either client_uuid or email must be provided"
+        }
+      ]
+    }
+  }
+}

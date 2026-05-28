@@ -1,0 +1,91 @@
+{
+  "captured_at": "2026-05-28T00:52:50.192691+00:00",
+  "attempt_id": "9330b642-fca9-4080-95b0-0bf7548833d3",
+  "elapsed_ms": 248.88,
+  "outcome": "fail-400-ach",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/recipients",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "f25be058-265e-4e26-bbe0-b79f6ce807bd"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "first_name": "Test",
+      "last_name": "Recipient",
+      "email": "test+ach@example.com",
+      "phone": "+15555550100",
+      "address": {
+        "street_name": "100 Test St",
+        "city": "San Francisco",
+        "state": "CA",
+        "postal_code": "94105",
+        "country": "USA"
+      },
+      "account": {
+        "account_type": "ACH",
+        "routing_number": "021000089",
+        "account_number": "000123456789",
+        "type": "checking",
+        "bank_name": "Test US Bank N.A.",
+        "bank_address": "1 Bank Plaza, New York, NY 10001, USA",
+        "doc_type": "ssn",
+        "doc_number": "000-00-0000",
+        "currency": "USD",
+        "country": "US"
+      }
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:52:50 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "286",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "d1348aa1-d496-4155-bbba-eb84c24daac5",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "286",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDO7ZErovHcEAjQ=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"11e-UXvbPNsH5iwNRKV6PEJbfKMV/4U\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:52:50 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a0294764ad03b290-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "address.country",
+          "message": "Country must be a 2-character ISO code",
+          "code": "too_big"
+        },
+        {
+          "path": "account.doc_type",
+          "message": "Invalid enum value. Expected 'id' | 'dni' | 'passport' | 'ein', received 'ssn'",
+          "code": "invalid_enum_value"
+        }
+      ]
+    }
+  }
+}

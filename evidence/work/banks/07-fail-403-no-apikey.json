@@ -1,0 +1,34 @@
+{
+  "captured_at": "2026-05-28T00:51:58.081670+00:00",
+  "attempt_id": "4e732947-e5a7-46e5-b8da-f6e4756b26af",
+  "elapsed_ms": 299.09,
+  "outcome": "fail-403-no-apikey",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/banks?country=MX",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:51:58 GMT",
+      "content-type": "application/json",
+      "content-length": "24",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "1bf10034-c68f-4110-9fbd-b56cb00ecb62",
+      "x-amzn-errortype": "ForbiddenException",
+      "x-amz-apigw-id": "eDOzQEVAPHcEjMg=",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a029461eac9c9426-BOG"
+    },
+    "body": {
+      "message": "Forbidden"
+    }
+  }
+}

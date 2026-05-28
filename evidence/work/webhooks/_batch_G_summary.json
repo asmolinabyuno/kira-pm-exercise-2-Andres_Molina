@@ -1,0 +1,598 @@
+{
+  "captured_at": "2026-05-28T00:58:11.961494+00:00",
+  "capture_url": "https://webhook.site/3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34",
+  "capture_uuid": "3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34",
+  "register_url": "https://api.balampay.com/webhooks/register",
+  "list_url": "https://api.balampay.com/webhooks",
+  "iterations": [
+    {
+      "iter": 1,
+      "label": "G0.1-path-v1-webhooks-register",
+      "method": "POST",
+      "url": "https://api.balampay.com/v1/webhooks/register",
+      "status": 403,
+      "outcome": "fail-403-G0.1-path-v1-webhooks-register",
+      "elapsed_ms": 284.68,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/01-fail-403-G0.1-path-v1-webhooks-register.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 2,
+      "label": "G0.2-path-webhooks-register-no-v1",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G0.2-path-webhooks-register-no-v1",
+      "elapsed_ms": 521.82,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/02-success-G0.2-path-webhooks-register-no-v1.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 3,
+      "label": "G0.3-list-v1-webhooks",
+      "method": "GET",
+      "url": "https://api.balampay.com/v1/webhooks",
+      "status": 403,
+      "outcome": "fail-403-G0.3-list-v1-webhooks",
+      "elapsed_ms": 212.12,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/03-fail-403-G0.3-list-v1-webhooks.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 4,
+      "label": "G0.4-list-webhooks-no-v1",
+      "method": "GET",
+      "url": "https://api.balampay.com/webhooks",
+      "status": 403,
+      "outcome": "fail-403-G0.4-list-webhooks-no-v1",
+      "elapsed_ms": 317.33,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/04-fail-403-G0.4-list-webhooks-no-v1.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 5,
+      "label": "G2.1-xapikey-only",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 401,
+      "outcome": "fail-401-G2.1-xapikey-only",
+      "elapsed_ms": 233.67,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/05-fail-401-G2.1-xapikey-only.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 6,
+      "label": "G2.2-bearer-only",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 403,
+      "outcome": "fail-403-G2.2-bearer-only",
+      "elapsed_ms": 726.1,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/06-fail-403-G2.2-bearer-only.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 7,
+      "label": "G2.3-both-headers",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G2.3-both-headers",
+      "elapsed_ms": 424.03,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/07-success-G2.3-both-headers.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 8,
+      "label": "G2.4-alt-shape-url-events",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 400,
+      "outcome": "fail-400-G2.4-alt-shape-url-events",
+      "elapsed_ms": 336.83,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "data",
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/08-fail-400-G2.4-alt-shape-url-events.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 9,
+      "label": "G4.1-idem-first",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G4.1-idem-first",
+      "elapsed_ms": 402.4,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/09-success-G4.1-idem-first.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 10,
+      "label": "G4.2-idem-replay-same-body",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G4.2-idem-replay-same-body",
+      "elapsed_ms": 492.94,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/10-success-G4.2-idem-replay-same-body.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 11,
+      "label": "G4.3-idem-conflict-diff-body",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G4.3-idem-conflict-diff-body",
+      "elapsed_ms": 377.0,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/11-success-G4.3-idem-conflict-diff-body.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 12,
+      "label": "ssrf-localhost-80",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-ssrf-localhost-80",
+      "elapsed_ms": 359.96,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/12-success-ssrf-localhost-80.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "http://localhost:80/"
+    },
+    {
+      "iter": 13,
+      "label": "ssrf-127-0-0-1",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-ssrf-127-0-0-1",
+      "elapsed_ms": 380.13,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/13-success-ssrf-127-0-0-1.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "http://127.0.0.1/"
+    },
+    {
+      "iter": 14,
+      "label": "ssrf-aws-imds",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-ssrf-aws-imds",
+      "elapsed_ms": 442.36,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/14-success-ssrf-aws-imds.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "http://169.254.169.254/latest/meta-data/"
+    },
+    {
+      "iter": 15,
+      "label": "ssrf-rfc1918-10",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-ssrf-rfc1918-10",
+      "elapsed_ms": 354.32,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/15-success-ssrf-rfc1918-10.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "http://10.0.0.1/"
+    },
+    {
+      "iter": 16,
+      "label": "ssrf-ipv6-loopback",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-ssrf-ipv6-loopback",
+      "elapsed_ms": 398.25,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/16-success-ssrf-ipv6-loopback.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "http://[::1]/"
+    },
+    {
+      "iter": 17,
+      "label": "ssrf-fragment",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-ssrf-fragment",
+      "elapsed_ms": 366.84,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/17-success-ssrf-fragment.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "https://webhook.site/3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34#evil"
+    },
+    {
+      "iter": 18,
+      "label": "ssrf-ftp-scheme",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 400,
+      "outcome": "fail-400-ssrf-ftp-scheme",
+      "elapsed_ms": 279.28,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "data",
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/18-fail-400-ssrf-ftp-scheme.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "ftp://webhook.site/test"
+    },
+    {
+      "iter": 19,
+      "label": "ssrf-dup-query",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-ssrf-dup-query",
+      "elapsed_ms": 373.55,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/19-success-ssrf-dup-query.json",
+      "secret_present_in_response": false,
+      "id_extracted": null,
+      "probed_url": "https://webhook.site/3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34?a=1&a=2"
+    },
+    {
+      "iter": 20,
+      "label": "G6.1-missing-webhook_url",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 400,
+      "outcome": "fail-400-G6.1-missing-webhook_url",
+      "elapsed_ms": 319.01,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "data",
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/20-fail-400-G6.1-missing-webhook_url.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 21,
+      "label": "G6.2-missing-client_uuid",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 400,
+      "outcome": "fail-400-G6.2-missing-client_uuid",
+      "elapsed_ms": 294.34,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "data",
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/21-fail-400-G6.2-missing-client_uuid.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 22,
+      "label": "G6.3-secret-empty",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 400,
+      "outcome": "fail-400-G6.3-secret-empty",
+      "elapsed_ms": 324.21,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "data",
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/22-fail-400-G6.3-secret-empty.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 23,
+      "label": "G6.4-secret-null",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G6.4-secret-null",
+      "elapsed_ms": 507.36,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/23-success-G6.4-secret-null.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 24,
+      "label": "G6.5-secret-omit",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G6.5-secret-omit",
+      "elapsed_ms": 346.16,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/24-success-G6.5-secret-omit.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 25,
+      "label": "G6.6-http-not-https",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-G6.6-http-not-https",
+      "elapsed_ms": 492.1,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/25-success-G6.6-http-not-https.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 26,
+      "label": "G5.1-list",
+      "method": "GET",
+      "url": "https://api.balampay.com/webhooks",
+      "status": 403,
+      "outcome": "fail-403-G5.1-list",
+      "elapsed_ms": 310.88,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/26-fail-403-G5.1-list.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 27,
+      "label": "G5.3-list-xapikey-only",
+      "method": "GET",
+      "url": "https://api.balampay.com/webhooks",
+      "status": 403,
+      "outcome": "fail-403-G5.3-list-xapikey-only",
+      "elapsed_ms": 222.87,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/27-fail-403-G5.3-list-xapikey-only.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    },
+    {
+      "iter": 28,
+      "label": "cleanup-overwrite-final",
+      "method": "POST",
+      "url": "https://api.balampay.com/webhooks/register",
+      "status": 200,
+      "outcome": "success-cleanup-overwrite-final",
+      "elapsed_ms": 488.23,
+      "shape": {
+        "top_type": "object",
+        "keys": [
+          "message"
+        ]
+      },
+      "evidence": "evidence/work/webhooks/28-success-cleanup-overwrite-final.json",
+      "secret_present_in_response": false,
+      "id_extracted": null
+    }
+  ],
+  "ssrf_results": [
+    {
+      "label": "ssrf-localhost-80",
+      "url": "http://localhost:80/",
+      "status": 200,
+      "accepted": true,
+      "evidence": "evidence/work/webhooks/12-success-ssrf-localhost-80.json"
+    },
+    {
+      "label": "ssrf-127-0-0-1",
+      "url": "http://127.0.0.1/",
+      "status": 200,
+      "accepted": true,
+      "evidence": "evidence/work/webhooks/13-success-ssrf-127-0-0-1.json"
+    },
+    {
+      "label": "ssrf-aws-imds",
+      "url": "http://169.254.169.254/latest/meta-data/",
+      "status": 200,
+      "accepted": true,
+      "evidence": "evidence/work/webhooks/14-success-ssrf-aws-imds.json"
+    },
+    {
+      "label": "ssrf-rfc1918-10",
+      "url": "http://10.0.0.1/",
+      "status": 200,
+      "accepted": true,
+      "evidence": "evidence/work/webhooks/15-success-ssrf-rfc1918-10.json"
+    },
+    {
+      "label": "ssrf-ipv6-loopback",
+      "url": "http://[::1]/",
+      "status": 200,
+      "accepted": true,
+      "evidence": "evidence/work/webhooks/16-success-ssrf-ipv6-loopback.json"
+    },
+    {
+      "label": "ssrf-fragment",
+      "url": "https://webhook.site/3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34#evil",
+      "status": 200,
+      "accepted": true,
+      "evidence": "evidence/work/webhooks/17-success-ssrf-fragment.json"
+    },
+    {
+      "label": "ssrf-ftp-scheme",
+      "url": "ftp://webhook.site/test",
+      "status": 400,
+      "accepted": false,
+      "evidence": "evidence/work/webhooks/18-fail-400-ssrf-ftp-scheme.json"
+    },
+    {
+      "label": "ssrf-dup-query",
+      "url": "https://webhook.site/3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34?a=1&a=2",
+      "status": 200,
+      "accepted": true,
+      "evidence": "evidence/work/webhooks/19-success-ssrf-dup-query.json"
+    }
+  ],
+  "cleanup_results": [
+    {
+      "strategy": "POST-overwrite",
+      "label": "final-clean-overwrite",
+      "status": 200,
+      "evidence": "evidence/work/webhooks/28-success-cleanup-overwrite-final.json"
+    }
+  ],
+  "latency_stats": {
+    "n": 16,
+    "min_ms": 346.16,
+    "max_ms": 521.82,
+    "median_ms": 400.32
+  }
+}

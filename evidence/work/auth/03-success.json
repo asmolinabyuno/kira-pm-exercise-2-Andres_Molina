@@ -1,0 +1,43 @@
+{
+  "captured_at": "2026-05-28T00:31:55.758622+00:00",
+  "attempt_id": "1414d07d-f286-41fc-9d67-b4122335a03d",
+  "elapsed_ms": 1297.76,
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/auth",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)"
+    },
+    "body": {
+      "client_id": "REDACTED(36)",
+      "password": "REDACTED(52)"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:31:55 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "a21f25c3-ea16-49de-b678-5dba6a78daad",
+      "x-amz-apigw-id": "eDL3UEBPvHcEEeA=",
+      "x-amzn-trace-id": "Root=1-6a178cfb-4451f2701c6f4aca5cc1bd3f;Parent=1a8394641af7f3de;Sampled=0;Lineage=1:bb71a2b0:0",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a02928beff18441c-BOG"
+    },
+    "body": {
+      "message": "Auth token",
+      "data": {
+        "access_token": "REDACTED(865)",
+        "expires_in": 3600,
+        "token_type": "Bearer"
+      }
+    }
+  }
+}

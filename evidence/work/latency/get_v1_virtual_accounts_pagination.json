@@ -1,0 +1,78 @@
+{
+  "endpoint": "GET /v1/virtual-accounts",
+  "scenario": "list-pagination-depth-latency/offset-sweep",
+  "n": 6,
+  "min_ms": 190.67,
+  "median_ms": 203.21,
+  "p95_ms": 312.1,
+  "p99_ms": 317.1,
+  "max_ms": 318.35,
+  "samples_ms": [
+    201.17,
+    293.36,
+    318.35,
+    205.26,
+    198.64,
+    190.67
+  ],
+  "offsets": [
+    0,
+    10,
+    100,
+    500,
+    1000,
+    5000
+  ],
+  "limit_fixed": 10,
+  "runs": [
+    {
+      "offset": 0,
+      "status": 200,
+      "elapsed_ms": 201.17,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 10,
+      "status": 200,
+      "elapsed_ms": 293.36,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 100,
+      "status": 200,
+      "elapsed_ms": 318.35,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 500,
+      "status": 200,
+      "elapsed_ms": 205.26,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 1000,
+      "status": 200,
+      "elapsed_ms": 198.64,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 5000,
+      "status": 200,
+      "elapsed_ms": 190.67,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    }
+  ],
+  "notes": "Offset sweep at limit=10."
+}

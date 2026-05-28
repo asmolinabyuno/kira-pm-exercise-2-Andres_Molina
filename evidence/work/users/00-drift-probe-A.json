@@ -1,0 +1,61 @@
+{
+  "captured_at": "2026-05-28T00:31:56.091605+00:00",
+  "attempt_id": "479e92c2-8a48-4092-889b-e5cc06357853",
+  "elapsed_ms": 331.58,
+  "outcome": "drift-probe-A-validation",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/users",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "97f7e47e-ea74-4138-a883-d816fe28353d"
+    },
+    "body": {}
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:31:56 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "173",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "7c7c545b-249f-4ffc-b85e-000988e9ba6f",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "173",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDL3bG1nPHcEeDg=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"ad-ZtARkrcBGe6ZGTAM9tnx9pgrDVs\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:31:55 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a02928c60dda9868-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "type",
+          "message": "Invalid discriminator value. Expected 'individual' | 'business'",
+          "code": "invalid_union_discriminator"
+        }
+      ]
+    }
+  }
+}

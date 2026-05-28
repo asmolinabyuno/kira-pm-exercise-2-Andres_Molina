@@ -1,0 +1,228 @@
+{
+  "captured_at": "2026-05-28T00:55:59.143864+00:00",
+  "attempt_id": "6716622d-d29f-4a6f-b089-e99b87fd771b",
+  "elapsed_ms": 398.3,
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/users",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "c56de40d-72c1-46c3-93dd-3fa33b8a0590"
+    },
+    "body": {
+      "type": "individual",
+      "first_name": "Test",
+      "last_name": "User",
+      "email": "test+phase2-1779929758-92b08e@example.com",
+      "phone": "+12025550100",
+      "birth_date": "1990-01-15",
+      "nationality": "USA",
+      "address_street": "123 Main St",
+      "address_city": "San Francisco",
+      "address_state": "CA",
+      "address_zip_code": "94105",
+      "address_country": "USA",
+      "identifying_information": [
+        {
+          "type": "ssn",
+          "issuing_country": "USA",
+          "number": "000-00-0000"
+        },
+        {
+          "type": "drivers_license",
+          "issuing_country": "USA",
+          "number": "FAKE-DL-000000",
+          "documents": [
+            {
+              "type": "front",
+              "file": "data:image/png;base64,REDACTED(91)="
+            },
+            {
+              "type": "back",
+              "file": "data:image/png;base64,REDACTED(91)="
+            }
+          ]
+        }
+      ],
+      "account_purpose": "personal_or_living_expenses",
+      "source_of_funds": "salary",
+      "employment_status": "employed",
+      "current_employer": "Test Corp",
+      "occupation": "software_engineer",
+      "gender": "other",
+      "middle_name": "Q"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:55:59 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "6751",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "25e4bb18-4970-4d68-abe0-9ad16e3107c7",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "6751",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPY5HCMvHcEi-w=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"1a5f-dvQNQgWLrls3Saxpj2WWdz825aI\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:55:59 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a0294c00b9a1b61c-BOG"
+    },
+    "body": {
+      "id": "02e4e953-f423-4a7a-8828-f9c2a2ecb1c7",
+      "type": "individual",
+      "email": "test+phase2-1779929758-92b08e@example.com",
+      "status": "CREATED",
+      "verification_status": "unverified",
+      "created_at": "2026-05-28T00:55:58.983Z",
+      "updated_at": "2026-05-28T00:55:58.983Z",
+      "verification_mode": "automatic",
+      "metadata": {},
+      "first_name": "Test",
+      "last_name": "User",
+      "middle_name": "Q",
+      "phone": "+12025550100",
+      "birth_date": "1990-01-15",
+      "nationality": "USA",
+      "gender": "other",
+      "residential_address": {
+        "street_line_1": "123 Main St",
+        "street_line_2": "",
+        "city": "San Francisco",
+        "subdivision": "CA",
+        "postal_code": "94105",
+        "country": "USA"
+      },
+      "verification_triggered": true,
+      "eligible_products": [
+        {
+          "product_id": "2bdd542d-883f-426c-9664-0718a9d86f04",
+          "product_code": "payment_link",
+          "product_name": "Payment Link",
+          "eligible": false
+        },
+        {
+          "product_id": "b3c92edb-6ae4-476d-ba06-06b00e4d306c",
+          "product_code": "cash_deposit",
+          "product_name": "Cash Deposit",
+          "eligible": false
+        },
+        {
+          "product_id": "3c1053b2-fc2d-4e50-aa1d-54f900c9a1b7",
+          "product_code": "card_deposit",
+          "product_name": "Card Deposit",
+          "eligible": false
+        },
+        {
+          "product_id": "4d1a6f16-2842-408d-973c-0492e5a59686",
+          "product_code": "payout",
+          "product_name": "Payout",
+          "eligible": false
+        },
+        {
+          "product_id": "6602ddd8-4e74-42b4-977d-1d2033dea216",
+          "product_code": "virtual_account",
+          "product_name": "Virtual Account",
+          "eligible": false
+        },
+        {
+          "product_id": "18c36a3b-dc0a-4711-a03d-3d6b588ae252",
+          "product_code": "pse_deposit",
+          "product_name": "PSE Deposit",
+          "eligible": false
+        },
+        {
+          "product_id": "6a760a30-f53e-4895-8be1-d40f3971616b",
+          "product_code": "virtual_account_spei",
+          "product_name": "Virtual Account SPEI",
+          "eligible": false
+        },
+        {
+          "product_id": "497207ac-004c-48e1-b90f-5cf6a161a745",
+          "product_code": "usa-virtual-accounts",
+          "product_name": "USA Virtual Accounts",
+          "eligible": false
+        },
+        {
+          "product_id": "e8b2477e-476b-47bf-97f2-627eff260f12",
+          "product_code": "usa-va-deposit-settlement",
+          "product_name": "USA Virtual Accounts Settlements",
+          "eligible": false
+        },
+        {
+          "product_id": "ad3cb816-4e97-44ab-ae17-838d5916ab56",
+          "product_code": "usa-va-crypto-payout",
+          "product_name": "US VA Crypto Payout",
+          "eligible": false
+        },
+        {
+          "product_id": "5a1ce607-49a8-41a3-b08c-163b2ab6097e",
+          "product_code": "usa-va-fiat-payout",
+          "product_name": "US VA Fiat Payout",
+          "eligible": false
+        },
+        {
+          "product_id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "product_code": "usa-virtual-accounts-act",
+          "product_name": "USA Virtual Accounts (ACT)",
+          "eligible": false
+        },
+        {
+          "product_id": "1ee9f2c6-d529-4a3e-8c40-e9d38f194847",
+          "product_code": "usa-va-fiat-to-crypto-payout",
+          "product_name": "USA VA Fiat to Crypto Payout",
+          "eligible": false
+        }
+      ],
+      "identifying_information": [
+        {
+          "type": "ssn",
+          "number": "000-00-0000",
+          "issuing_country": "USA"
+        },
+        {
+          "type": "drivers_license",
+          "number": "FAKE-DL-000000",
+          "documents": [
+            {
+              "file": "https://kirafin-user-files-production.s3.us-west-2.amazonaws.com/clients/<client_id-redacted>/users/02e4e953-f423-4a7a-8828-f9c2a2ecb1c7/associated-persons/person-0/1779929758986-fc22f1f1-drivers_license-front.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZQ3DNWM5TBQ3QNCE%2F20260528%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260528T005559Z&X-Amz-Expires=600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%REDACTED(73)%2F7MsIXfpqhAbbaZd4SvRaE3wIGf6BKw8i%2Byh%2FqXEyg8q2gQIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2NTQ2NTQxNTc2MjciDLN9w%REDACTED(81)%REDACTED(152)%2BN%REDACTED(54)%2B3QzshFekO3sYLVcWQ0FNJwtJufc%2F1YsUu8NJp84wvhRg%2FHzWQsvdmTYaV%REDACTED(91)%2BhzQgrUIEwmFkYHLuAr4e53i%REDACTED(50)%REDACTED(47)%2BsFMvguIuKCJZgj%REDACTED(58)%2B7GYreLLDKzWn9qJzSqb2qpZ0v1dTWzuDZZEMc%2BYI%2FzU9rNM0LinYcaZUrgL00c3dqRsTSqaH%2FVfVdY%2FZI6lbO%REDACTED(49)%REDACTED(40)%2FYqyN%2FpPq2EIEF7otDmkIR55r2Z%2FCY6r0qffA10XrtfsFIHKkH%REDACTED(43)%2BquSRWxT4FUg82e0D%2Fy%2FCa8eLedEwTtpToG1acUm3c2YKfPl%REDACTED(58)&X-Amz-Signature=REDACTED(64)&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "type": "front",
+              "file_name": "1779929758986-fc22f1f1-drivers_license-front.png",
+              "uploaded_at": "2026-05-28T00:55:59.053Z",
+              "content_type": "image/png"
+            },
+            {
+              "file": "https://kirafin-user-files-production.s3.us-west-2.amazonaws.com/clients/<client_id-redacted>/users/02e4e953-f423-4a7a-8828-f9c2a2ecb1c7/associated-persons/person-0/1779929758986-cda8602c-drivers_license-back.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZQ3DNWM5TBQ3QNCE%2F20260528%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260528T005559Z&X-Amz-Expires=600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%REDACTED(73)%2F7MsIXfpqhAbbaZd4SvRaE3wIGf6BKw8i%2Byh%2FqXEyg8q2gQIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2NTQ2NTQxNTc2MjciDLN9w%REDACTED(81)%REDACTED(152)%2BN%REDACTED(54)%2B3QzshFekO3sYLVcWQ0FNJwtJufc%2F1YsUu8NJp84wvhRg%2FHzWQsvdmTYaV%REDACTED(91)%2BhzQgrUIEwmFkYHLuAr4e53i%REDACTED(50)%REDACTED(47)%2BsFMvguIuKCJZgj%REDACTED(58)%2B7GYreLLDKzWn9qJzSqb2qpZ0v1dTWzuDZZEMc%2BYI%2FzU9rNM0LinYcaZUrgL00c3dqRsTSqaH%2FVfVdY%2FZI6lbO%REDACTED(49)%REDACTED(40)%2FYqyN%2FpPq2EIEF7otDmkIR55r2Z%2FCY6r0qffA10XrtfsFIHKkH%REDACTED(43)%2BquSRWxT4FUg82e0D%2Fy%2FCa8eLedEwTtpToG1acUm3c2YKfPl%REDACTED(58)&X-Amz-Signature=REDACTED(64)&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+              "type": "back",
+              "file_name": "1779929758986-cda8602c-drivers_license-back.png",
+              "uploaded_at": "2026-05-28T00:55:59.049Z",
+              "content_type": "image/png"
+            }
+          ],
+          "issuing_country": "USA"
+        }
+      ]
+    }
+  }
+}

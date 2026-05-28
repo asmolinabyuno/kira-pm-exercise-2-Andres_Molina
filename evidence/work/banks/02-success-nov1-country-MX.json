@@ -1,0 +1,33 @@
+{
+  "captured_at": "2026-05-28T00:51:56.459763+00:00",
+  "attempt_id": "ea07645f-caea-4b56-a2ab-07ec94e424be",
+  "elapsed_ms": 19925.5,
+  "outcome": "success-nov1-country-MX",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/banks?country=MX",
+    "headers": {
+      "Accept": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:51:56 GMT",
+      "content-type": "application/json",
+      "content-length": "15",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "21a36651-bae7-4590-8921-b9e7522d12c5",
+      "x-amz-apigw-id": "eDOv7E0EvHcEaCw=",
+      "x-amzn-trace-id": "Root=1-6a179198-7fd8fd7d77d81aea518f696c",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a0294599eb82aefa-BOG"
+    },
+    "body": "error code: 522"
+  }
+}

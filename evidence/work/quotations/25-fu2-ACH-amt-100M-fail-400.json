@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-05-28T00:54:31.943969+00:00",
+  "attempt_id": "bae60f7d-8cef-4265-9798-017d74d00a28",
+  "elapsed_ms": 295.4,
+  "outcome": "fu2-ACH-amt-100M-fail-400",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/quotations",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "amount": "100000000",
+      "account_type": "ACH"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:54:31 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "79",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "cb37e31f-929a-4280-b2cc-4983a9d8ebaf",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "79",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPLSHlrPHcEPsA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"4f-pBbFUyRsekwgtZlFY2AHi2/awMU\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:54:31 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a02949e05e8c473f-BOG"
+    },
+    "body": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    }
+  }
+}

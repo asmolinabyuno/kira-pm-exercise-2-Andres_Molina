@@ -1,0 +1,77 @@
+{
+  "created": [
+    {
+      "variant": "spei",
+      "status": 201,
+      "recipient_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "idem_key": "21962c69-e401-485f-9558-87e5bd41d70d",
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/01-success-201-spei.json"
+    },
+    {
+      "variant": "ach",
+      "status": 400,
+      "recipient_id": null,
+      "idem_key": "f25be058-265e-4e26-bbe0-b79f6ce807bd",
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/02-fail-400-ach.json"
+    },
+    {
+      "variant": "usdt",
+      "status": 400,
+      "recipient_id": null,
+      "idem_key": "5bdf9781-5d0e-4161-9642-fd849502db31",
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/03-fail-400-usdt.json"
+    },
+    {
+      "variant": "swift",
+      "status": 400,
+      "recipient_id": null,
+      "idem_key": "de83c892-29cb-42ba-8809-12821fb924f5",
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/04-fail-400-swift.json"
+    }
+  ],
+  "phases": {
+    "list": {
+      "status": 200,
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/05-success-200-list-by-user.json"
+    },
+    "detail": {
+      "status": 200,
+      "recipient_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "variant": "spei",
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/06-success-200-detail-spei.json"
+    },
+    "idem_replay_same": {
+      "status": 201,
+      "original_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "replayed_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "ids_match": true,
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/07-success-201-idem-replay-same-spei.json"
+    },
+    "idem_conflict_mutated": {
+      "status": 409,
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/08-fail-409-idem-conflict-spei.json"
+    },
+    "idem_omit": {
+      "status": 400,
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/09-fail-400-idem-omit.json"
+    },
+    "m1_cross_pollution": {
+      "status": 201,
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/10-success-201-m1-spei-with-wallet-fields.json"
+    },
+    "m2_country_mismatch": {
+      "status": 201,
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/11-success-201-m2-spei-country-mismatch.json"
+    },
+    "delete": {
+      "status": 403,
+      "recipient_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+      "variant": "spei",
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/12-fail-403-delete-spei.json"
+    },
+    "delete_followup_get": {
+      "status": 200,
+      "evidence": "/Users/asmolinab/Documents/Personal/Kira/Exercise 2 - API Integration/evidence/work/recipients/13-success-200-detail-after-delete-spei.json"
+    }
+  }
+}

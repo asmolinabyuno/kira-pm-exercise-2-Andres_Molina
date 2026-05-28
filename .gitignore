@@ -1,0 +1,46 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude
+.claude/projects/
+.claude/sessions/
+.claude/.cache/
+
+# Local-only evidence (uncomment if any captured payloads contain unredacted PII/tokens you can't sanitize)
+# evidence/work/**/*.raw.json
+
+# Partner-distributed binary docs (Kira gave these to us for integration; not public material)
+# Their content is cited in evidence/analysis/13-docs-vs-partner-guide-delta.md with attribution.
+*.docx

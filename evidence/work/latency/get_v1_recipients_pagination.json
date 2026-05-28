@@ -1,0 +1,78 @@
+{
+  "endpoint": "GET /v1/recipients",
+  "scenario": "list-pagination-depth-latency/offset-sweep",
+  "n": 6,
+  "min_ms": 229.28,
+  "median_ms": 306.04,
+  "p95_ms": 429.49,
+  "p99_ms": 433.03,
+  "max_ms": 433.91,
+  "samples_ms": [
+    230.48,
+    233.08,
+    378.99,
+    416.23,
+    433.91,
+    229.28
+  ],
+  "offsets": [
+    0,
+    10,
+    100,
+    500,
+    1000,
+    5000
+  ],
+  "limit_fixed": 10,
+  "runs": [
+    {
+      "offset": 0,
+      "status": 200,
+      "elapsed_ms": 230.48,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 10,
+      "status": 200,
+      "elapsed_ms": 233.08,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 100,
+      "status": 200,
+      "elapsed_ms": 378.99,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 500,
+      "status": 200,
+      "elapsed_ms": 416.23,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 1000,
+      "status": 200,
+      "elapsed_ms": 433.91,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    },
+    {
+      "offset": 5000,
+      "status": 200,
+      "elapsed_ms": 229.28,
+      "retry_after": null,
+      "x_api_version": "2026-04-14",
+      "x_amzn_errortype": null
+    }
+  ],
+  "notes": "Requires user_id query param. Offset sweep at limit=10."
+}

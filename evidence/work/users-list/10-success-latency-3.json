@@ -1,0 +1,193 @@
+{
+  "captured_at": "2026-05-28T00:53:21.369753+00:00",
+  "attempt_id": "2cdf7ced-75d8-4d48-ada0-ada21330b8c1",
+  "elapsed_ms": 240.9,
+  "outcome": "success-latency-3",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/users",
+    "headers": {
+      "Accept": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:53:21 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "235d11d5-e5fc-4410-a319-d0cf75679cd6",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "2764",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPAQF_dvHcEFtg=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"acc-5fbTSqCOkE6K1ICDTxx+/Ctqxzk\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:53:21 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a02948277ad5aece-BOG"
+    },
+    "body": {
+      "data": [
+        {
+          "id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+          "type": "business",
+          "email": "ops+phase2-1779928492-628c99@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T00:34:52.504Z",
+          "updated_at": "2026-05-28T00:34:52.504Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779928492",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        {
+          "id": "871c7ea3-75dc-43ac-ae8e-131f15dcc1b9",
+          "type": "business",
+          "email": "ops+phase2-1779928464-2fdd92@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T00:34:24.394Z",
+          "updated_at": "2026-05-28T00:34:24.394Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779928464",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "US"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "US",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        {
+          "id": "f48a4669-1987-4869-a9b1-e8326bc9e424",
+          "type": "business",
+          "email": "ops+phase2-1779928463-6b6af3@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T00:34:24.136Z",
+          "updated_at": "2026-05-28T00:34:24.136Z",
+          "verification_mode": "automatic",
+          "metadata": {},
+          "business_legal_name": "Test Corp 1779928463",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        },
+        {
+          "id": "ae80515c-2d59-4e02-9678-0bcfd6e9a188",
+          "type": "business",
+          "email": "ops+phase2-1779928419-312dc5@example.com",
+          "status": "CREATED",
+          "verification_status": "unverified",
+          "created_at": "2026-05-28T00:33:39.255Z",
+          "updated_at": "2026-05-28T00:52:20.276Z",
+          "verification_mode": "automatic",
+          "metadata": {
+            "ts": "1779929540",
+            "batch": "B",
+            "probe": "non-sensitive-update"
+          },
+          "business_legal_name": "Test Corp 1779928419",
+          "registered_address": {
+            "street_line_1": "",
+            "street_line_2": "",
+            "city": "",
+            "subdivision": "",
+            "postal_code": "",
+            "country": "USA"
+          },
+          "associated_persons": [
+            {
+              "ssn": "000-00-0000",
+              "is_signer": true,
+              "last_name": "Signer",
+              "birth_date": "1975-08-22",
+              "first_name": "Test",
+              "nationality": "USA",
+              "has_ownership": true,
+              "ownership_percentage": 100
+            }
+          ]
+        }
+      ],
+      "pagination": {
+        "total": 4,
+        "limit": 10,
+        "offset": 0,
+        "has_more": false
+      }
+    }
+  }
+}

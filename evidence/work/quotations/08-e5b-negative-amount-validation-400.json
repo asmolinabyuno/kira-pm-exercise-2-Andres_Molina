@@ -1,0 +1,82 @@
+{
+  "captured_at": "2026-05-28T00:52:25.314697+00:00",
+  "attempt_id": "3d47eca3-aa2e-457a-b517-3de74501899e",
+  "elapsed_ms": 268.5,
+  "outcome": "e5b-negative-amount-validation-400",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/quotations",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "base_currency": "USD",
+      "quote_currency": "MXN",
+      "amount": -1000
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:52:25 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "436",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "cefa65a5-c3ee-4afb-94e5-9c47a3a71a0c",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "436",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDO3gFVnPHcErEA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"1b4-aH5/0DT4pUJyy36DvQ+4oLEhkCg\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:52:25 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a02946c91efc32d4-BOG"
+    },
+    "body": {
+      "code": "validation_error",
+      "message": "Invalid request body",
+      "details": [
+        {
+          "validation": "regex",
+          "code": "invalid_string",
+          "message": "Amount must be a positive number with up to 2 decimal places",
+          "path": [
+            "amount"
+          ]
+        },
+        {
+          "code": "custom",
+          "message": "Amount must be greater than zero",
+          "path": [
+            "amount"
+          ]
+        },
+        {
+          "code": "custom",
+          "message": "Either recipient_id or account_type (WIRE, SWIFT, WALLET, ACH, or INSTANT_PAY) is required",
+          "path": [
+            "recipient_id"
+          ]
+        }
+      ]
+    }
+  }
+}

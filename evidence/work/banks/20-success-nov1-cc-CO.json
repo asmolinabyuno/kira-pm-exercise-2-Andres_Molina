@@ -1,0 +1,33 @@
+{
+  "captured_at": "2026-05-28T00:54:47.682823+00:00",
+  "attempt_id": "08a031b5-c18c-49c0-8b48-cd576e2532e0",
+  "elapsed_ms": 268.07,
+  "outcome": "success-nov1-cc-CO",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/banks?country_code=CO",
+    "headers": {
+      "Accept": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:54:47 GMT",
+      "content-type": "application/json",
+      "content-length": "7",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "95d215d3-b7ae-4a3d-956f-b653c9cdb334",
+      "x-amz-apigw-id": "eDPNvEMCPHcEJmg=",
+      "x-amzn-trace-id": "Root=1-6a179257-41e911e13cde86e9125eaafe",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a0294a42da5f74ab-BOG"
+    },
+    "body": "Blocked"
+  }
+}

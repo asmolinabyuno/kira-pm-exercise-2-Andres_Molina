@@ -1,0 +1,59 @@
+{
+  "captured_at": "2026-05-28T02:27:13.212204+00:00",
+  "elapsed_ms": 266.56,
+  "outcome": "fail-400-iter2-P1b-va-MX_SPEI-CREATED",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/virtual-accounts",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "22cc1003-7f15-4968-ad2c-605ed2754b11"
+    },
+    "body": {
+      "user_id": "65ba0e06-9f52-4c43-b093-5d30a632ce3d",
+      "product": "mexico-virtual-accounts",
+      "type": "MX_SPEI"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:27:13 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "176",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "4bb5fe93-d408-4053-9478-dc98863410e4",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-frame-options": "SAMEORIGIN",
+      "x-amzn-remapped-content-length": "176",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcwPEfXPHcEGzw=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:27:13 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a029d1a65aadaece-BOG"
+    },
+    "body": {
+      "statusCode": 400,
+      "error": "Bad Request",
+      "message": "User must be in VERIFIED status to create a virtual account. Current status: CREATED",
+      "timestamp": "2026-05-28T02:27:13.151Z"
+    }
+  }
+}

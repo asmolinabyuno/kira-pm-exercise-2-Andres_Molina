@@ -1,0 +1,15 @@
+{
+  "canonical_schema": null,
+  "note": "4xx-only timings",
+  "n": 3,
+  "min_ms": 259.72,
+  "median_ms": 270.89,
+  "max_ms": 305.93,
+  "p95_ms": 305.93,
+  "samples_ms": [
+    259.72,
+    305.93,
+    270.89
+  ],
+  "last_status": 400
+}

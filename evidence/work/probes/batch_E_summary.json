@@ -1,0 +1,178 @@
+{
+  "probes": {
+    "E1_guides": {
+      "status": 400,
+      "elapsed_ms": 804.11,
+      "evidence": "quotations/01-e1-guides-validation-400.json",
+      "body_keys": [
+        "code",
+        "message",
+        "details"
+      ]
+    },
+    "E1b_guides_amount_in_destination": {
+      "status": 400,
+      "elapsed_ms": 303.23,
+      "evidence": "quotations/02-e1b-guides-amt-in-dest-validation-400.json",
+      "body_keys": [
+        "code",
+        "message",
+        "details"
+      ]
+    },
+    "E2_reference_wallet": {
+      "status": 400,
+      "elapsed_ms": 382.72,
+      "evidence": "quotations/03-e2-ref-wallet-validation-400.json",
+      "body_keys": [
+        "code",
+        "message"
+      ]
+    },
+    "E2b_reference_ach": {
+      "status": 400,
+      "elapsed_ms": 306.27,
+      "evidence": "quotations/04-e2b-ref-ach-validation-400.json",
+      "body_keys": [
+        "code",
+        "message"
+      ]
+    },
+    "E3_union": {
+      "status": 400,
+      "elapsed_ms": 474.13,
+      "evidence": "quotations/05-e3-union-validation-400.json",
+      "body_keys": [
+        "code",
+        "message"
+      ]
+    },
+    "E4_empty": {
+      "status": 400,
+      "elapsed_ms": 244.41,
+      "evidence": "quotations/06-e4-empty-validation-400.json",
+      "body_keys": [
+        "code",
+        "message",
+        "details"
+      ],
+      "response_body_redacted": {
+        "code": "validation_error",
+        "message": "Invalid request body",
+        "details": [
+          {
+            "code": "invalid_type",
+            "expected": "string",
+            "received": "undefined",
+            "path": [
+              "amount"
+            ],
+            "message": "Required"
+          }
+        ]
+      }
+    },
+    "E5_mutations_guides_fallback": {
+      "wrong_quote_currency": {
+        "status": 400,
+        "elapsed_ms": 286.1,
+        "evidence": "quotations/07-e5a-bad-currency-validation-400.json",
+        "body_keys": [
+          "code",
+          "message",
+          "details"
+        ]
+      },
+      "negative_amount": {
+        "status": 400,
+        "elapsed_ms": 268.5,
+        "evidence": "quotations/08-e5b-negative-amount-validation-400.json",
+        "body_keys": [
+          "code",
+          "message",
+          "details"
+        ]
+      },
+      "fiat_to_fiat": {
+        "status": 400,
+        "elapsed_ms": 273.45,
+        "evidence": "quotations/09-e5c-fiat-to-fiat-validation-400.json",
+        "body_keys": [
+          "code",
+          "message",
+          "details"
+        ]
+      }
+    },
+    "E6_latency_4xx_fallback": {
+      "n": 3,
+      "min_ms": 259.72,
+      "median_ms": 270.89,
+      "max_ms": 305.93,
+      "p95_ms": 305.93,
+      "samples_ms": [
+        259.72,
+        305.93,
+        270.89
+      ],
+      "last_status": 400
+    },
+    "E7_get_quote": "skipped: no quote_id"
+  },
+  "canonical_schema": null,
+  "error_bodies": {
+    "E1": {
+      "code": "validation_error",
+      "message": "Invalid request body",
+      "details": [
+        {
+          "code": "custom",
+          "message": "Either recipient_id or account_type (WIRE, SWIFT, WALLET, ACH, or INSTANT_PAY) is required",
+          "path": [
+            "recipient_id"
+          ]
+        }
+      ]
+    },
+    "E1b": {
+      "code": "validation_error",
+      "message": "Invalid request body",
+      "details": [
+        {
+          "code": "custom",
+          "message": "Either recipient_id or account_type (WIRE, SWIFT, WALLET, ACH, or INSTANT_PAY) is required",
+          "path": [
+            "recipient_id"
+          ]
+        }
+      ]
+    },
+    "E2": {
+      "code": "bad_request",
+      "message": "No fee profile configured for product usa-va-fiat-to-crypto-payout with account type WALLET"
+    },
+    "E2b": {
+      "code": "bad_request",
+      "message": "Total fees exceed or equal the payout amount"
+    },
+    "E3": {
+      "code": "bad_request",
+      "message": "No fee profile configured for product usa-va-fiat-to-crypto-payout with account type WALLET"
+    },
+    "E4": {
+      "code": "validation_error",
+      "message": "Invalid request body",
+      "details": [
+        {
+          "code": "invalid_type",
+          "expected": "string",
+          "received": "undefined",
+          "path": [
+            "amount"
+          ],
+          "message": "Required"
+        }
+      ]
+    }
+  }
+}

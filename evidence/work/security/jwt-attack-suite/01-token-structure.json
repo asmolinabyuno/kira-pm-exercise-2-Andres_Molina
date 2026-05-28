@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-05-28T02:20:43.634711+00:00",
+  "header": {
+    "kid": "GuYId5hRS6j2TToQzJJ7UOsqh6e1ullOcdHoB9FFRPw=",
+    "alg": "RS256"
+  },
+  "claims_keys": [
+    "auth_time",
+    "client_id",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "scope",
+    "sub",
+    "token_use",
+    "version"
+  ],
+  "claims_redacted": {
+    "sub": "REDACTED(26)",
+    "token_use": "access",
+    "scope": "REDACTED(27)",
+    "auth_time": 1779934843,
+    "iss": "REDACTED(63)",
+    "exp": 1779938443,
+    "iat": 1779934843,
+    "version": 2,
+    "jti": "REDACTED(36)",
+    "client_id": "REDACTED(26)"
+  },
+  "signature_length": 342
+}

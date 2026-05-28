@@ -1,0 +1,25 @@
+{
+  "endpoint": "PUT /v1/users/id",
+  "n": 10,
+  "samples_ms": [
+    324.84,
+    306.21,
+    353.33,
+    286.61,
+    375.12,
+    471.36,
+    367.29,
+    283.53,
+    497.54,
+    349.14
+  ],
+  "min_ms": 283.53,
+  "max_ms": 497.54,
+  "median_ms": 351.24,
+  "p50_ms": 349.14,
+  "p95_ms": 497.54,
+  "p99_ms": 497.54,
+  "mean_ms": 361.5,
+  "stdev_ms": 72.34,
+  "notes": "N=10 metadata-only updates (non-sensitive \u2014 should not trigger reverification). PUT has no Idempotency-Key \u2014 implicitly idempotent."
+}

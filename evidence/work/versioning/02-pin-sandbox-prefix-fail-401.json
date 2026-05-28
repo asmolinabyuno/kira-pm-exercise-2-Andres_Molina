@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-05-28T22:36:46.894649+00:00",
+  "attempt_id": "a8a04f42-17df-4023-98a2-20de731f24f8",
+  "elapsed_ms": 236.45,
+  "outcome": "fail-401",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/sandbox/v1/versioning/upgrade",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "target_version": "2026-04-14"
+    }
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+      "date": "Thu, 28 May 2026 22:36:46 GMT",
+      "content-type": "application/json",
+      "content-length": "26",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "9c074295-3d66-4ef7-9ce0-597357b31512",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Content-Type,Authorization,x-api-key,x-client-id",
+      "x-amzn-errortype": "UnauthorizedException",
+      "x-amz-apigw-id": "eGN74GvVvHcEnBA=",
+      "access-control-allow-methods": "GET,POST,PUT,DELETE,OPTIONS",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a030bd782c79ffac-BOG"
+    },
+    "body": {
+      "message": "Unauthorized"
+    }
+  }
+}

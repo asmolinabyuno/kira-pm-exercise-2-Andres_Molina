@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-05-28T02:23:59.478445+00:00",
+  "elapsed_ms": 264.44,
+  "outcome": "fail-404-random-recipient-4",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/recipients/1ffff7c9-f197-43eb-8424-e434d9096b86",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:23:59 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "b5d3f4b5-14c1-44c1-9e41-13dbc5b446bf",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "120",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcR9GfVPHcECvA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"78-XM6PpAB3n86iUYh95CqWXDDF1kE\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:23:59 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a029cceb8b44e564-BOG"
+    },
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Recipient with ID 1ffff7c9-f197-43eb-8424-e434d9096b86 not found",
+        "details": {}
+      }
+    }
+  }
+}

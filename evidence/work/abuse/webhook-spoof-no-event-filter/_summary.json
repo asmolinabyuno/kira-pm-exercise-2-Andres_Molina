@@ -1,0 +1,80 @@
+{
+  "scenario": "webhook-spoof-no-event-filter",
+  "iterations": [
+    {
+      "label": "P1-baseline-own-client_uuid",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "own"
+    },
+    {
+      "label": "P2-bogus-client_uuid-0",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "bogus-random-uuid"
+    },
+    {
+      "label": "P2-bogus-client_uuid-1",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "bogus-random-uuid"
+    },
+    {
+      "label": "P2-bogus-client_uuid-2",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "bogus-random-uuid"
+    },
+    {
+      "label": "P3-omit-client_uuid",
+      "status": 400,
+      "body_shape": [
+        "data",
+        "message"
+      ],
+      "request_client_uuid_kind": "absent"
+    },
+    {
+      "label": "P4-overwrite-1",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "own"
+    },
+    {
+      "label": "P4-overwrite-2",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "own"
+    },
+    {
+      "label": "P5-with-events-field",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "own"
+    },
+    {
+      "label": "cleanup-restore-baseline",
+      "status": 200,
+      "body_shape": [
+        "message"
+      ],
+      "request_client_uuid_kind": "own"
+    }
+  ],
+  "cross_tenant_spoof_accepted": true,
+  "p3_omit_status": 400
+}

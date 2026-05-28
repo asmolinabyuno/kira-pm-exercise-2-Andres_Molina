@@ -1,0 +1,41 @@
+{
+  "captured_at": "2026-05-28T22:36:47.951796+00:00",
+  "attempt_id": "b9b50fcc-0040-483d-b47a-383735b15dc1",
+  "elapsed_ms": 278.56,
+  "outcome": "fail-401",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/sandbox/v1/virtual-accounts/00000000-0000-0000-0000-000000000000/simulate-deposit",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "amount": 1000,
+      "currency": "USD"
+    }
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+      "date": "Thu, 28 May 2026 22:36:47 GMT",
+      "content-type": "application/json",
+      "content-length": "26",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "15b4f5fe-95fc-4105-8fc6-2b30d14488e9",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Content-Type,Authorization,x-api-key,x-client-id",
+      "x-amzn-errortype": "UnauthorizedException",
+      "x-amz-apigw-id": "eGN8CHGEvHcEQZg=",
+      "access-control-allow-methods": "GET,POST,PUT,DELETE,OPTIONS",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a030bd7e6f26da19-BOG"
+    },
+    "body": {
+      "message": "Unauthorized"
+    }
+  }
+}

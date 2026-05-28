@@ -1,0 +1,42 @@
+{
+  "captured_at": "2026-05-28T00:58:01.621442+00:00",
+  "attempt_id": "e5b34570-af75-4bb3-b197-4c6ccd57c503",
+  "elapsed_ms": 284.68,
+  "outcome": "fail-403-G0.1-path-v1-webhooks-register",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/webhooks/register",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Accept": "application/json",
+      "Idempotency-Key": "799b2c7e-2e8b-464d-bc98-a0cf8d27b189"
+    },
+    "body": {
+      "webhook_url": "https://webhook.site/3529bfd3-ec02-4cf5-9c3a-2aa2dd900f34",
+      "secret": "REDACTED(32)",
+      "client_uuid": "<client_id-redacted>"
+    }
+  },
+  "response": {
+    "status": 403,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:58:01 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "f84b867e-f09a-4949-8e79-3edb1d019982",
+      "x-amzn-errortype": "IncompleteSignatureException",
+      "x-amz-apigw-id": "eDPsDGnBvHcEYxg=",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(306)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a0294efedf4b74ab-BOG"
+    },
+    "body": {
+      "message": "Invalid key=value pair (missing equal-sign) in Authorization header (hashed with SHA-256 and encoded with Base64): 'bbcfOy3hNbPkSiR6n858838lvU/iu20Ph4SiZFsyvyM='."
+    }
+  }
+}

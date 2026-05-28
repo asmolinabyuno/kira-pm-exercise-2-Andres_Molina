@@ -1,0 +1,25 @@
+{
+  "endpoint": "POST /v1/users/id/verifications",
+  "n": 10,
+  "samples_ms": [
+    418.05,
+    466.78,
+    414.22,
+    524.68,
+    440.04,
+    409.58,
+    531.76,
+    491.34,
+    393.91,
+    478.64
+  ],
+  "min_ms": 393.91,
+  "max_ms": 531.76,
+  "median_ms": 453.41,
+  "p50_ms": 440.04,
+  "p95_ms": 531.76,
+  "p99_ms": 531.76,
+  "mean_ms": 456.9,
+  "stdev_ms": 49.19,
+  "notes": "N=10 fresh idempotency keys (no cached replays) \u2014 each provisions a new AiPrise session. Includes the partner-side session-create roundtrip; higher latency than vanilla CRUD."
+}

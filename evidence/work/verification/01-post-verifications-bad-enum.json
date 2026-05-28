@@ -1,0 +1,64 @@
+{
+  "captured_at": "2026-05-28T00:55:53.175508+00:00",
+  "attempt_id": "ea67c196-28dd-4043-9670-f40e30b06019",
+  "elapsed_ms": 308.04,
+  "outcome": "fail-400-validation",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/users/ae80515c-2d59-4e02-9678-0bcfd6e9a188/verifications",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "5b6632ec-ba3f-4c30-8155-e253e910e453"
+    },
+    "body": {
+      "type": "NONEXISTENT",
+      "redirect_uri": "https://example.com/done"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:55:53 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "171",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "4ca69f8c-566d-40aa-9d1f-ee3cf6bce370",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "171",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPX-FQ_PHcEevw=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"ab-pjLy12ACDFuNBRGRSrM93ZXsUnY\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:55:53 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a0294bdc0ef80f0f-BOG"
+    },
+    "body": {
+      "error": "Invalid request data",
+      "details": [
+        {
+          "path": "type",
+          "message": "Invalid discriminator value. Expected 'embedded-link' | 'api'",
+          "code": "invalid_union_discriminator"
+        }
+      ]
+    }
+  }
+}

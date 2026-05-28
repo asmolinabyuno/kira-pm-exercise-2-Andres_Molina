@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-05-28T00:55:55.691067+00:00",
+  "attempt_id": "38a700da-d893-4cbc-b669-d81f5badd7b5",
+  "elapsed_ms": 332.36,
+  "outcome": "success",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/users/ae80515c-2d59-4e02-9678-0bcfd6e9a188/verifications",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "Idempotency-Key": "fa8ebe02-f0db-4d56-b241-92d3c426de72"
+    },
+    "body": {
+      "type": "embedded-link",
+      "redirect_uri": "https://example.com/B-different"
+    }
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:55:55 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "448",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "0f6c0aa0-74f2-48b6-b846-98b8d9599ecd",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "448",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPYXHqsvHcEEWg=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"1c0-G8D6VrPkqHLsHxbulcvoURsJN9s\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:55:55 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(307)",
+      "server": "cloudflare",
+      "cf-ray": "a0294beb88a1e564-BOG"
+    },
+    "body": {
+      "id": "7fe40cde-d8c8-465f-a29c-7dff87ac3df8",
+      "provider": "aiprise",
+      "provider_metadata": {
+        "session_id": "adadfbb2-3138-4de0-a87c-846653a750e7",
+        "template_id": "ab92b46b-1ac9-4d52-a16e-052073e02062"
+      },
+      "provider_link": "https://verify.aiprise.com/?business_onboarding_session_id=adadfbb2-3138-4de0-a87c-846653a750e7",
+      "status": "not_started",
+      "verification_link": "https://verify.aiprise.com/?business_onboarding_session_id=adadfbb2-3138-4de0-a87c-846653a750e7"
+    }
+  }
+}

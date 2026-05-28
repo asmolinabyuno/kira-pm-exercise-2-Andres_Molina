@@ -1,0 +1,62 @@
+{
+  "captured_at": "2026-05-28T02:24:02.106338+00:00",
+  "elapsed_ms": 258.52,
+  "outcome": "fail-400-va-fake-user",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/virtual-accounts",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)",
+      "idempotency-key": "089d4432-4f72-4d35-b3cc-5154f92c7c15"
+    },
+    "body": {
+      "user_id": "b3901864-db4f-4748-8080-c4187be08b03",
+      "product": "usa-virtual-accounts"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:24:02 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "93",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "c4a232eb-5907-418e-82f2-cc23a435dc07",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "93",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcSYGzAvHcEFxg=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"5d-wwDFggc/YaKnQnulSObZiMx12iM\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:24:02 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(306)",
+      "server": "cloudflare",
+      "cf-ray": "a029ccfc0e304736-BOG"
+    },
+    "body": {
+      "code": "validation_error",
+      "error": "Invalid data",
+      "details": [
+        {
+          "message": "type is Required"
+        }
+      ]
+    }
+  }
+}

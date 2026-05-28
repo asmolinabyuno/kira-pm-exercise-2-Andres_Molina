@@ -1,0 +1,547 @@
+{
+  "captured_at": "2026-05-28T02:22:28.548743+00:00",
+  "elapsed_ms": 260.5,
+  "outcome": "success-200-list-limit-neg1",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/recipients?user_id=65ba0e06-9f52-4c43-b093-5d30a632ce3d&limit=-1",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "date": "Thu, 28 May 2026 02:22:28 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "33551fff-50c0-4746-8bf3-364af1276827",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "11599",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDcDwHuovHcEaxA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"2d4f-a8wldZeMCe/K/TEHY3UWnxXFf58\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 02:22:28 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "content-encoding": "gzip",
+      "server": "cloudflare",
+      "cf-ray": "a029cab34e96473f-BOG"
+    },
+    "body": {
+      "recipients": [
+        {
+          "recipient_id": "ff9828b2-9e83-4c71-ae3e-040ffb52c894",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "Beneficiary",
+          "phone": "+525512345678",
+          "email": "test+spei@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567890",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 00:52:49.879228+00",
+          "updated_ts": "2026-05-28 00:52:49.879228+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "24bdd8ae-7c5e-4af1-bc50-7419a0423917",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "Beneficiary",
+          "phone": "+525512345678",
+          "email": "test+spei@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567890",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 00:52:52.191958+00",
+          "updated_ts": "2026-05-28 00:52:52.191958+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "a277e286-11a4-445b-b3cc-4972c905aade",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "Beneficiary",
+          "phone": "+525512345678",
+          "email": "test+spei@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567890",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 00:52:52.499218+00",
+          "updated_ts": "2026-05-28 00:52:52.499218+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "044aeb76-8f56-4344-8eb0-a6b7a7852969",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "Recipient",
+          "phone": "+15555550100",
+          "email": "test+ach@example.com",
+          "address": {
+            "street_name": "100 Test St",
+            "city": "San Francisco",
+            "state": "CA",
+            "postal_code": "94105",
+            "country": "US"
+          },
+          "account_type": "ACH",
+          "account_details": {
+            "routing_number": "021000089",
+            "account_number": "000123456789",
+            "type": "checking",
+            "bank_name": "Test US Bank N.A.",
+            "bank_address": "1 Bank Plaza, New York, NY 10001, USA",
+            "doc_type": "id",
+            "doc_number": "FAKE000000"
+          },
+          "created_ts": "2026-05-28 00:54:15.43984+00",
+          "updated_ts": "2026-05-28 00:54:15.43984+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "2038f798-efa1-4c94-9dd4-4c60fff9776e",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "WalletHolder",
+          "email": "test+usdt@example.com",
+          "account_type": "WALLET",
+          "account_details": {
+            "token": "REDACTED(4)",
+            "address": "TLsV52sRDL79HXGGm9yzwKibb6BeruhUzy",
+            "network": "tron"
+          },
+          "created_ts": "2026-05-28 00:54:15.977711+00",
+          "updated_ts": "2026-05-28 00:54:15.977711+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "2a0cb60a-da7b-4463-afd5-7c0908307c91",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "EuroBeneficiary",
+          "phone": "+34900000000",
+          "email": "test+swift@example.com",
+          "address": {
+            "street_name": "1 Recipient St",
+            "city": "Madrid",
+            "state": "Madrid",
+            "postal_code": "28001",
+            "country": "ES"
+          },
+          "account_type": "SWIFT",
+          "account_details": {
+            "account_number": "ES7100000000000000000000",
+            "swift_code": "TESTESM0XXX",
+            "bank_name": "Test European Bank S.A.",
+            "bank_address": {
+              "street_name": "1 Bank Avenue",
+              "city": "Madrid",
+              "state": "",
+              "postal_code": "",
+              "country": "ES"
+            },
+            "doc_type": "passport",
+            "doc_number": "FAKE000000",
+            "doc_country_code": "ES"
+          },
+          "created_ts": "2026-05-28 00:54:16.464742+00",
+          "updated_ts": "2026-05-28 00:54:16.464742+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "2a9cd466-a237-4e15-80d0-ebefe1ea5608",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteA",
+          "phone": "+525512345678",
+          "email": "test+abuse-1b931e@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567000",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:14.661988+00",
+          "updated_ts": "2026-05-28 02:22:14.661988+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "781e0344-4d6b-4943-8b50-08052d940697",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteB",
+          "phone": "+525512345678",
+          "email": "test+abuse-fe6ba1@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567001",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:15.398331+00",
+          "updated_ts": "2026-05-28 02:22:15.398331+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "5b53aeb4-33ad-463e-9eac-f5df5719da7c",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteC",
+          "phone": "+525512345678",
+          "email": "test+abuse-6829bc@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567002",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:16.068687+00",
+          "updated_ts": "2026-05-28 02:22:16.068687+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "a681aa7f-4cf1-4279-a5b5-258fb5f1b55d",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteD",
+          "phone": "+525512345678",
+          "email": "test+abuse-564423@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567003",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:16.669511+00",
+          "updated_ts": "2026-05-28 02:22:16.669511+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "04a6090f-dbf6-43f6-ad7f-7f3110d959db",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteE",
+          "phone": "+525512345678",
+          "email": "test+abuse-4eec22@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567004",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:17.179002+00",
+          "updated_ts": "2026-05-28 02:22:17.179002+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "bf8db503-f844-497b-836a-d375f3a112fa",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteF",
+          "phone": "+525512345678",
+          "email": "test+abuse-99ab7a@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567005",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:18.33376+00",
+          "updated_ts": "2026-05-28 02:22:18.33376+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "57e7e691-adb3-4269-9cfe-6da3107b4ccf",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteG",
+          "phone": "+525512345678",
+          "email": "test+abuse-139728@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567006",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:18.851065+00",
+          "updated_ts": "2026-05-28 02:22:18.851065+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "575871a7-fc27-4dcd-bc0d-9bf6aaa2b4fd",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteH",
+          "phone": "+525512345678",
+          "email": "test+abuse-2ce765@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567007",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:19.55211+00",
+          "updated_ts": "2026-05-28 02:22:19.55211+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "080bb1d1-366a-4f6c-b953-9fa85ce6e198",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteI",
+          "phone": "+525512345678",
+          "email": "test+abuse-7a03d0@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567008",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:20.088648+00",
+          "updated_ts": "2026-05-28 02:22:20.088648+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "1c9c53f7-992b-429d-9297-311cca87eb52",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteJ",
+          "phone": "+525512345678",
+          "email": "test+abuse-2249e2@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567009",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:20.622059+00",
+          "updated_ts": "2026-05-28 02:22:20.622059+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "d7c4add8-5110-48f6-982b-4d15c299426b",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteK",
+          "phone": "+525512345678",
+          "email": "test+abuse-f17964@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567010",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:21.134409+00",
+          "updated_ts": "2026-05-28 02:22:21.134409+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "0a317a80-ea00-41d2-bfe1-edcbc4dbac52",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteL",
+          "phone": "+525512345678",
+          "email": "test+abuse-9ad1f9@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567011",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:21.66194+00",
+          "updated_ts": "2026-05-28 02:22:21.66194+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "a2af19a5-c0fd-4d9b-a958-2c48ab873277",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteM",
+          "phone": "+525512345678",
+          "email": "test+abuse-a2ac12@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567012",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:22.166743+00",
+          "updated_ts": "2026-05-28 02:22:22.166743+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "e37dd66c-467b-42cb-bdc8-f37c71c9eb41",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteN",
+          "phone": "+525512345678",
+          "email": "test+abuse-9eeca3@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567013",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:22.766428+00",
+          "updated_ts": "2026-05-28 02:22:22.766428+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "3242718b-5274-4077-9fdb-91528b6ad400",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteO",
+          "phone": "+525512345678",
+          "email": "test+abuse-0bed2d@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567014",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:23.460783+00",
+          "updated_ts": "2026-05-28 02:22:23.460783+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "eb517200-2ed4-4dcf-bc7a-84afc80479ad",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteP",
+          "phone": "+525512345678",
+          "email": "test+abuse-d9879b@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567015",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:23.979385+00",
+          "updated_ts": "2026-05-28 02:22:23.979385+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "d2b2ab34-583d-499b-94c6-45c6815a0d05",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteQ",
+          "phone": "+525512345678",
+          "email": "test+abuse-e82b20@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567016",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:24.481884+00",
+          "updated_ts": "2026-05-28 02:22:24.481884+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "07d37b53-4c3f-4684-b7bf-3083553353e6",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteR",
+          "phone": "+525512345678",
+          "email": "test+abuse-134c8c@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567017",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:25.029049+00",
+          "updated_ts": "2026-05-28 02:22:25.029049+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "25c94f28-c624-4d2b-a43f-3e778bc4ae27",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteS",
+          "phone": "+525512345678",
+          "email": "test+abuse-40059c@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567018",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:25.543933+00",
+          "updated_ts": "2026-05-28 02:22:25.543933+00",
+          "metadata": {}
+        },
+        {
+          "recipient_id": "6baf6922-14eb-48c7-9403-20be3177121b",
+          "type": "individual",
+          "first_name": "Test",
+          "last_name": "PolluteT",
+          "phone": "+525512345678",
+          "email": "test+abuse-2575f0@example.com",
+          "account_type": "SPEI",
+          "account_details": {
+            "clabe": "012180001234567019",
+            "doc_type": "rfc",
+            "doc_number": "TFAK900101AAA",
+            "doc_country_code": "MX"
+          },
+          "created_ts": "2026-05-28 02:22:26.076963+00",
+          "updated_ts": "2026-05-28 02:22:26.076963+00",
+          "metadata": {}
+        }
+      ],
+      "total": 26
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-05-28T00:53:25.844062+00:00",
+  "attempt_id": "2acfd3b3-da27-475f-ba74-5438097307cc",
+  "elapsed_ms": 300.96,
+  "outcome": "fail-400-offset-99999",
+  "request": {
+    "method": "GET",
+    "url": "https://api.balampay.com/v1/recipients?offset=99999",
+    "headers": {
+      "Accept": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": null
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:53:25 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "98",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "5aadec2d-aa03-4d70-b071-a9ff862f5333",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "98",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPA9FIDvHcEaxA=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"62-tLm2S09RfFl4SWRQhQEhrsV9MLE\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:53:25 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a02948431c79386d-BOG"
+    },
+    "body": {
+      "error": {
+        "code": "VALIDATION_ERROR",
+        "message": "user_id query parameter is required",
+        "details": {}
+      }
+    }
+  }
+}

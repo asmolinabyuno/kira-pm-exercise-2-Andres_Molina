@@ -1,0 +1,59 @@
+{
+  "captured_at": "2026-05-28T00:53:53.629680+00:00",
+  "attempt_id": "e1dd31c7-b9c4-4e0b-8ed8-c9cf3409180b",
+  "elapsed_ms": 285.24,
+  "outcome": "fu-WALLET-tron-USDT-10000-fail-400",
+  "request": {
+    "method": "POST",
+    "url": "https://api.balampay.com/v1/quotations",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-api-key": "REDACTED(40)",
+      "Authorization": "REDACTED(872)"
+    },
+    "body": {
+      "amount": "10000.00",
+      "account_type": "WALLET",
+      "wallet_network": "tron",
+      "wallet_token": "USDT"
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "date": "Thu, 28 May 2026 00:53:53 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "126",
+      "connection": "keep-alive",
+      "x-amzn-requestid": "ba85c616-740b-42ff-8762-8d4b0afc746d",
+      "x-dns-prefetch-control": "off",
+      "referrer-policy": "no-referrer",
+      "x-permitted-cross-domain-policies": "none",
+      "x-xss-protection": "0",
+      "strict-transport-security": "max-age=15552000; includeSubDomains",
+      "x-amzn-remapped-content-length": "126",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "origin-agent-cluster": "?1",
+      "x-amzn-remapped-connection": "keep-alive",
+      "cross-origin-opener-policy": "same-origin",
+      "x-download-options": "noopen",
+      "x-api-version": "2026-04-14",
+      "x-amz-apigw-id": "eDPFSEEiPHcEQ6Q=",
+      "vary": "Origin",
+      "x-content-type-options": "nosniff",
+      "etag": "W/\"7e-mpp06haVFtn+azY0ETLjBa7RNnU\"",
+      "cross-origin-resource-policy": "same-origin",
+      "x-amzn-remapped-date": "Thu, 28 May 2026 00:53:53 GMT",
+      "access-control-allow-credentials": "true",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "REDACTED(308)",
+      "server": "cloudflare",
+      "cf-ray": "a02948f0dafbae73-BOG"
+    },
+    "body": {
+      "code": "bad_request",
+      "message": "No fee profile configured for product usa-va-fiat-to-crypto-payout with account type WALLET"
+    }
+  }
+}
