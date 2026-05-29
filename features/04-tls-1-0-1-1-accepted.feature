@@ -3,7 +3,7 @@
 # Pillar: Integration Hardening (transport security) + Regulatory (PCI-DSS Req 4.1 / FFIEC / state money-transmitter)
 # Evidence: evidence/analysis/05-security-audit.md § Finding 4 · evidence/work/security/security-headers-and-tls/03-tls-protocol-audit.json
 # Related: F4 (security), OWASP-API8:2023, T-P3-SEC-F4
-# Disclosure status: raised with @Diego on the security disclosure track
+# Disclosure status: included in this public deliverable; no prior private coordination with Kira
 @security @tls @transport
 Feature: api.balampay.com:443 must enforce TLS 1.2 minimum (TLS 1.0 and TLS 1.1 handshakes must fail)
   As a regulated buyer (BIA, N1co) running an InfoSec review on Kira's API

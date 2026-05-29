@@ -3,7 +3,7 @@
 # Pillar: Documentation Quality + Ease of Connection
 # Evidence: evidence/analysis/13-docs-vs-partner-guide-delta.md § 3 · evidence/analysis/03-phase-1-findings.md (Findings #1, #2, #7, #8) · evidence/analysis/12-api-reference-coverage.md · evidence/analysis/11-docs-coverage-matrix.md
 # Related: META-finding (T-P1-META-01), Phase-1 Finding-#1/#2/#7/#8, GAP-01, GAP-30, GAP-31, GAP-37, DRIFT-1, DRIFT-23, DRIFT-40
-# Disclosure status: raised with @Diego — see README "Outreach to Kira"
+# Disclosure status: see README § Outreach to Kira
 # Note: This feature Gherkinizes a docs-quality META-finding. Scenarios assert observable runtime behavior an
 # integrator hits when they follow the public docs literally, vs the partner-doc / no-prefix behavior the
 # integrator never learns about from the public surface. The "spec" scenarios encode the hardened-API behavior

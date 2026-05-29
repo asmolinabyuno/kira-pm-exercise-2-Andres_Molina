@@ -3,7 +3,7 @@
 # Pillar: Docs↔Runtime Congruence + Documentation Quality
 # Evidence: evidence/analysis/04-integration-log.md § DRIFT-1, DRIFT-2 (with 2026-05-28 revalidation block) · evidence/work/auth/01-fail-403.json · evidence/work/auth/02-success.json · evidence/work/versioning/01-pin-no-prefix-success.json · evidence/work/versioning/02-pin-sandbox-prefix-fail-401.json · evidence/work/versioning/03-sandbox-auth-after-pin-fail-403.json · evidence/work/versioning/04-sandbox-users-after-pin-fail-401.json
 # Related: DRIFT-1, DRIFT-1b, DRIFT-1c, DRIFT-2, T-P2-DRIFT-1, T-P2-DRIFT-54, T-P2-DRIFT-55, DELTA-Bucket-C
-# Disclosure status: raised with @Diego — see README "Outreach to Kira"
+# Disclosure status: see README § Outreach to Kira
 @docs-runtime-drift @sandbox-prod-drift @auth @versioning @meta-finding
 Feature: Sandbox base URL contract must be one canonical, documented URL that runtime honors
   As an integrator copy-pasting URLs from either the public docs OR the partner Sandbox Integration Guide

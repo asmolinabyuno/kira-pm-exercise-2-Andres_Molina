@@ -15,7 +15,7 @@
 |---|---|---|---|---|
 | 1 | `delete-recipient-pollution` | **HIGH** | tenant-abuse / state-machine | Reproduced — DRIFT-C15 firing 20/20 |
 | 2 | `idempotency-replay-race` | LOW (positive) | concurrency | Idempotency is RACE-SAFE on `/v1/recipients` (good — contrast with DRIFT-G4 on webhooks) |
-| 3 | `bola-cross-tenant-stub` | LOW | tenant-abuse | No leak — random UUID enumeration returns 404 consistently |
+| 3 | `bola-cross-tenant-stub` | LOW (**caveat: single-tenant probe — not a clean bill of health**) | tenant-abuse | No leak via random UUID enumeration (16/16 → 404), but schema gating prevents ownership-enforcement test. Recommend Phase-3 dual-tenant probe before claiming BOLA absent. |
 | 4 | `silent-country-override-exploit` | **HIGH** | currency-exploit / compliance | DRIFT-C14 reproduced + **NEW: ACH USD route accepts `address.country=MX` with US routing number** |
 | 5 | `webhook-spoof-no-event-filter` | **CRITICAL** | tenant-abuse / webhook-spoof | **3/3 bogus `client_uuid` values accepted** — cross-tenant webhook hijack vector |
 | 6 | `verification-skip-attempt` | **HIGH** | state-machine / dependency-skip | Verification check works for MX_SPEI (great!) but **4th error envelope shape discovered**, and **layer ordering inconsistent** (schema-first for US_BANK, verification-first for MX_SPEI) |

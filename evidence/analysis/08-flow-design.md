@@ -58,7 +58,7 @@ Kira does **not** execute fiat-to-fiat conversions (e.g. USD → MXN). Every cro
 | Header | Required on `/auth`? | Required on every other endpoint? |
 |---|---|---|
 | `x-api-key` | Yes | Yes (all endpoints) |
-| `Authorization: Bearer <jwt>` | **No** (this call obtains it) | Yes (all except `/auth` and `POST /webhooks/register`) |
+| `Authorization: Bearer <jwt>` | **No** (this call obtains it) | Yes — all endpoints (docs claim `/webhooks/register` is exempt, but **DRIFT-49 reproduced** shows Bearer is required at runtime; `x-api-key` alone → 401 UnauthorizedException — see §2.7 note) |
 | `Content-Type: application/json` | Yes (for POST/PUT) | Yes (for POST/PUT) |
 | `idempotency-key` | No | Required on **7 create endpoints**, see §2.4 |
 | `x-validation-header` | No | Optional OTP for **fiat payouts only** |
@@ -117,11 +117,11 @@ Kira does **not** execute fiat-to-fiat conversions (e.g. USD → MXN). Every cro
 | `POST /v1/payins` | ✓ | ✓ | **✓** | — |
 | `POST /v1/payins/fees` | ✓ | ✓ | — | — |
 | `POST /v1/payment-link` | ✓ | ✓ | — | — |
-| `POST /webhooks/register` | ✓ | **— (no JWT)** | — | — |
+| `POST /webhooks/register` | ✓ | **✓ at runtime (docs claim "no JWT" but DRIFT-49 reproduced → 401 without Bearer)** | — | — |
 | `POST /v1/quotations` | ✓ | ✓ | — | — |
 | All `GET` endpoints | ✓ | ✓ (or `x-api-key` alone on some — see GAP-04) | — | — |
 
-> **`POST /webhooks/register` is the only documented endpoint that does not require a Bearer token** — `x-api-key` alone authenticates it. Many `GET` endpoints describe "Bearer OR API key" (`oneOf` security in the OpenAPI), which contradicts the docs/authentication.md statement that "both" are always required. → GAP-04.
+> **DOC-vs-RUNTIME (DRIFT-49):** Public docs and partner guide claim `POST /webhooks/register` accepts `x-api-key` alone. **Empirical test (Batch G + Phase 3 security) confirms Bearer is required at runtime**: `x-api-key`-only request → 401 UnauthorizedException; Bearer-only → 403 ForbiddenException; both → 200. The "oneOf(BearerAuth, ApiKeyAuth)" claim in OpenAPI for many endpoints does not match runtime either. → GAP-04 (still HIGH severity — the security architecture documented is contradictory).
 
 ### 2.3 Error envelope — three coexisting shapes
 
@@ -219,7 +219,7 @@ No per-endpoint cost weighting documented. No burst allowance documented. → **
 
 [source: [docs/webhooks-guide.md](https://kira-financial-ai.readme.io/docs/webhooks-guide.md), [docs/webhooks-event-types.md](https://kira-financial-ai.readme.io/docs/webhooks-event-types.md), [docs/virtual-account-webhooks.md](https://kira-financial-ai.readme.io/docs/virtual-account-webhooks.md), [reference/post_webhooks-register.md](https://kira-financial-ai.readme.io/reference/post_webhooks-register.md)]
 
-**Registration:** `POST /webhooks/register` with `{ webhook_url (HTTPS), secret, client_uuid }`. Only `x-api-key` header required, **no Bearer token**.
+**Registration:** `POST /webhooks/register` with `{ webhook_url (HTTPS), secret, client_uuid }`. Docs claim only `x-api-key` is required (no Bearer); **DRIFT-49 reproduced shows Bearer is also required at runtime** — `x-api-key`-only returns 401. Per Phase 3 security probes the endpoint also accepts cleartext `http://`, foreign `client_uuid` values, null `secret`, and arbitrary URLs including SSRF targets (Finding #2).
 
 **Signing:** `x-signature-sha256` header carries an HMAC-SHA256 of the raw JSON body using the secret registered above. Verify with a timing-safe compare.
 
@@ -558,7 +558,7 @@ Two emitted webhook events: `card_payment` (debit-card success) and `barcode_gen
 |---|---|
 | `GET /v1/countries` ([src](https://kira-financial-ai.readme.io/reference/get_v1countries.md)) | 250 countries + subdivisions + `postal_code_format` regex. Use to validate user `address_*` fields client-side. |
 | `GET /banks?country_code=XX` ([src](https://kira-financial-ai.readme.io/reference/get_banks.md)) | `bank_code` lookup. **Uses ISO 3166-1 alpha-2** (`CO`, `MX`, `US`) while everything else in the platform uses alpha-3 (`COL`, `MEX`, `USA`). → GAP-20. |
-| `POST /webhooks/register` ([src](https://kira-financial-ai.readme.io/reference/post_webhooks-register.md)) | Register URL + secret. **`x-api-key` only, no JWT.** No update or delete endpoint documented (GAP-21). |
+| `POST /webhooks/register` ([src](https://kira-financial-ai.readme.io/reference/post_webhooks-register.md)) | Register URL + secret. **Docs say `x-api-key` only, no JWT; DRIFT-49 reproduced shows Bearer is also required at runtime.** No update or delete endpoint documented (GAP-21). |
 
 ---
 

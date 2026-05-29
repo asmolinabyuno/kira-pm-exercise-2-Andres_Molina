@@ -3,7 +3,7 @@
 # Pillar: Integration Hardening (security) + Webhook contract
 # Evidence: evidence/analysis/05-security-audit.md § Finding 1 · evidence/analysis/06-abuse-scenarios.md Scenario 5 · evidence/work/security/ssrf-webhook-delivery-confirm/ · evidence/work/webhooks/12..19 · evidence/work/abuse/webhook-spoof-no-event-filter/
 # Related: DRIFT-47, DRIFT-48, DRIFT-49, DRIFT-50, DRIFT-51, DRIFT-53, ABUSE-4, F1 (security), GAP-11, GAP-21, OWASP-API7:2023, OWASP-API3:2023
-# Disclosure status: raised with @Diego on the security disclosure track — kept out of public outreach until acknowledged
+# Disclosure status: included in this public deliverable; no prior private coordination with Kira
 @security @webhook @fraud-vector @sandbox-prod-drift
 Feature: Webhook registration endpoint must validate URLs, tenant ownership, and require an HMAC secret
   As an integrator whose tenant is the security boundary

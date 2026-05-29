@@ -3,7 +3,7 @@
 # Pillar: Integration Hardening (security) + Regulatory (PCI / GLBA-adjacent)
 # Evidence: evidence/analysis/05-security-audit.md § Findings 2-3 · DRIFT-30 (broadened in Phase 3) · evidence/work/security/info-disclosure-account-details/01-disclosure-sweep.json · evidence/work/recipients/06,27,29,31-*.json
 # Related: DRIFT-30, F2 (security), F3 (security), OWASP-API3:2023
-# Disclosure status: raised with @Diego on the security disclosure track
+# Disclosure status: included in this public deliverable; no prior private coordination with Kira
 @security @info-disclosure @docs-runtime-drift
 Feature: PII fields (SSN, document_number, account_details) must be masked to last-4 on every read
   As an integrator handling regulated PII (SSN, ACH routing+account, SPEI CLABE, SWIFT IBAN, USDT wallet)
